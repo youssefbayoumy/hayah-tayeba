@@ -1,0 +1,51 @@
+@startuml
+!pragma layout smetana
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam componentStyle uml2
+title Logical components | child-only app and separate content administration
+package "Expo React Native child app" {
+ [Child navigation / profile] as Shell
+ [Content renderers] as Renderer
+ [Local progress + outbox] as Outbox
+ Shell --> Renderer
+ Renderer --> Outbox
+}
+[Admin web client\n(proposed)] as Admin
+package "One backend application (proposed)" {
+ [Authenticated / scoped API] as API
+ [Child identity / sessions / recovery] as Identity
+ [Admin authentication] as AdminAuth
+ [Catalog / publication / locale editions] as Content
+ [Learning progress] as Progress
+ [Character / practice / rewards] as Practice
+ [Media authorization / processing] as Media
+ [Editorial audit / operations] as Audit
+ API --> Identity
+ API --> AdminAuth
+ API --> Content
+ API --> Progress
+ API --> Practice
+ API --> Media
+ Content --> Media : readiness
+ Content --> Audit
+}
+database "Transactional persistence\n(engine TBD)" as DB
+cloud "Media storage / delivery\n(provider TBD)" as Storage
+Shell --> API : learner-scoped HTTPS
+Outbox --> API : idempotent progress
+Admin --> API : admin-authorized operations
+Identity --> DB
+AdminAuth --> DB
+Content --> DB
+Progress --> DB
+Practice --> DB
+Audit --> DB
+Media --> Storage
+Renderer --> Storage : authorized reference
+note bottom of DB
+Logical modules can share one database.
+Child access/recovery and providers remain open.
+No companion-account or monitoring module.
+end note
+@enduml

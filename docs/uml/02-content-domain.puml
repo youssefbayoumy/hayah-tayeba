@@ -1,0 +1,88 @@
+@startuml
+!pragma layout smetana
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
+title Content domain | conceptual classes, not database tables
+class Door {
+  doorId
+  labelKey
+  displayOrder
+  availabilityState
+}
+class Journey {
+  journeyId
+  labelKey
+  currentRevisionId
+}
+class ContentRevision {
+  revisionId
+  schemaVersion
+  draftVersion
+  lifecycleState
+  requiredCapabilities
+}
+class LearningPath {
+  pathId
+  stageOrder
+}
+class Step {
+  stepId
+  templateType
+  required: boolean
+  completionRule
+  nextStepId: optional
+  contentKey
+}
+class ChoiceOption {
+  optionId
+  labelKey
+  feedbackKey
+  targetStepId: optional
+}
+class MediaAsset {
+  assetId
+  mediaType
+  processingState
+  accessibilityMetadata
+  rightsReference
+}
+class EditorialReview {
+  reviewId
+  adminId
+  reviewedDraftVersion
+  result
+  sourceNotes
+}
+class AuditEvent {
+  eventId
+  actorId
+  action
+  timestamp
+}
+class LearningStage {
+  stageId
+  stageKind
+  prerequisiteStageIds
+}
+Door "1" o-- "0..*" Journey
+Journey "1" *-- "1..*" ContentRevision
+ContentRevision "1" *-- "1..*" LearningPath
+LearningPath "1" *-- "1..*" LearningStage
+LearningStage "1" *-- "1..*" Step
+Step "1" *-- "0..*" ChoiceOption
+Step "0..*" --> "0..*" MediaAsset : references
+ContentRevision "1" -- "0..*" EditorialReview
+ContentRevision "1" -- "0..*" AuditEvent
+note bottom of ContentRevision
+Published data is immutable.
+Only availability can change to withdrawn.
+An attempt binds to one revision.
+Localized copy is in LocaleEdition (UML 09).
+end note
+note bottom of Step
+Required steps are digital and reachable.
+Real-life and reflection steps
+cannot block required completion.
+end note
+@enduml

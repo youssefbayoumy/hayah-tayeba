@@ -1,0 +1,23 @@
+# Local agent/runtime assets and attachments
+.codex-inspect/
+.codex-remote-attachments/
+.codex/
+tmp/
+
+# Development dependencies and caches
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+Thumbs.db
+
+# Credentials and machine-local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Intermediate failed browser runs (successful reports are retained)
+docs/design/qa/failed-check.json

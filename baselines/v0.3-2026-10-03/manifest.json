@@ -1,0 +1,230 @@
+{
+  "project": "Hayah Tayeba",
+  "version": "0.3",
+  "status": "Locked planning baseline; explicit open decisions retained",
+  "approved_on": "2026-10-03",
+  "timezone": "Africa/Cairo",
+  "approval": "Direct user instruction in this chat: \"okay, lock in that version\"",
+  "open_decision_ids": [
+    "OQ-01",
+    "OQ-02",
+    "OQ-03",
+    "OQ-04",
+    "OQ-05",
+    "OQ-06",
+    "OQ-08",
+    "OQ-09",
+    "OQ-10",
+    "OQ-11",
+    "OQ-12",
+    "OQ-13",
+    "OQ-14",
+    "OQ-15",
+    "OQ-16"
+  ],
+  "closed_decision_ids": [
+    "OQ-07"
+  ],
+  "files": [
+    {
+      "path": ".codex-inspect/build_client_pdf.py",
+      "bytes": 24071,
+      "sha256": "5f0bfb072d210433fe03adb6b9e40e79eb716e3ea408c9b63aada33d654045c4"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 10897,
+      "sha256": "5f774e636a9bec4106c7c5ef23074cf5aad8abf35b2d44d2c4660adfbd1325bc"
+    },
+    {
+      "path": "docs/CLIENT_REVISION.md",
+      "bytes": 7646,
+      "sha256": "1f86da9caead744f10246bcf150c59b5004821f28b7f2964a6f5f1e3823db0a8"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "bytes": 10819,
+      "sha256": "c830ae584de666ac2a257b6ac1ff12d82cd35ac96622269615dc9ae798caf28a"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 4522,
+      "sha256": "9a3e23f9e513c12386a45ba2669f7c6ffe92f44ccfed1498cc8785d50ad035a9"
+    },
+    {
+      "path": "docs/SRS.md",
+      "bytes": 27324,
+      "sha256": "0297f140ebab6229f2135beda20330e86bcc00a3b421c4e0a9c695bcf4bdfd79"
+    },
+    {
+      "path": "docs/TRACEABILITY.md",
+      "bytes": 8709,
+      "sha256": "81568f9a8644befd892275618fb82268eeb9cb4ccfa33f3b594fe988cf03a3e7"
+    },
+    {
+      "path": "docs/UML.md",
+      "bytes": 5373,
+      "sha256": "8dcfd46b66f1e11dd9c22f2a84f7327092542aa06b6db4dfbca0e67647665b3c"
+    },
+    {
+      "path": "docs/USE_CASES.md",
+      "bytes": 12132,
+      "sha256": "f88d4f162458d26f4a32d0cc846b3c59785ae906908d975656d4052cdd4f23c7"
+    },
+    {
+      "path": "docs/diagrams/01-use-cases.png",
+      "bytes": 27679,
+      "sha256": "1705ef5c0a7a355bb20e67dddbe11e90fd167d1654fe36be8168d5ee02ec3fa3"
+    },
+    {
+      "path": "docs/diagrams/01-use-cases.svg",
+      "bytes": 12692,
+      "sha256": "33beea02410de643ebc52494236021cf7e77e1151d953c8155ca981139e4ae4f"
+    },
+    {
+      "path": "docs/diagrams/02-content-domain.png",
+      "bytes": 45359,
+      "sha256": "5dae55a2501129ffefe038a563e69df4d7afd0c18efe0f20019888fe0e047cc6"
+    },
+    {
+      "path": "docs/diagrams/02-content-domain.svg",
+      "bytes": 31841,
+      "sha256": "5643a2bab9960a413232c41a9ba45af244fdd6ad51c323232c75e7c3e2b8ea90"
+    },
+    {
+      "path": "docs/diagrams/03-learner-domain.png",
+      "bytes": 30705,
+      "sha256": "37eb08403dfe92e72087d646c52d3d01ea0822f2e67a272fd2d2c1e161afec93"
+    },
+    {
+      "path": "docs/diagrams/03-learner-domain.svg",
+      "bytes": 21939,
+      "sha256": "bae55b68abc3db5c1371d639453425fdeb8a0b440f94005afcd1e4a07ffbdd59"
+    },
+    {
+      "path": "docs/diagrams/04-child-activity.png",
+      "bytes": 50309,
+      "sha256": "b696823bac372ad533301782e8a511b725becfd02ce93fc323cfebc7a61f0918"
+    },
+    {
+      "path": "docs/diagrams/04-child-activity.svg",
+      "bytes": 29616,
+      "sha256": "0c64adb8b6bba360822829cec8a9b2e5c84ea71d94d25d1565ac4c99d1b3b62a"
+    },
+    {
+      "path": "docs/diagrams/05-child-access-sequence.png",
+      "bytes": 43127,
+      "sha256": "3015dc50615bf8b129ce8cd72bc20cf46fd29faf921c837bac70e75d80abe105"
+    },
+    {
+      "path": "docs/diagrams/05-child-access-sequence.svg",
+      "bytes": 18933,
+      "sha256": "fcb92442b96de7593c64759039097fbd8d0f60d1c776b0e929db486d72d77225"
+    },
+    {
+      "path": "docs/diagrams/06-progress-sequence.png",
+      "bytes": 45853,
+      "sha256": "d522f7995529889b6d1a73db4266abeea10041f61e39c7665b0e23177b6658c5"
+    },
+    {
+      "path": "docs/diagrams/06-progress-sequence.svg",
+      "bytes": 18666,
+      "sha256": "2a025a4f54be8c09bee3d4db6408eb3cfa00a8ff8225be78560f37ceb33ead25"
+    },
+    {
+      "path": "docs/diagrams/07-content-state.png",
+      "bytes": 27008,
+      "sha256": "74108c5a9d5d953da5440c3f9795cac176d5c69038209255e01fe2b0036c9758"
+    },
+    {
+      "path": "docs/diagrams/07-content-state.svg",
+      "bytes": 11014,
+      "sha256": "48736416752c7e6db73bab34ef974574d9e91e517fb2854c0504660605452a0c"
+    },
+    {
+      "path": "docs/diagrams/08-components.png",
+      "bytes": 46670,
+      "sha256": "2c0d09003f30494f5c652c87c18107dda6cc443b6cce06a64b6a1bc10e494e8c"
+    },
+    {
+      "path": "docs/diagrams/08-components.svg",
+      "bytes": 25724,
+      "sha256": "107fc2104b4ba6adb0df4cf0efa2f662b8d606f7371d63cd91bb2d7329331ee0"
+    },
+    {
+      "path": "docs/diagrams/09-localization.png",
+      "bytes": 28318,
+      "sha256": "08671d9f65e7f8b99715a0c97c65ef63f59f65378a918536c2aaee20dc136b51"
+    },
+    {
+      "path": "docs/diagrams/09-localization.svg",
+      "bytes": 19347,
+      "sha256": "be36349e0df45b383cc6583d0590a7ec39de8fcf10a883eba7f06ee6d063e9bb"
+    },
+    {
+      "path": "docs/diagrams/10-practice-rewards.png",
+      "bytes": 31784,
+      "sha256": "d6b3184aab8619193e920ab257b122156e1c1199af73f8c48a595ef3d9e2cd33"
+    },
+    {
+      "path": "docs/diagrams/10-practice-rewards.svg",
+      "bytes": 22414,
+      "sha256": "4297bce6eaff2921e0b33e951c43c064bbff85d5702dc8d4c36a5529a21dd582"
+    },
+    {
+      "path": "docs/uml/01-use-cases.puml",
+      "bytes": 1163,
+      "sha256": "f675dab0757351e9ab7dbf6a0ad6561f520e49b0cef84367fd9161689c5d7c2d"
+    },
+    {
+      "path": "docs/uml/02-content-domain.puml",
+      "bytes": 1775,
+      "sha256": "8c123d8c04c53fe8d878eb1561fd872d5f239b635350cad1548681d3c593856d"
+    },
+    {
+      "path": "docs/uml/03-learner-domain.puml",
+      "bytes": 1352,
+      "sha256": "5a06551788cf4b1be3950fe24ca15a068f6ff9d1d475c843910a6c3554b4afb7"
+    },
+    {
+      "path": "docs/uml/04-child-activity.puml",
+      "bytes": 1739,
+      "sha256": "3a0e8ee476fbda79f6c91d510c650ea85c9ce2ec848f078ede1abcf03d9cb81a"
+    },
+    {
+      "path": "docs/uml/05-child-access-sequence.puml",
+      "bytes": 1699,
+      "sha256": "c52b8398310bc43ff0622d53ee34bc7d5c57069fba53cb400d65075c2f6d891f"
+    },
+    {
+      "path": "docs/uml/06-progress-sequence.puml",
+      "bytes": 1593,
+      "sha256": "532e34af1f81d05e972cd8a9c28c7df068f0ac305bacd599493c2fd2e42a13e2"
+    },
+    {
+      "path": "docs/uml/07-content-state.puml",
+      "bytes": 1012,
+      "sha256": "d7cd4a71730d9ece20913ee9eed5897310482184f1764a5793ae974d4c1220ab"
+    },
+    {
+      "path": "docs/uml/08-components.puml",
+      "bytes": 1588,
+      "sha256": "4d0bd23ac360c64629af7fa3ae993e0b1d21c94e2d9632d933468c9312d153d7"
+    },
+    {
+      "path": "docs/uml/09-localization.puml",
+      "bytes": 1218,
+      "sha256": "fade767d5520d0b0edebd7702d25719b67cc472c88a11e6ed7905872d8fee09e"
+    },
+    {
+      "path": "docs/uml/10-practice-rewards.puml",
+      "bytes": 1403,
+      "sha256": "8700ac6857868e95c4c8b0ce58cd63c5e1a7cd45c7047d4d5a66d0e451f1aa3b"
+    },
+    {
+      "path": "output/pdf/Hayah_Tayeba_SRS_and_UML_Client_Review_v0.3.pdf",
+      "bytes": 267268,
+      "sha256": "dfd83a6f7d55afa24d21f659b4ae780a40b086763cc8802d691a0f20a5687feb"
+    }
+  ]
+}

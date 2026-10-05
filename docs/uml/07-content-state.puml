@@ -1,0 +1,26 @@
+@startuml
+!pragma layout smetana
+skinparam shadowing false
+skinparam defaultFontName Arial
+title Content revision lifecycle | immutable publication
+[*] --> Draft : create revision
+Draft --> InReview : submit preview + review material
+InReview --> Draft : request corrections
+InReview --> Ready : review recorded and validation passes
+Ready --> Draft : edit invalidates review readiness
+Ready --> Published : explicit publish succeeds atomically
+Published --> Withdrawn : confirm withdrawal with reason
+Withdrawn --> [*] : retained as historical unavailable revision
+note right of Ready
+Schema, media, reachability and compatibility checks pass.
+Expected draft version checked again on publish.
+Failed publication stays Ready and keeps the live pointer.
+end note
+note right of Published
+Immutable content data.
+Editing creates a different Draft revision.
+Publishing R2 does not mutate or withdraw R1.
+New attempts use the current live pointer.
+Existing R1 attempts may continue until withdrawal.
+end note
+@enduml

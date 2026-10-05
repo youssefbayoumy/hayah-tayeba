@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>الحياة الطيبة - إعداد الشخصية</title>
+<!-- Google Fonts: Noto Sans Arabic -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary-fixed-dim": "#b7cbc1",
+            "canvas": "#F7F8F5",
+            "primary-fixed": "#abf0e2",
+            "accentPressed": "#1D574E",
+            "stone": "#C5CECA",
+            "on-secondary-container": "#556860",
+            "surface-container-high": "#e6e9e7",
+            "sand": "#D9C9AC",
+            "inverse-surface": "#2e3130",
+            "surface": "#FFFFFF",
+            "tertiary": "#71392a",
+            "on-secondary-fixed": "#0d1f19",
+            "inverse-primary": "#8fd3c6",
+            "on-tertiary": "#ffffff",
+            "surface-variant": "#e1e3e1",
+            "ink": "#243B36",
+            "secondary-container": "#d2e7dd",
+            "tertiary-container": "#8d503f",
+            "on-error": "#ffffff",
+            "outline": "#6f7976",
+            "on-tertiary-container": "#ffd2c6",
+            "on-primary": "#ffffff",
+            "surface-container-low": "#f2f4f2",
+            "error-container": "#ffdad6",
+            "error": "#8B4B3F",
+            "on-primary-fixed": "#00201b",
+            "background": "#f8faf8",
+            "on-tertiary-fixed": "#370d03",
+            "on-error-container": "#93000a",
+            "paleLeaf": "#BFCFBF",
+            "surface-bright": "#f8faf8",
+            "inverse-on-surface": "#eff1ef",
+            "primary-fixed-dim": "#8fd3c6",
+            "on-tertiary-fixed-variant": "#6e3728",
+            "tertiary-fixed-dim": "#ffb5a0",
+            "textSecondary": "#566961",
+            "border": "#C9D3CC",
+            "controlBorder": "#6F8279",
+            "accent": "#246B60",
+            "surface-dim": "#d8dbd8",
+            "tertiary-fixed": "#ffdbd1",
+            "on-surface-variant": "#3f4946",
+            "primary-container": "#246b60",
+            "primary": "#005248",
+            "on-surface": "#191c1b",
+            "outline-variant": "#bec9c5",
+            "accentSoft": "#E8F0EB",
+            "surface-container-lowest": "#ffffff",
+            "surface-container": "#eceeec",
+            "errorSoft": "#F3E9E5",
+            "surface-tint": "#22695e",
+            "on-secondary": "#ffffff",
+            "on-background": "#191c1b",
+            "on-primary-fixed-variant": "#005047",
+            "surface-container-highest": "#e1e3e1",
+            "secondary-fixed": "#d2e7dd",
+            "clay": "#CBAF9C",
+            "on-primary-container": "#a4e9db",
+            "secondary": "#50625b",
+            "on-secondary-fixed-variant": "#384b43"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1rem",
+            "space-md": "0.75rem",
+            "space-3xl": "3rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem",
+            "margin": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-2xl": "2.5rem",
+            "space-xl": "2rem"
+          },
+          "fontFamily": {
+            "button": ["Noto Sans Arabic"],
+            "headline-md": ["Noto Sans Arabic"],
+            "display": ["Noto Sans Arabic"],
+            "supporting": ["Noto Sans Arabic"],
+            "caption": ["Noto Sans Arabic"],
+            "headline-lg": ["Noto Sans Arabic"],
+            "body": ["Noto Sans Arabic"]
+          },
+          "fontSize": {
+            "button": ["17px", {"lineHeight": "28px", "fontWeight": "600"}],
+            "headline-md": ["20px", {"lineHeight": "32px", "fontWeight": "600"}],
+            "display": ["28px", {"lineHeight": "42px", "fontWeight": "700"}],
+            "supporting": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+            "caption": ["14px", {"lineHeight": "24px", "fontWeight": "500"}],
+            "headline-lg": ["24px", {"lineHeight": "36px", "fontWeight": "700"}],
+            "body": ["18px", {"lineHeight": "30px", "fontWeight": "400"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-canvas text-ink font-body antialiased min-h-screen flex justify-center p-0 selection:bg-accentSoft selection:text-accent">
+<!-- Mobile Device Shell Canvas (390px base reference) -->
+<main class="w-full max-w-[390px] min-h-screen bg-canvas flex flex-col justify-between relative shadow-[0_0_24px_rgba(36,59,54,0.06)] border-x border-border">
+<!-- Top Safe Area & Screen Header -->
+<header class="sticky top-0 z-40 bg-canvas/95 backdrop-blur-sm border-b border-border/70 px-margin h-14 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<button aria-label="الرجوع" class="w-10 h-10 -mr-2 flex items-center justify-center text-ink hover:text-accent hover:bg-accentSoft rounded-full transition-colors active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[24px]">arrow_forward</span>
+</button>
+<h1 class="text-headline-md font-headline-md text-ink tracking-tight">خلّي الرحلة تشبهك</h1>
+</div>
+<!-- Offline Journal Status Stamp -->
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-accentSoft/70 border border-stone/40">
+<span class="material-symbols-outlined text-[16px] text-accent">auto_stories</span>
+<span class="text-caption font-caption text-textSecondary leading-none">دفتر محلي</span>
+</div>
+</header>
+<!-- Scrollable Character Creation Form Canvas -->
+<div class="flex-1 overflow-y-auto px-margin pt-space-md pb-space-2xl space-y-space-xl">
+<!-- Archetypal Paper Arched Explorer Frame -->
+<section class="flex flex-col items-center justify-center pt-space-xs">
+<div class="relative w-44 h-56 rounded-t-[5.5rem] rounded-b-2xl bg-surface border-2 border-border shadow-[0px_4px_12px_rgba(36,59,54,0.06)] flex flex-col items-center justify-end overflow-hidden p-3 group">
+<!-- Inner Paper Tone Arch Accent Line -->
+<div class="absolute inset-1.5 rounded-t-[5rem] rounded-b-xl border border-sand/40 pointer-events-none"></div>
+<!-- Gentle Background Decorative Radiance (Sun / Dune Arc) -->
+<div class="absolute -top-12 inset-x-0 h-44 bg-sand/20 rounded-full blur-xl pointer-events-none"></div>
+<!-- Illustrated Explorer Representation (Mature 10-14yo field traveler) -->
+<div class="relative z-10 w-full h-full flex flex-col items-center justify-end">
+<img class="w-36 h-48 object-contain object-bottom select-none filter contrast-[1.03]" data-alt="A thoughtful and mature 12-year-old Arabic field explorer with deep expressive eyes and a gentle reflective smile, styled in modern illustrated field-journal aesthetic with delicate contour lines. The youth wears a forest green travel scarf with a natural linen jacket in warm sand and stone hues. Soft natural outdoor lighting against an architectural subtle arched parchment background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaJIlI1Fa9wI6f0B4B4c4JeWKyMP25XnoH-xuhGte5lpjl8XehVtOz2dRdUaOhLoOmnBq7k7cQRDazcnXQkx15I_RuVK24kYtfZy_mgekA97tb3TKC5zb_2MG6-BQL8Ux0Nj36FD433shaeWacsJEiNWu7_stwNXX-urNbdmQgHIaY0D1DmmfZ5OapkgekTfDE46_e9_nl9mf4wThbVylSD3OJm_-aMfiZYQHffFcwKIkqE2knXpf8YVFB4bbL4j-kJIDXSz0EZFI2"/>
+</div>
+<!-- Active Character Badge Accent -->
+<div class="absolute bottom-2.5 z-20 bg-canvas/90 backdrop-blur-sm border border-stone px-3 py-0.5 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-accent text-[14px]">eco</span>
+<span class="text-[13px] font-caption text-ink font-semibold">مستكشف الدرب</span>
+</div>
+</div>
+<p class="text-caption font-caption text-textSecondary mt-2.5 text-center">
+          هكذا ستبدو في صفحات الاستكشاف والمفكرة
+        </p>
+</section>
+<!-- Input Field: Nickname (اسمك في الرحلة) -->
+<section class="space-y-space-xs">
+<label class="block text-body font-body font-semibold text-ink" for="character-name">
+          اسمك في الرحلة
+        </label>
+<div class="relative">
+<input class="w-full h-14 bg-surface text-ink text-body font-body px-4 rounded-xl border border-controlBorder focus:border-accent focus:ring-2 focus:ring-accentSoft transition-all outline-none" id="character-name" placeholder="اكتب اسمك هنا..." type="text" value="سليم"/>
+<div class="absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-textSecondary flex items-center">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</div>
+</div>
+<p class="text-caption font-caption text-textSecondary pr-1">
+          اسم تناديك به الرحلة ومسارات الدفتر
+        </p>
+</section>
+<!-- Section: Character Disposition (الشخصية) -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="text-headline-md font-headline-md text-ink">ملامح المستكشف</h2>
+<span class="text-caption font-caption text-textSecondary">اختر المظهر</span>
+</div>
+<div class="grid grid-cols-3 gap-2.5">
+<!-- Look Option 1: Selected (Smiling & curious) -->
+<button class="min-h-[52px] flex flex-col items-center justify-center p-3 rounded-xl border-2 border-accent bg-accentSoft text-center relative transition-all active:scale-[0.98]" type="button">
+<div class="w-11 h-11 rounded-full bg-surface border border-accent/20 flex items-center justify-center text-accent mb-1.5 shadow-xs">
+<span class="material-symbols-outlined text-[24px]">sentiment_satisfied</span>
+</div>
+<span class="text-caption font-caption text-accent font-semibold">باسم وفضولي</span>
+<div class="absolute top-1.5 left-1.5 w-4 h-4 rounded-full bg-accent text-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[11px]">check</span>
+</div>
+</button>
+<!-- Look Option 2: Thoughtful -->
+<button class="min-h-[52px] flex flex-col items-center justify-center p-3 rounded-xl border border-border bg-surface hover:border-stone text-center transition-all active:scale-[0.98]" type="button">
+<div class="w-11 h-11 rounded-full bg-surface-container-low flex items-center justify-center text-textSecondary mb-1.5">
+<span class="material-symbols-outlined text-[24px]">psychology_alt</span>
+</div>
+<span class="text-caption font-caption text-ink">متأمل ذكي</span>
+</button>
+<!-- Look Option 3: Adventurous -->
+<button class="min-h-[52px] flex flex-col items-center justify-center p-3 rounded-xl border border-border bg-surface hover:border-stone text-center transition-all active:scale-[0.98]" type="button">
+<div class="w-11 h-11 rounded-full bg-surface-container-low flex items-center justify-center text-textSecondary mb-1.5">
+<span class="material-symbols-outlined text-[24px]">visibility</span>
+</div>
+<span class="text-caption font-caption text-ink">حذِق لماح</span>
+</button>
+</div>
+</section>
+<!-- Section: Attire / Explorer Style (الشكل) -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="text-headline-md font-headline-md text-ink">زي الاستكشاف</h2>
+<span class="text-caption font-caption text-textSecondary">لباسك المفضل</span>
+</div>
+<div class="grid grid-cols-3 gap-2.5">
+<!-- Clothing Option 1: Selected (سترة الميدان) -->
+<button class="min-h-[52px] flex flex-col items-center justify-center p-3 rounded-xl border-2 border-accent bg-accentSoft text-center relative transition-all active:scale-[0.98]" type="button">
+<div class="w-11 h-11 rounded-full bg-surface border border-accent/20 flex items-center justify-center text-accent mb-1.5 shadow-xs">
+<span class="material-symbols-outlined text-[24px]">hiking</span>
+</div>
+<span class="text-caption font-caption text-accent font-semibold">سترة الميدان</span>
+<div class="absolute top-1.5 left-1.5 w-4 h-4 rounded-full bg-accent text-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[11px]">check</span>
+</div>
+</button>
+<!-- Clothing Option 2: هودي المسار -->
+<button class="min-h-[52px] flex flex-col items-center justify-center p-3 rounded-xl border border-border bg-surface hover:border-stone text-center transition-all active:scale-[0.98]" type="button">
+<div class="w-11 h-11 rounded-full bg-surface-container-low flex items-center justify-center text-textSecondary mb-1.5">
+<span class="material-symbols-outlined text-[24px]">dry_cleaning</span>
+</div>
+<span class="text-caption font-caption text-ink">هودي المسار</span>
+</button>
+<!-- Clothing Option 3: قبعة المسافر -->
+<button class="min-h-[52px] flex flex-col items-center justify-center p-3 rounded-xl border border-border bg-surface hover:border-stone text-center transition-all active:scale-[0.98]" type="button">
+<div class="w-11 h-11 rounded-full bg-surface-container-low flex items-center justify-center text-textSecondary mb-1.5">
+<span class="material-symbols-outlined text-[24px]">face</span>
+</div>
+<span class="text-caption font-caption text-ink">قبعة المسافر</span>
+</button>
+</div>
+</section>
+<!-- Section: Color Palette (اللون) -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between bg-surface border border-border rounded-xl p-3 px-5">
+<!-- Swatch 1: Deep Pine (Selected) -->
+<button aria-label="أخضر صنوبري" class="w-12 h-12 flex items-center justify-center rounded-full group focus:outline-none" type="button">
+<span class="block w-11 h-11 rounded-full bg-accent ring-2 ring-offset-2 ring-accent flex items-center justify-center text-surface shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</button>
+<!-- Swatch 2: Sand -->
+<button aria-label="رمل الصحراء" class="w-12 h-12 flex items-center justify-center rounded-full group focus:outline-none" type="button">
+<span class="block w-10 h-10 rounded-full bg-sand border border-stone/50 hover:scale-105 transition-transform"></span>
+</button>
+<!-- Swatch 3: Pale Leaf -->
+<button aria-label="ورق الغاب" class="w-12 h-12 flex items-center justify-center rounded-full group focus:outline-none" type="button">
+<span class="block w-10 h-10 rounded-full bg-paleLeaf border border-stone/50 hover:scale-105 transition-transform"></span>
+</button>
+<!-- Swatch 4: Warm Clay -->
+<button aria-label="طمي دافئ" class="w-12 h-12 flex items-center justify-center rounded-full group focus:outline-none" type="button">
+<span class="block w-10 h-10 rounded-full bg-clay border border-stone/50 hover:scale-105 transition-transform"></span>
+</button>
+</div>
+<div class="flex items-center justify-between bg-surface border border-border rounded-xl p-3 px-5">
+<!-- Swatch 1: Deep Pine (Selected) -->
+<button aria-label="أخضر صنوبري" class="w-12 h-12 flex items-center justify-center rounded-full group focus:outline-none" type="button">
+<span class="block w-11 h-11 rounded-full bg-accent ring-2 ring-offset-2 ring-accent flex items-center justify-center text-surface shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</button>
+<!-- Swatch 2: Sand -->
+<button aria-label="رمل الصحراء" class="w-12 h-12 flex items-center justify-center rounded-full group focus:outline-none" type="button">
+<span class="block w-10 h-10 rounded-full bg-sand border border-stone/50 hover:scale-105 transition-transform"></span>
+</button>
+<!-- Swatch 3: Pale Leaf -->
+<button aria-label="ورق الغاب" class="w-12 h-12 flex items-center justify-center rounded-full group focus:outline-none" type="button">
+<span class="block w-10 h-10 rounded-full bg-paleLeaf border border-stone/50 hover:scale-105 transition-transform"></span>
+</button>
+<!-- Swatch 4: Warm Clay -->
+<button aria-label="طمي دافئ" class="w-12 h-12 flex items-center justify-center rounded-full group focus:outline-none" type="button">
+<span class="block w-10 h-10 rounded-full bg-clay border border-stone/50 hover:scale-105 transition-transform"></span>
+</button>
+</div>
+</section>
+<!-- Section: Symbolic Badge (رمزي) -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="text-headline-md font-headline-md text-ink">شارة الاستكشاف</h2>
+<span class="text-caption font-caption text-textSecondary">رمز يزين مذكراتك</span>
+</div>
+<div class="grid grid-cols-3 gap-2.5">
+<!-- Badge 1: Selected (غصن الزيتون) -->
+<button class="flex flex-col items-center text-center p-3 rounded-xl border-2 border-accent bg-accentSoft relative transition-all active:scale-[0.98]" type="button">
+<div class="w-10 h-10 rounded-full bg-surface text-accent flex items-center justify-center mb-1.5 shadow-xs">
+<span class="material-symbols-outlined text-[22px]">potted_plant</span>
+</div>
+<span class="text-caption font-caption text-accent font-semibold leading-tight">غصن الزيتون</span>
+<div class="absolute top-1.5 left-1.5 w-4 h-4 rounded-full bg-accent text-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[11px]">check</span>
+</div>
+</button>
+<!-- Badge 2: Key (مفتاح الباب) -->
+<button class="flex flex-col items-center text-center p-3 rounded-xl border border-border bg-surface hover:border-stone transition-all active:scale-[0.98]" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-low text-textSecondary flex items-center justify-center mb-1.5">
+<span class="material-symbols-outlined text-[22px]">key</span>
+</div>
+<span class="text-caption font-caption text-ink leading-tight">مفتاح الباب</span>
+</button>
+<!-- Badge 3: Sail of Light (شراع النور) -->
+<button class="flex flex-col items-center text-center p-3 rounded-xl border border-border bg-surface hover:border-stone transition-all active:scale-[0.98]" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-low text-textSecondary flex items-center justify-center mb-1.5">
+<span class="material-symbols-outlined text-[22px]">sailing</span>
+</div>
+<span class="text-caption font-caption text-ink leading-tight">شراع النور</span>
+</button>
+</div>
+</section>
+<!-- Offline Local Guarantee Notice -->
+</div>
+<!-- Sticky Bottom Safe-Area Action Row -->
+<footer class="sticky bottom-0 z-40 bg-surface/95 backdrop-blur-sm border-t border-border px-margin py-3.5 shadow-[0px_-4px_16px_rgba(36,59,54,0.04)]">
+<button class="w-full h-[54px] rounded-xl bg-accent text-surface text-button font-button flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(36,107,96,0.25)] hover:bg-accentPressed transition-all duration-150 active:scale-[0.98]" type="button">
+<span>يلا نبدأ</span>
+<span class="material-symbols-outlined text-[20px] -scale-x-100">arrow_forward</span>
+</button>
+</footer>
+</main>
+</body></html>

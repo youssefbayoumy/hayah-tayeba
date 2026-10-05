@@ -1,0 +1,59 @@
+@startuml
+!pragma layout smetana
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
+title Practice and participation | proposed rules, not worship measurement
+class Learner {
+  learnerId
+}
+class RememberingMoment {
+  momentId
+  approvedContextId
+}
+class PracticePlan {
+  planId
+  approvedPracticeId
+  timezone
+  suggestedWindowDays
+}
+class PracticeCheckIn {
+  localDate
+  participationState
+  idempotencyKey
+}
+class RewardGrant {
+  eligibleEventId
+  rewardRuleId
+  participationXP
+}
+class UnlockRecord {
+  stageId
+  sourceLearningCompletionId
+}
+class ReflectionPrompt {
+  contentKey
+  enabledInputMode
+}
+Learner "1" -- "0..*" RememberingMoment
+Learner "1" -- "0..*" PracticePlan
+RememberingMoment "1" <-- "0..*" PracticePlan
+PracticePlan "1" *-- "0..*" PracticeCheckIn
+Learner "1" -- "0..*" RewardGrant
+Learner "1" -- "0..*" UnlockRecord
+PracticePlan ..> ReflectionPrompt : optional closing invitation
+note bottom of PracticeCheckIn
+Unique per plan and local date.
+Missing day is a pause, not loss of learning.
+Seven-day gate is not approved.
+end note
+note bottom of RewardGrant
+Once per learner / eligible reward event.
+No emotion, worship-count, or faith score.
+Exact values remain a product decision.
+end note
+note bottom of ReflectionPrompt
+Text / voice selection and storage are pending.
+Raw responses are not progress or reward payloads.
+end note
+@enduml

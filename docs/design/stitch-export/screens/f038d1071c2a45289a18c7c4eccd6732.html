@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>حديقة المعنى - الحياة الطيبة</title>
+<!-- Google Fonts: Noto Sans Arabic -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration Verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-container": "#556860",
+            "accentSoft": "#E8F0EB",
+            "tertiary-fixed-dim": "#ffb5a0",
+            "surface-container": "#eceeec",
+            "on-primary-fixed-variant": "#005047",
+            "secondary-fixed": "#d2e7dd",
+            "primary-fixed-dim": "#8fd3c6",
+            "on-error-container": "#93000a",
+            "stone": "#C5CECA",
+            "on-primary-container": "#a4e9db",
+            "canvas": "#F7F8F5",
+            "accent": "#246B60",
+            "secondary": "#50625b",
+            "surface-bright": "#f8faf8",
+            "outline": "#6f7976",
+            "primary-container": "#246b60",
+            "surface-tint": "#22695e",
+            "surface-container-lowest": "#ffffff",
+            "secondary-fixed-dim": "#b7cbc1",
+            "on-secondary-fixed-variant": "#384b43",
+            "tertiary-container": "#8d503f",
+            "tertiary": "#71392a",
+            "secondary-container": "#d2e7dd",
+            "on-secondary": "#ffffff",
+            "surface-variant": "#e1e3e1",
+            "on-primary": "#ffffff",
+            "surface-container-high": "#e6e9e7",
+            "inverse-on-surface": "#eff1ef",
+            "textSecondary": "#566961",
+            "surface-container-highest": "#e1e3e1",
+            "on-tertiary": "#ffffff",
+            "inverse-surface": "#2e3130",
+            "border": "#C9D3CC",
+            "on-tertiary-fixed-variant": "#6e3728",
+            "inverse-primary": "#8fd3c6",
+            "clay": "#CBAF9C",
+            "on-surface": "#191c1b",
+            "sand": "#D9C9AC",
+            "on-secondary-fixed": "#0d1f19",
+            "on-primary-fixed": "#00201b",
+            "error-container": "#ffdad6",
+            "controlBorder": "#6F8279",
+            "surface-container-low": "#f2f4f2",
+            "surface-dim": "#d8dbd8",
+            "primary": "#005248",
+            "tertiary-fixed": "#ffdbd1",
+            "outline-variant": "#bec9c5",
+            "on-error": "#ffffff",
+            "on-tertiary-container": "#ffd2c6",
+            "errorSoft": "#F3E9E5",
+            "background": "#f8faf8",
+            "paleLeaf": "#BFCFBF",
+            "error": "#8B4B3F",
+            "on-background": "#191c1b",
+            "ink": "#243B36",
+            "primary-fixed": "#abf0e2",
+            "on-surface-variant": "#3f4946",
+            "accentPressed": "#1D574E",
+            "on-tertiary-fixed": "#370d03",
+            "surface": "#FFFFFF"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "1.5rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-3xl": "3rem",
+            "space-md": "0.75rem",
+            "gutter": "1rem",
+            "space-2xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2rem"
+          },
+          "fontFamily": {
+            "caption": ["Noto Sans Arabic"],
+            "supporting": ["Noto Sans Arabic"],
+            "headline-md": ["Noto Sans Arabic"],
+            "body": ["Noto Sans Arabic"],
+            "headline-lg": ["Noto Sans Arabic"],
+            "button": ["Noto Sans Arabic"],
+            "display": ["Noto Sans Arabic"]
+          },
+          "fontSize": {
+            "caption": ["14px", { "lineHeight": "24px", "fontWeight": "500" }],
+            "supporting": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "headline-md": ["20px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "body": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+            "headline-lg": ["24px", { "lineHeight": "36px", "fontWeight": "700" }],
+            "button": ["17px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "display": ["28px", { "lineHeight": "42px", "fontWeight": "700" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Noto Sans Arabic', sans-serif;
+      background-color: #F7F8F5;
+      color: #243B36;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    /* Subtle paper texture overlay */
+    .paper-texture {
+      background-image: radial-gradient(#243B36 0.4px, transparent 0.4px);
+      background-size: 16px 16px;
+      opacity: 0.035;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-canvas text-ink antialiased min-h-screen flex flex-col justify-between selection:bg-accentSoft selection:text-accent">
+<!-- Fixed Background Texture -->
+<div class="fixed inset-0 paper-texture pointer-events-none z-0"></div>
+<!-- Main Mobile Frame Container (Strictly 390px reference centered) -->
+<div class="relative z-10 w-full max-w-[390px] mx-auto min-h-screen flex flex-col bg-canvas shadow-[0px_4px_24px_rgba(36,59,54,0.04)]">
+<!-- Top Navigation Header (Docked full width, styled as Shared TopAppBar instance) -->
+<header class="sticky top-0 z-40 bg-canvas/95 backdrop-blur-sm border-b border-border shadow-sm">
+<div class="flex justify-between items-center w-full px-margin h-14">
+<!-- Return Navigation Action (RTL Arrow right: arrow_forward) -->
+<button aria-label="الرجوع إلى الروضة الثانية" class="flex items-center gap-1.5 text-ink hover:text-accent active:scale-[0.98] transition-transform duration-150 py-1 pe-2 rounded-lg" type="button">
+<span class="material-symbols-outlined text-ink text-[22px]" data-icon="arrow_forward">arrow_forward</span>
+<span class="text-caption font-caption text-textSecondary font-semibold">الروضة الثانية</span>
+</button>
+<!-- Centered / Calm Station Badge -->
+<div class="flex items-center gap-1.5 px-3 py-1 bg-accentSoft border border-border rounded-full">
+<span class="w-2 h-2 rounded-full bg-accent inline-block"></span>
+<span class="text-caption font-caption text-accent font-semibold tracking-wide">حديقة المعنى</span>
+</div>
+<!-- Trailing Decorative Eco Anchor Icon -->
+<div class="w-8 h-8 rounded-full flex items-center justify-center text-accent">
+<span class="material-symbols-outlined text-[20px]" data-icon="eco">eco</span>
+</div>
+</div>
+</header>
+<!-- Scrollable Content Canvas -->
+<main class="flex-1 px-margin pt-4 pb-10 flex flex-col gap-6">
+<!-- Header Visual Illustration: Architectural Arch & Botanical Field Journal Frame -->
+<section aria-label="رسم الروضة الميداني" class="relative w-full rounded-2xl overflow-hidden border border-border bg-surface p-1 shadow-[0px_4px_12px_rgba(36,59,54,0.04)]">
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-accentSoft/40 flex items-center justify-center border border-border/60">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-90 transition-transform duration-700 hover:scale-105" data-alt="A tranquil field journal watercolor illustration of an ancient stone archway nestled among lush olive branches, delicate chamomile wildflowers, and gentle green botanicals. The scene is illuminated by soft diffused morning sunlight over aged warm paper parchment with fine natural ink contour lines. Deep pine green, muted clay, and gentle sage tones evoke quiet contemplation and historical Arabic architectural poise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiai6VuwNvo99y8rKirxY3J7bhtARULk4wqmnpm0BfcDnv2M4KbX3ADj9w3rvYwPfYT2PGz-THgTzhwjLk96IsPbpN39RFogwvpBet_aGmLmVhMz2ip1ytroVgfCURS_WSpYexe0a3JFfRfqTNrBxW2Rsm31qaz2Nx1WJol7RNFfCvsA0NsWaKWxqOILaw-QkzXdyt71oM1N-Lga5ii1EomhQL273w94q7yXd2gmHlwAk6swWM_4jRxoXD8LzaPocXvHM8MI6scKm9"/>
+<!-- Frame Accent Stamps & Watermark -->
+<div class="absolute top-2.5 start-3 px-2 py-0.5 rounded-md bg-surface/85 backdrop-blur-xs border border-border text-[11px] font-caption text-textSecondary font-medium">
+            ميدان الهدوء • ورقة ٠٨
+          </div>
+<div class="absolute bottom-2.5 end-3 w-7 h-7 rounded-full bg-surface/80 border border-border flex items-center justify-center text-accent/80">
+<span class="material-symbols-outlined text-[16px]" data-icon="spa">spa</span>
+</div>
+</div>
+</section>
+<!-- Editorial Typography & Introduction -->
+<section class="flex flex-col gap-2">
+<h1 class="text-headline-lg font-headline-lg text-ink font-bold leading-tight">
+          الذكر: معنى تصحبه في يومك
+        </h1>
+<p class="text-body font-body text-textSecondary leading-relaxed">
+          نفتكر الله بقلوبنا وألسنتنا، وننتبه لمعنى الكلمات اللي بنقولها.
+        </p>
+</section>
+<!-- Four Meaning Rows (Balanced Tactile Choices) -->
+<section aria-label="أذكار التفكر" class="flex flex-col gap-3">
+<!-- Row 1: سبحان الله -->
+<article class="flex items-center gap-3.5 p-3.5 bg-surface rounded-2xl border border-border hover:border-controlBorder shadow-[0px_2px_6px_rgba(36,59,54,0.03)] transition-all duration-150 min-h-[56px] active:scale-[0.99] cursor-pointer">
+<div class="w-11 h-11 shrink-0 rounded-xl bg-accentSoft flex items-center justify-center text-accent border border-border/80">
+<span class="text-caption font-caption font-bold text-accent">١</span>
+</div>
+<div class="flex-1 min-w-0">
+<h2 class="text-headline-md font-headline-md text-ink font-bold text-[18px] leading-snug">
+              سبحان الله
+            </h2>
+<p class="text-caption font-caption text-textSecondary truncate">
+              تنزيه الله وتعظيمه بكل هدوء
+            </p>
+</div>
+<div class="text-textSecondary/60 ps-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="water_drop">water_drop</span>
+</div>
+</article>
+<!-- Row 2: الحمد لله -->
+<article class="flex items-center gap-3.5 p-3.5 bg-surface rounded-2xl border border-border hover:border-controlBorder shadow-[0px_2px_6px_rgba(36,59,54,0.03)] transition-all duration-150 min-h-[56px] active:scale-[0.99] cursor-pointer">
+<div class="w-11 h-11 shrink-0 rounded-xl bg-accentSoft flex items-center justify-center text-accent border border-border/80">
+<span class="text-caption font-caption font-bold text-accent">٢</span>
+</div>
+<div class="flex-1 min-w-0">
+<h2 class="text-headline-md font-headline-md text-ink font-bold text-[18px] leading-snug">
+              الحمد لله
+            </h2>
+<p class="text-caption font-caption text-textSecondary truncate">
+              استشعار النعم والرضا بالقلب
+            </p>
+</div>
+<div class="text-textSecondary/60 ps-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="energy_savings_leaf">energy_savings_leaf</span>
+</div>
+</article>
+<!-- Row 3: الله أكبر -->
+<article class="flex items-center gap-3.5 p-3.5 bg-surface rounded-2xl border border-border hover:border-controlBorder shadow-[0px_2px_6px_rgba(36,59,54,0.03)] transition-all duration-150 min-h-[56px] active:scale-[0.99] cursor-pointer">
+<div class="w-11 h-11 shrink-0 rounded-xl bg-accentSoft flex items-center justify-center text-accent border border-border/80">
+<span class="text-caption font-caption font-bold text-accent">٣</span>
+</div>
+<div class="flex-1 min-w-0">
+<h2 class="text-headline-md font-headline-md text-ink font-bold text-[18px] leading-snug">
+              الله أكبر
+            </h2>
+<p class="text-caption font-caption text-textSecondary truncate">
+              أكبر من كل ما يشغل بالنا
+            </p>
+</div>
+<div class="text-textSecondary/60 ps-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="landscape">landscape</span>
+</div>
+</article>
+<!-- Row 4: لا إله إلا الله -->
+<article class="flex items-center gap-3.5 p-3.5 bg-surface rounded-2xl border border-border hover:border-controlBorder shadow-[0px_2px_6px_rgba(36,59,54,0.03)] transition-all duration-150 min-h-[56px] active:scale-[0.99] cursor-pointer">
+<div class="w-11 h-11 shrink-0 rounded-xl bg-accentSoft flex items-center justify-center text-accent border border-border/80">
+<span class="text-caption font-caption font-bold text-accent">٤</span>
+</div>
+<div class="flex-1 min-w-0">
+<h2 class="text-headline-md font-headline-md text-ink font-bold text-[18px] leading-snug">
+              لا إله إلا الله
+            </h2>
+<p class="text-caption font-caption text-textSecondary truncate">
+              توحيد وسكينة في الروح
+            </p>
+</div>
+<div class="text-textSecondary/60 ps-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="wb_sunny">wb_sunny</span>
+</div>
+</article>
+</section>
+<!-- Thoughtful Inset Reflection Box -->
+<section class="bg-accentSoft rounded-2xl p-4 border border-border flex flex-col gap-2 relative overflow-hidden">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-xl bg-surface/80 border border-border/60 flex items-center justify-center text-accent shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]" data-icon="psychology_alt">psychology_alt</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-headline-md font-headline-md text-ink font-bold text-[17px] leading-snug">
+              ماذا يتغير عندما تنتبه للمعنى؟
+            </h3>
+<p class="text-caption font-caption text-textSecondary leading-normal">
+              الكلمات لما تدخل القلب، بتسيب أثر حقيقي في يومك.
+            </p>
+</div>
+</div>
+</section>
+<!-- Action Area: Primary CTA & Gentle Subtitle (Suppressed bottom tabs due to focused task flow) -->
+<section class="mt-2 flex flex-col items-center gap-2.5">
+<button class="w-full h-[52px] px-5 rounded-2xl bg-accent hover:bg-accentPressed active:scale-[0.98] text-white font-button text-button flex items-center justify-center gap-2 shadow-[0px_4px_12px_rgba(36,107,96,0.18)] transition-all duration-150 cursor-pointer" type="button">
+<span>جرّب لحظة بنفسك</span>
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-hover:-translate-x-1" data-icon="arrow_backward">cloud_upload</span>
+</button>
+<span class="text-caption font-caption text-textSecondary text-center">
+          خطوة ذاتية هادئة، بدون استعجال.
+        </span>
+</section>
+</main>
+</div>
+</body></html>

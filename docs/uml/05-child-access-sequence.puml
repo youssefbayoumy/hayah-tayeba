@@ -1,0 +1,45 @@
+@startuml
+skinparam shadowing false
+skinparam defaultFontName Arial
+autonumber
+title UC-01 / UC-08 | child access and recovery (mechanism TBD)
+actor Child
+participant "Child app" as App
+participant "Identity / session module" as Identity
+database "Learner store" as DB
+Child -> App : Open app
+alt Valid scoped credential exists
+ App -> Identity : Validate / renew scoped access
+ Identity -> DB : Check learner scope and revocation
+ Identity --> App : Authorized learner context
+else New profile
+ App -> Identity : Establish access using selected guest/account method
+ note over App, Identity
+ OQ-01: method and required credentials are not selected.
+ No second-person account or device approval.
+ end note
+ Identity -> DB : Create independent learner identity idempotently
+ Identity --> App : Scoped session
+ Child -> App : Choose age band and character options
+ App -> Identity : Save own profile configuration
+ Identity -> DB : Validate scope and persist
+else Existing profile, credential lost / expired
+ App -> Identity : Use selected recovery mechanism
+ alt Recovery verified
+  Identity -> DB : Resolve same learner; apply session policy
+  Identity --> App : Restored authorized access
+ else Proof unavailable / invalid
+  Identity --> App : Explain recovery limits; no private data
+ end
+end
+opt Authorized context established
+ App -> Identity : Fetch own confirmed progress
+ Identity -> DB : Scope-check and read
+ Identity --> App : Own profile and confirmed checkpoint
+ App --> Child : Enter or resume map
+end
+note over App, DB
+Nickname or avatar is never proof of identity.
+Unsynced data from a lost device may not be recoverable.
+end note
+@enduml

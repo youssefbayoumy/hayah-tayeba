@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>اختار لحظة من يومك - الحياة الطيبة</title>
+<!-- Google Fonts: Noto Sans Arabic -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-container": "#556860",
+            "accentSoft": "#E8F0EB",
+            "tertiary-fixed-dim": "#ffb5a0",
+            "surface-container": "#eceeec",
+            "on-primary-fixed-variant": "#005047",
+            "secondary-fixed": "#d2e7dd",
+            "primary-fixed-dim": "#8fd3c6",
+            "on-error-container": "#93000a",
+            "stone": "#C5CECA",
+            "on-primary-container": "#a4e9db",
+            "canvas": "#F7F8F5",
+            "accent": "#246B60",
+            "secondary": "#50625b",
+            "surface-bright": "#f8faf8",
+            "outline": "#6f7976",
+            "primary-container": "#246b60",
+            "surface-tint": "#22695e",
+            "surface-container-lowest": "#ffffff",
+            "secondary-fixed-dim": "#b7cbc1",
+            "on-secondary-fixed-variant": "#384b43",
+            "tertiary-container": "#8d503f",
+            "tertiary": "#71392a",
+            "secondary-container": "#d2e7dd",
+            "on-secondary": "#ffffff",
+            "surface-variant": "#e1e3e1",
+            "on-primary": "#ffffff",
+            "surface-container-high": "#e6e9e7",
+            "inverse-on-surface": "#eff1ef",
+            "textSecondary": "#566961",
+            "surface-container-highest": "#e1e3e1",
+            "on-tertiary": "#ffffff",
+            "inverse-surface": "#2e3130",
+            "border": "#C9D3CC",
+            "on-tertiary-fixed-variant": "#6e3728",
+            "inverse-primary": "#8fd3c6",
+            "clay": "#CBAF9C",
+            "on-surface": "#191c1b",
+            "sand": "#D9C9AC",
+            "on-secondary-fixed": "#0d1f19",
+            "on-primary-fixed": "#00201b",
+            "error-container": "#ffdad6",
+            "controlBorder": "#6F8279",
+            "surface-container-low": "#f2f4f2",
+            "surface-dim": "#d8dbd8",
+            "primary": "#005248",
+            "tertiary-fixed": "#ffdbd1",
+            "outline-variant": "#bec9c5",
+            "on-error": "#ffffff",
+            "on-tertiary-container": "#ffd2c6",
+            "errorSoft": "#F3E9E5",
+            "background": "#f8faf8",
+            "paleLeaf": "#BFCFBF",
+            "error": "#8B4B3F",
+            "on-background": "#191c1b",
+            "ink": "#243B36",
+            "primary-fixed": "#abf0e2",
+            "on-surface-variant": "#3f4946",
+            "accentPressed": "#1D574E",
+            "on-tertiary-fixed": "#370d03",
+            "surface": "#FFFFFF"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "1.5rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-3xl": "3rem",
+            "space-md": "0.75rem",
+            "gutter": "1rem",
+            "space-2xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2rem"
+          },
+          "fontFamily": {
+            "caption": ["Noto Sans Arabic"],
+            "supporting": ["Noto Sans Arabic"],
+            "headline-md": ["Noto Sans Arabic"],
+            "body": ["Noto Sans Arabic"],
+            "headline-lg": ["Noto Sans Arabic"],
+            "button": ["Noto Sans Arabic"],
+            "display": ["Noto Sans Arabic"]
+          },
+          "fontSize": {
+            "caption": ["14px", { "lineHeight": "24px", "fontWeight": "500" }],
+            "supporting": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "headline-md": ["20px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "body": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+            "headline-lg": ["24px", { "lineHeight": "36px", "fontWeight": "700" }],
+            "button": ["17px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "display": ["28px", { "lineHeight": "42px", "fontWeight": "700" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Noto Sans Arabic', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    /* Subtle paper texture overlay */
+    .paper-texture {
+      background-color: #F7F8F5;
+      background-image: radial-gradient(#243B36 0.5px, transparent 0.5px);
+      background-size: 24px 24px;
+      background-position: 0 0;
+      opacity: 0.98;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-canvas text-ink antialiased selection:bg-accentSoft selection:text-accent min-h-screen flex flex-col justify-between">
+<!-- Safe Area Outer Wrapper (Mobile-constrained: 390px base reference) -->
+<div class="w-full max-w-[420px] mx-auto min-h-screen flex flex-col justify-between bg-canvas px-margin py-4 sm:py-6 relative">
+<!-- Top Nav / Back Action Row -->
+<header class="w-full pt-2 pb-4 flex items-center justify-between">
+<button aria-label="الرجوع" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface border border-border text-ink hover:bg-accentSoft active:scale-[0.98] transition-transform duration-150 shadow-[0px_2px_8px_rgba(36,59,54,0.04)]" type="button">
+<span class="material-symbols-outlined text-[24px]">arrow_forward</span>
+</button>
+<!-- Pill Step Indicator -->
+<div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-accentSoft border border-paleLeaf text-accent font-caption text-caption">
+<span class="material-symbols-outlined text-[18px]">auto_stories</span>
+<span>طريق اللحظات</span>
+</div>
+<!-- Balanced spacer target -->
+<div class="w-12 h-12 flex items-center justify-center text-textSecondary opacity-80" title="خطوة ١ من ٣">
+<span class="font-caption text-caption text-textSecondary font-semibold">١ / ٣</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 flex flex-col">
+<!-- Title & Guiding Prompt -->
+<div class="mt-2 mb-6">
+<h1 class="font-headline-lg text-headline-lg text-ink font-bold tracking-tight mb-2">
+          اختار لحظة من يومك
+        </h1>
+<p class="font-supporting text-supporting text-textSecondary leading-relaxed">
+          ابدأ بلحظة واحدة، وتقدر تغيّرها بعدين في أي وقت.
+        </p>
+</div>
+<!-- Functional Choice Bento Grid (2 cols x 3 rows) -->
+<section aria-label="خيارات اللحظات اليومية" class="grid grid-cols-2 gap-3 mb-6" id="moments-grid">
+<!-- Cell 1: Selected State -->
+<button class="moment-card relative group flex flex-col justify-between p-4 min-h-[120px] rounded-2xl text-right transition-all duration-150 active:scale-[0.98] bg-accentSoft border-2 border-accent shadow-[0px_4px_12px_rgba(36,107,96,0.12)]" data-moment-card="" type="button">
+<!-- Top Row: Icon + Checkmark Badge -->
+<div class="flex items-center justify-between w-full mb-3">
+<div class="w-10 h-10 rounded-xl flex items-center justify-center bg-surface border border-accent/20 text-accent">
+<span class="material-symbols-outlined text-[24px]">bed</span>
+</div>
+<!-- Corner Checkmark Indicator -->
+<div class="status-indicator w-6 h-6 rounded-full bg-accent text-surface flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<!-- Label & Subtitle -->
+<div>
+<span class="block font-headline-md text-[17px] leading-snug font-bold text-ink mb-0.5">
+              قبل النوم
+            </span>
+<span class="block font-caption text-[13px] leading-tight text-textSecondary">
+              وقت هدوء السرير
+            </span>
+</div>
+</button>
+<!-- Cell 2: Default State -->
+<button class="moment-card relative group flex flex-col justify-between p-4 min-h-[120px] rounded-2xl text-right transition-all duration-150 active:scale-[0.98] bg-surface border border-border hover:border-controlBorder shadow-[0px_2px_8px_rgba(36,59,54,0.04)]" data-moment-card="" type="button">
+<div class="flex items-center justify-between w-full mb-3">
+<div class="w-10 h-10 rounded-xl flex items-center justify-center bg-canvas border border-border text-ink group-hover:text-accent">
+<span class="material-symbols-outlined text-[24px]">wb_sunny</span>
+</div>
+<div class="status-indicator hidden w-6 h-6 rounded-full bg-accent text-surface items-center justify-center">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<div>
+<span class="block font-headline-md text-[17px] leading-snug font-bold text-ink mb-0.5">
+              بعد الاستيقاظ
+            </span>
+<span class="block font-caption text-[13px] leading-tight text-textSecondary">
+              بداية اليوم
+            </span>
+</div>
+</button>
+<!-- Cell 3: Default State -->
+<button class="moment-card relative group flex flex-col justify-between p-4 min-h-[120px] rounded-2xl text-right transition-all duration-150 active:scale-[0.98] bg-surface border border-border hover:border-controlBorder shadow-[0px_2px_8px_rgba(36,59,54,0.04)]" data-moment-card="" type="button">
+<div class="flex items-center justify-between w-full mb-3">
+<div class="w-10 h-10 rounded-xl flex items-center justify-center bg-canvas border border-border text-ink group-hover:text-accent">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+</div>
+<div class="status-indicator hidden w-6 h-6 rounded-full bg-accent text-surface items-center justify-center">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<div>
+<span class="block font-headline-md text-[17px] leading-snug font-bold text-ink mb-0.5">
+              قبل المذاكرة
+            </span>
+<span class="block font-caption text-[13px] leading-tight text-textSecondary">
+              تركيز وصفاء ذهني
+            </span>
+</div>
+</button>
+<!-- Cell 4: Default State -->
+<button class="moment-card relative group flex flex-col justify-between p-4 min-h-[120px] rounded-2xl text-right transition-all duration-150 active:scale-[0.98] bg-surface border border-border hover:border-controlBorder shadow-[0px_2px_8px_rgba(36,59,54,0.04)]" data-moment-card="" type="button">
+<div class="flex items-center justify-between w-full mb-3">
+<div class="w-10 h-10 rounded-xl flex items-center justify-center bg-canvas border border-border text-ink group-hover:text-accent">
+<span class="material-symbols-outlined text-[24px]">directions_walk</span>
+</div>
+<div class="status-indicator hidden w-6 h-6 rounded-full bg-accent text-surface items-center justify-center">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<div>
+<span class="block font-headline-md text-[17px] leading-snug font-bold text-ink mb-0.5">
+              أثناء المشي
+            </span>
+<span class="block font-caption text-[13px] leading-tight text-textSecondary">
+              في الطريق أو الفسحة
+            </span>
+</div>
+</button>
+<!-- Cell 5: Default State -->
+<button class="moment-card relative group flex flex-col justify-between p-4 min-h-[120px] rounded-2xl text-right transition-all duration-150 active:scale-[0.98] bg-surface border border-border hover:border-controlBorder shadow-[0px_2px_8px_rgba(36,59,54,0.04)]" data-moment-card="" type="button">
+<div class="flex items-center justify-between w-full mb-3">
+<div class="w-10 h-10 rounded-xl flex items-center justify-center bg-canvas border border-border text-ink group-hover:text-accent">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+</div>
+<div class="status-indicator hidden w-6 h-6 rounded-full bg-accent text-surface items-center justify-center">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<div>
+<span class="block font-headline-md text-[17px] leading-snug font-bold text-ink mb-0.5">
+              لما أفرح
+            </span>
+<span class="block font-caption text-[13px] leading-tight text-textSecondary">
+              شكر وامتنان
+            </span>
+</div>
+</button>
+<!-- Cell 6: Default State -->
+<button class="moment-card relative group flex flex-col justify-between p-4 min-h-[120px] rounded-2xl text-right transition-all duration-150 active:scale-[0.98] bg-surface border border-border hover:border-controlBorder shadow-[0px_2px_8px_rgba(36,59,54,0.04)]" data-moment-card="" type="button">
+<div class="flex items-center justify-between w-full mb-3">
+<div class="w-10 h-10 rounded-xl flex items-center justify-center bg-canvas border border-border text-ink group-hover:text-accent">
+<span class="material-symbols-outlined text-[24px]">shield</span>
+</div>
+<div class="status-indicator hidden w-6 h-6 rounded-full bg-accent text-surface items-center justify-center">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<div>
+<span class="block font-headline-md text-[17px] leading-snug font-bold text-ink mb-0.5">
+              في موقف صعب
+            </span>
+<span class="block font-caption text-[13px] leading-tight text-textSecondary">
+              استعانة وسكينة
+            </span>
+</div>
+</button>
+</section>
+<!-- Field Journal Note / Micro-prompt Card -->
+<div class="rounded-xl bg-surface/70 border border-stone/60 p-3.5 mb-6 flex items-start gap-3">
+<span class="material-symbols-outlined text-accent text-[20px] mt-0.5 flex-shrink-0">eco</span>
+<p class="font-caption text-caption text-textSecondary leading-normal">
+          اللحظة هي بداية مساحتك الخاصة للتأمل اليومي وتدوين المشاعر براحة وهدوء.
+        </p>
+</div>
+</main>
+<!-- Bottom Actions & Offline Safe Guard -->
+<footer class="pt-2 pb-4">
+<!-- Primary Action CTA -->
+<button class="w-full h-[52px] bg-accent hover:bg-accentPressed active:scale-[0.98] text-white rounded-2xl font-button text-button flex items-center justify-center gap-2 shadow-[0px_4px_16px_rgba(36,107,96,0.24)] transition-all duration-150" id="confirm-button" type="button">
+<span>دي لحظتي</span>
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:-translate-x-1">arrow_back</span>
+</button>
+<!-- Offline & Privacy Assurance Badge -->
+<div class="mt-4 flex items-center justify-center gap-2 text-center text-textSecondary px-2">
+<span class="material-symbols-outlined text-[18px] text-textSecondary/80 flex-shrink-0">offline_pin</span>
+<p class="font-caption text-[13px] leading-tight text-textSecondary">
+          ملفك محفوظ على جهازك، بدون تتبع أو إشعارات مزعجة.
+        </p>
+</div>
+</footer>
+</div>
+<!-- Interactive Logic for Tactile Choice Selection -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('[data-moment-card]');
+      
+      cards.forEach(card => {
+        card.addEventListener('click', () => {
+          // Deselect all
+          cards.forEach(c => {
+            c.classList.remove('bg-accentSoft', 'border-2', 'border-accent', 'shadow-[0px_4px_12px_rgba(36,107,96,0.12)]');
+            c.classList.add('bg-surface', 'border', 'border-border', 'shadow-[0px_2px_8px_rgba(36,59,54,0.04)]');
+            
+            const iconWrap = c.querySelector('.w-10');
+            if (iconWrap) {
+              iconWrap.className = 'w-10 h-10 rounded-xl flex items-center justify-center bg-canvas border border-border text-ink group-hover:text-accent';
+            }
+
+            const check = c.querySelector('.status-indicator');
+            if (check) {
+              check.classList.add('hidden');
+              check.classList.remove('flex');
+            }
+          });
+
+          // Select current
+          card.classList.remove('bg-surface', 'border', 'border-border', 'shadow-[0px_2px_8px_rgba(36,59,54,0.04)]');
+          card.classList.add('bg-accentSoft', 'border-2', 'border-accent', 'shadow-[0px_4px_12px_rgba(36,107,96,0.12)]');
+
+          const activeIconWrap = card.querySelector('.w-10');
+          if (activeIconWrap) {
+            activeIconWrap.className = 'w-10 h-10 rounded-xl flex items-center justify-center bg-surface border border-accent/20 text-accent';
+          }
+
+          const activeCheck = card.querySelector('.status-indicator');
+          if (activeCheck) {
+            activeCheck.classList.remove('hidden');
+            activeCheck.classList.add('flex');
+          }
+        });
+      });
+    });
+  </script>
+</body></html>

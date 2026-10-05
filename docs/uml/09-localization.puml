@@ -1,0 +1,53 @@
+@startuml
+!pragma layout smetana
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
+title Locale editions | Arabic release, English-ready structure
+class ContentRevision {
+  revisionId
+  schemaVersion
+  canonicalStepIds
+  canonicalChoiceIds
+}
+class LocaleEdition {
+  editionId
+  locale: ar or en
+  editionVersion
+  reviewState
+}
+class LocalizedField {
+  contentKey
+  fieldKey
+  localizedValue
+}
+class LocalizedMedia {
+  contentKey
+  assetId
+  captionAssetId
+  accessibilityText
+}
+class CatalogLabel {
+  entityId
+  locale
+  labelKey
+  publishedValue
+}
+class LearningAttempt {
+  revisionId
+  sessionEditionId
+  completedStepIds
+}
+ContentRevision "1" *-- "1..*" LocaleEdition
+LocaleEdition "1" *-- "1..*" LocalizedField
+LocaleEdition "1" *-- "0..*" LocalizedMedia
+LearningAttempt --> ContentRevision : progress identity
+LearningAttempt --> LocaleEdition : presentation selection
+CatalogLabel ..> ContentRevision : catalog references
+note bottom of LocaleEdition
+Arabic required at launch; English may be absent.
+Published editions are immutable and reviewed.
+Translation preserves graph and completion IDs.
+Changed learning logic needs a new canonical revision.
+end note
+@enduml

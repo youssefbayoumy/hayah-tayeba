@@ -1,0 +1,55 @@
+@startuml
+skinparam shadowing false
+skinparam defaultFontName Arial
+title UC-02 / UC-03 | independent child journey
+start
+:Create or resume saved character;
+:Enter Good Life Map;
+:Distinguish available Dhikr from future previews;
+:Open available journey;
+if (Authorized, available and supported?) then (yes)
+  :Create or resume version-bound attempt;
+else (no)
+  :Explain access / availability / update issue;
+  stop
+endif
+while (Required digital step remains?) is (yes)
+  :Show scene and text;
+  :Offer optional audio;
+  if (Choice step?) then (yes)
+    :Explore a response and authored feedback;
+    :Allow another response without penalty;
+  endif
+  :Commit checkpoint and allowed completion locally;
+  :Queue unique progress event;
+  if (Connection available?) then (yes)
+    :Submit and await durable server acknowledgment;
+    if (Accepted?) then (yes)
+      :Mark event synced;
+    else (no)
+      :Keep checkpoint and show recoverable error;
+      :Stop delivery if content withdrawn or session revoked;
+      stop
+    endif
+  else (no)
+    :Show sync pending;
+    if (Next required content cached?) then (yes)
+    else (no)
+      :Pause with saved checkpoint until connection returns;
+      stop
+    endif
+  endif
+endwhile (no)
+:Offer optional real-life activity;
+:Allow defer without blocking progress;
+:Offer when-then practice plan and remembering moments;
+:Continue voluntary check-ins without reset after pauses;
+:Offer optional reflection; input mode pending;
+if (All required completion synced?) then (yes)
+  :Show server-confirmed completion;
+else (no)
+  :Show finished on this device; sync pending;
+endif
+:Clear session ending; return to map by choice;
+stop
+@enduml

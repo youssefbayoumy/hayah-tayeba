@@ -1,0 +1,320 @@
+{
+  "projectId": "12660900467156300151",
+  "designSystem": "assets/92d62dbe84ef41fe8ac5d19204edf0d8",
+  "projectUrl": "https://stitch.withgoogle.com/projects/12660900467156300151",
+  "screens": [
+    {
+      "code": "S01",
+      "id": "9fe0c9b9d0cd4f7d846cf235313a884f",
+      "name": "projects/12660900467156300151/screens/9fe0c9b9d0cd4f7d846cf235313a884f",
+      "title": "S01 - مرحباً بك في الحياة الطيبة",
+      "width": "780",
+      "height": "1768",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WV8Vf5Mhcl3KIyJn4ZA41x4LfzRr3jh9qSl2bdCnTWXTWT4tVB4UPnwaqb65eyt9pIEVApmo9KRip_ALKyez58AmqVW5LxUoeAo6o2rtqT2x8EbKFLoVNvMwjBrDq3TjWqD_1ycXratkamvln5J_dFDpMzHOxM9mm8Vwj4TrIi7ZCi3BMs92bkFJGj3iM4VI4Rr4ND-gOl4Te7ZZbX5He9-dKlX62Ewr8PJAEcq4Sq0veRxQT8NVh38gQk",
+        "name": "projects/12660900467156300151/files/44a3c586f21c4382ae03f00c1d6744be"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2M1MmQ2MTI1YTMzYTRkNzFhMDA4MDIyNjM1NTJmOWMyEgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/524505006b0b4bd1b93ad4df720ef836"
+      }
+    },
+    {
+      "code": "S02",
+      "id": "969b8c30efe54d369160dada8727f24b",
+      "name": "projects/12660900467156300151/screens/969b8c30efe54d369160dada8727f24b",
+      "title": "S02 - إعداد الشخصية (معدلة)",
+      "width": "780",
+      "height": "2688",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XQSVZTX-pkRXEUzXcV1GBbx81qAgwqCAAGpO8GaOHtBCKoRoAaysUn0yRRxcSvjPG5nQbGxLBuIkelTunsrynAVJd_GkZ8WcQwHVnkYzwlyz6_zHyImix89Y3n7PpxGbwbwc9Bf11KfNebO5Vc6RMR8rXXWcFVtPOasg6iWKl4CffiY37TJs0jKlFMAeNh1V2d6nwAKFd3DWGuvBz1T_sv_Je1ZVhV_4D-97ooqjuKwZCynAjRWXV8qvfE",
+        "name": "projects/12660900467156300151/files/5fd31b07213f415791bf749c115f41c7"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2JjMzU1YWFiYTc5MTQ0MDE4NTE2YzAwMWExYWVhMGI0EgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/b79f04c9bf3b4feb88afba074966dd15"
+      }
+    },
+    {
+      "code": "S03",
+      "id": "97ccc32711b24531b4339f124d1d1fd0",
+      "name": "projects/12660900467156300151/screens/97ccc32711b24531b4339f124d1d1fd0",
+      "title": "S03 - خريطة الحياة الطيبة (معدلة)",
+      "width": "780",
+      "height": "2306",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WHvKX1Xh4uYu0L8ttjRLF52jVRrOXvJlk0acNwLlILXxYfboYJ80uUXueEYAK7IQGymBI2hlUCmOkQJZL6RvRyD9AsN3M-kuNIPB1LCb_CuUY6hg_JSN1WqUAayAEkp84na4KzG3ykh2jRdrUkZ5KKAXo2izdMhBNF8lgrmSkQRLHoI2FZXDdk2kKYvkVawjGvOgOjB22uS5nZTxYaq1_OT7--GQvzdWNtDg_KGI_ueSoiO4G9Vie6be1m",
+        "name": "projects/12660900467156300151/files/41220996ec1b40199876565c99c546eb"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2Y5YmExZTI4OWY2NjQ4MjM5OGZhOTgzOTZlZmM5ZDAzEgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/ed1fa74683494e4498f424889a37a76d"
+      }
+    },
+    {
+      "code": "S04",
+      "id": "be4729d4aa004148b90f7f7cc2fa30b3",
+      "name": "projects/12660900467156300151/screens/be4729d4aa004148b90f7f7cc2fa30b3",
+      "title": "S04 - استكشاف باب الذكر",
+      "width": "780",
+      "height": "1768",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1Wv707nqHlg4NUF4uRzwsaXo6rKR-zSqQLdzGYLWUPCbWA5NBks7PD2Z3TBbspyg4rOqLAo8MA3lk8h6z6a2XE9Y9TCJqV5fYHID3hPan_Qm6DPIMF22Ne4X5j5bQWXzpD4CkbngduocMxcykaMiXMP8sigrsM9aFOq2L6RBRUb1KRzGoGAbyDe12xzCgHjK3FdfEg_QxnCMEnJ2WI99d9CMws3-8v9U7HobkYVxGiqorKRWxuogyLGYkkw",
+        "name": "projects/12660900467156300151/files/c4c922fb656e400890f69c2d62e3c6d8"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzQ2MzdlZjAwYmFjNzQ1ZDY4MjQ0NzdmZTQyODY1MmFlEgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/3dc14fad8e6e48c78ec6fc6eebd223ad"
+      }
+    },
+    {
+      "code": "S05",
+      "id": "34123ee75a284541ad80e9e47127f9ca",
+      "name": "projects/12660900467156300151/screens/34123ee75a284541ad80e9e47127f9ca",
+      "title": "S05 - خطوات داخل باب الذكر",
+      "width": "780",
+      "height": "1768",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UUV5fjMCPOVCXCofoGAChgSGW8wp98cjOWKjoCnYEOmMypxRRjsojV8uyGZMiQkrVbRnICxjNRvr_LBUyjv82JUj1y383JcdJlOucsloVGFoay5lhTqDh14G-TRgQCuxoU_yYTpanXJNwxkbIDZNAKT7bCD4so6SX18F1rMdNjt_ubdWjcbcHx2jZ5wjAJc0rAomojttI4xwpA5C6DZIkuZjBnmXDGP2w93hRBh0-A8mWk3IqizcoVoG4",
+        "name": "projects/12660900467156300151/files/c33ddb9fde914fa0adc3b9e899545b13"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAxYTI4MmEzYmU1NzRiYzJiMGI3ZjJiOTYwOTk2M2E0EgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/751fce67f635405995619c14ca2a142a"
+      }
+    },
+    {
+      "code": "S06",
+      "id": "dac78cd4375944fa99bca6ffc88fbb0e",
+      "name": "projects/12660900467156300151/screens/dac78cd4375944fa99bca6ffc88fbb0e",
+      "title": "S06 - مشهد القصة: رسالة ورا رسالة",
+      "width": "780",
+      "height": "1820",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UMDIua0ETYl3JwmhZuXcXEfJgoSZntfh_UAHO-lB42wRxevk9-DXNAVMPDrUrM11L_MBnjo6zSDsoz_73c9UVt7SfjTC9u77MlO36Z5WH9vfw21nZwe4-kSgtdZCAJZfmRw4UHKGdSJWS3u7q2ode52s17ae1RwS9weYnwnt8x7_GcXNicoaATvy5Sy2Ho_V-zO5HvUsUDF4NeoQCJpsNa9kBgqnDnrUNw4pbd1Q2lG5Hc3VZQ50DxU5o",
+        "name": "projects/12660900467156300151/files/c7ad2eaf518546b492ee8b36b65a67a9"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzA2OWE4NDhkZWY3MzQxMTdiOTk3ZjA1MzA3ZmUzOWY5EgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/cbbd4db6d36c4590841ac493aa67f2e1"
+      }
+    },
+    {
+      "code": "S07",
+      "id": "1e067983522e493c884483596eee1853",
+      "name": "projects/12660900467156300151/screens/1e067983522e493c884483596eee1853",
+      "title": "S07 - اختيار الخطوة والملاحظة",
+      "width": "780",
+      "height": "1768",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1U1PfEcszUKuHJnherYRCU5n9BgcVgYgRvlTLel7kAxh09MidPgPo0QwDr0stx5w8ofSslq8p-efuJDYmSkS1ek_ISx-P9TPzu2AbtVfX9GCpd6jzCmqxAhqSvD23jkqjm801TMd3d_wIbCdOTVUpgk393mCNdwnzP715ec_AkFPiFllJlxAkUF6qzbhKhWkxyyd9d8QFMENXHgrnD8mY0w6dcRLTqTvT7ULh0PsI_wULsedWddjl7ZwQ8s",
+        "name": "projects/12660900467156300151/files/8ddd8f91724a46a59d10ab3cac284a11"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzgzMWY4OTllNWM1MjQ3ODFiYjMwMjAzOTlmMmVkZWMxEgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/259a0189203b41dab3ab4a1ee7b1e181"
+      }
+    },
+    {
+      "code": "S08",
+      "id": "f038d1071c2a45289a18c7c4eccd6732",
+      "name": "projects/12660900467156300151/screens/f038d1071c2a45289a18c7c4eccd6732",
+      "title": "S08 - حديقة المعنى: الذكر في يومك",
+      "width": "780",
+      "height": "2110",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1Ub5XyEt0suciu2Qlz_c_HqTFHyef9t0ALiJ6m5bwAqH2lPD2TEiMDlerNvRD41UPaxY6-5rondDKnl7P8PhF3EbtoMU5ALAugzxBz-cGhnltWgQirjL-NYm6Bpxe44nkAp1gcBDtQdr610cNDcSJqyuf3In7D_tvS53cirAMfIJkHLeEKd46Q12KGtPKNjmGAxOx6vJSderpdzlNoRft-LbZRzIhujYxJ4ztFGUA5pNEcda-8bzLuJEVwr",
+        "name": "projects/12660900467156300151/files/77cb53561dc540fcb431d2e0df998905"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzBiN2E1YjA1ZjNlYTRiNTg4MWE3OTBiYmI3N2IwYzkwEgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/00dc38338a8540019a94a13dce77e9d1"
+      }
+    },
+    {
+      "code": "S09",
+      "id": "c9ed63e258b349c5ab529c8bbb6ba8bf",
+      "name": "projects/12660900467156300151/screens/c9ed63e258b349c5ab529c8bbb6ba8bf",
+      "title": "S09 - المكان الهادئ: وقفة سبحان الله",
+      "width": "780",
+      "height": "1768",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WMqRdKwHnGo0xr1QkS8H2Rjv5GnRYtxdHQJ1zAybFeUCPdhwibONDqkRP_R_6XZPOsIkvPJzukbPish8CjIxuYcMgTBTv9-zqSaCR3LR1EcvuMsfDN_ux4hlPGAE-YreSDD8d1yEcNmqADkE5dO7vepJ9vWkQp6IgmEHB1AgjLx7sO3EAz2TRt9PK4hMKC8xp5aENiivnC04IiTzhNZkQw2Safesj4tqAe8DwBS7DMlt-BhcbeLkqj-3uK",
+        "name": "projects/12660900467156300151/files/5c43cd29dc174e8b83561b7dfb92621c"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzgwYzZmYWMzNWI2MDQ5OGQ4ZDkzOTVkMTBmZjFhMTY1EgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/b6af208a4c1f428dbe2c1f1d41c7e92a"
+      }
+    },
+    {
+      "code": "S10",
+      "id": "551b782e9840417f8a976e803cb5d8a6",
+      "name": "projects/12660900467156300151/screens/551b782e9840417f8a976e803cb5d8a6",
+      "title": "S10 - لاحظ تجربتك: بعد الوقفة",
+      "width": "780",
+      "height": "1806",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XJf3cECAByeqs_86IMsCJGv56KIrKE39ZlLe7py76QAR_a-zvTLez2hDVu7LyVH6YBGCJqU4xFOezgb67Rh5fFdA8aT5HfmqsmmaN5USq6deIMP9vLCKJbzQh8QLqveghcPI108JlT_1obKqCfAu87K8lX5OC9CjarTx6TnBXuTe62B1ASAmgZICwFv6P772LFbTKthWdFdxYmFuS0FbDhkwUjz7pBCUAriXUrwM_6XxqGUJVyeUNbmro6",
+        "name": "projects/12660900467156300151/files/70080eef81f6441f931633f68b0ec979"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzE1NmVmYzJmNjQ0YzQ1YzE4MjhjM2Y3ZjExOGMxZTAzEgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/36028ae9d4f442b4805d6193489b72b7"
+      }
+    },
+    {
+      "code": "S11",
+      "id": "6f44d451294644e5a3089697a2107f59",
+      "name": "projects/12660900467156300151/screens/6f44d451294644e5a3089697a2107f59",
+      "title": "S11 - اختار لحظة: طريق اللحظات",
+      "width": "780",
+      "height": "1768",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WRrNnalYA6wplld8bn8WIpXc2K0lM6V4WVQOVsMaYIDnfCwv_TRKgg-DAod9yQaggwMuKQeZ-sY4q10foprG5G_VoJ2iuLXFQBo4CPN43Xniuj0VSVlxiYlvjPDvOz9LSqdEy3Jp0AYZU5ftT0unBNEtxEVTNsZ_VscZidxQQFKlMcDxx46yxMhkmG91Cx2iQgEY8mfolIVM4_ugmAHGYhdNYBlYvoJRLyAQp4_cz83TpQxKnp8Qz35yxA",
+        "name": "projects/12660900467156300151/files/c97023dbeeb74f238b438fa857046993"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2U4ZTNmOTNlOTRjMDQxYTBiYjAxYjVhODVkZDIxNjA3EgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/e0be9ff05393456ea7e0c4c10ecab748"
+      }
+    },
+    {
+      "code": "S12",
+      "id": "13ba6b2e5c7f4d8cab25fdc745430d7d",
+      "name": "projects/12660900467156300151/screens/13ba6b2e5c7f4d8cab25fdc745430d7d",
+      "title": "S12 - خطة بسيطة: خطوة تخصك",
+      "width": "780",
+      "height": "2138",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1W8AvA4IJuzFR1ES-ayNMEQuD_oOsHROvbPASvtplfFudRmGKSMo40uH2l-ReOQwxEEdSh-p1qVfhbcCPqB1zosxKSKF23_DNXfVXyT3oJfi3qvhL5Dic8_OoeFeytBYyjuGkPB3XuxhrMa1uoGDUjnlZ-_lQ0qrmQz0-Wi5_uE6VygNPacisK6qadmZiQzuHjGBon4OajeSbx1Ltfh-NVtYG3y2zbwjIX3tHHTf-ZJ_yKhksYlp7wY3Xk",
+        "name": "projects/12660900467156300151/files/24aef6f9fce5418d9df5103ea72316f4"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzU4YWFiYWE1NTI1ODQwODliMzdmMWE5ZTFmYjFkMDRhEgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/f2010b854f144f008caa0552e6e8880e"
+      }
+    },
+    {
+      "code": "S13",
+      "id": "4415ab13bdf74678bdbd4f0905249067",
+      "name": "projects/12660900467156300151/screens/4415ab13bdf74678bdbd4f0905249067",
+      "title": "S13 - تسجيل الممارسة: خطوة في يومك",
+      "width": "780",
+      "height": "1852",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1VJhxQzk26POj27-sW3cLZt1EzD2_qgyPaUGB6MTG-f6f6pPmAwynWuCxrP5dCTA1jTpfJ7vDrej-M7KfxN6a537086qNqtG8XykFCB4n0tDlOIq-nv5AtZ5XwUry2GlyW5XLd11HUPV74K8-hig1m2Joq4Lzg0__rFZB3QIdrTrng7SB2Eo_99GNQFisSSTdyaPeCOu_ZwHhzKmJYoMwCkPAFF3MjzwyfCcW-nCZJRFAWPZUNgvCxWl16E",
+        "name": "projects/12660900467156300151/files/5aa8abd1102742c2b4704b99552f3ba8"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzU1YzZhNmU2YTU0YzQ4YzI4YTk1M2FmNTU0ODUzZTFhEgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/6396d673c25e40a29ef01b824818f447"
+      }
+    },
+    {
+      "code": "S14",
+      "id": "b4b3fa8256624510aac23a6ed309ab24",
+      "name": "projects/12660900467156300151/screens/b4b3fa8256624510aac23a6ed309ab24",
+      "title": "S14 - دفتر الرحلة: مساحة لكلامك",
+      "width": "780",
+      "height": "1768",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WQ4ivKN_QlTGDM7lCVA38C4-VFeu0zVY4Y3mKrgGr0a2D3fnIMV0VIB2_1_PkdC3nbJC_AFA8FkSfso0SwdGr8bqE2cGposdGkrCFrbYVk_9kEov7zqgw_7OhpaeWASaggGO-lsD_uEj3_HoXSUKo7RY32vdNuek7Dyh5DsIaXCCzqgmBc_QvDf5zlGr-o0G3T-YZrtvOVl1xHAuGtOwapkBxLrp9NkyypWjcVh1DMSYpVEaAapMqNvFO9",
+        "name": "projects/12660900467156300151/files/dee222acdb2f41dfbd0602de274d465d"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzkwNWRlMDYxNDU4MDRhNGQ5NjQ0Yzg5YmIzNDBmNjA0EgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/9654f9521eec4e52bdf03a1b4b1ab6bc"
+      }
+    },
+    {
+      "code": "S15",
+      "id": "10f4f8c844b44e1db36edaa37bfe4ea0",
+      "name": "projects/12660900467156300151/screens/10f4f8c844b44e1db36edaa37bfe4ea0",
+      "title": "S15 - دفتر التأمل والكتابة (معدلة)",
+      "width": "780",
+      "height": "2064",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1VV0ugOqdh7-fQ1kgu1hEAxvG_l0CePTr10LpnzR-jjdfzMhlrIAV_Edr6IXWRbrSO4T29hlFOpBo0zCws9QvnXDY_mhM_JVIklDss0Vn5mP3JrnaU-lCQZi8Jy_YRQkwclhjXoq0AVEVxh5Y-elfpMkcmC4TKOgRY0K8snyaKOhXWSfYT6Eeh70brcorJl47rG7bfZBrzDGgLXuzCxbLKHMAGSwXluuRDRPQvP93tXwW_aS7BnpdpEPz0",
+        "name": "projects/12660900467156300151/files/da9d7e2f581646eda15ea55415ba8e02"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzNhYzc1NTZiOTc5MjRmNjRhOTYyNmM5MTVkYWIzZGNkEgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/5059aa19b9c64450ae4ed8853ea374fc"
+      }
+    },
+    {
+      "code": "S16",
+      "id": "0c3e6639ad9843b2927f2b06d1d08ebf",
+      "name": "projects/12660900467156300151/screens/0c3e6639ad9843b2927f2b06d1d08ebf",
+      "title": "S16 - ختام الجلسة: خطوة جديدة تصاحب يومك",
+      "width": "780",
+      "height": "1768",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1VgZCciiecAmTwQKb5wC7Z4_E3ueoqyEzfooaoY_yZqntQwQbiYQ4q6Gz6S9dKb0x8HSVFjLPmKq7Pr1LCYxzOaUOYvQ3qz5SOenu2KKeZH3c8Kut4pqF5R9LMlqg23J2qR5uxq87MFCsPlKlF0sbvOuBBrunolkc8e0xfiVb9TsFpmR7mIvKUmuRl7yIauqjB0caKvCkLOUglOJIdQZM3o_jXCmVfio8XgcdrAmIjBvFjnjQ8t6OqptUyJ",
+        "name": "projects/12660900467156300151/files/5acde9c00bc649f39b82175286a4cd52"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzMxZTlkMzdiNjM3NzQ3NmM5NTI2MTcyMDY3ZjU5YTZjEgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/20fdbf56211947c2ab94da64e50ec59e"
+      }
+    },
+    {
+      "code": "S17",
+      "id": "a7f94ca833db41369e32c204198d387a",
+      "name": "projects/12660900467156300151/screens/a7f94ca833db41369e32c204198d387a",
+      "title": "S17 - شخصيتي: ما اكتشفته (معدلة)",
+      "width": "780",
+      "height": "1892",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XpIEVb1BMwyDtTYqLChuVmymPyjje5Q59KBzi0KAffO7xOezCOlVCeX12XK5uZawnCF434UOM-wosD1GFTBYKFct0IeZzgT8t0-V-Uzfaa0QXnpr4UqutiDtTy_lc0gGXMCHTwph5qFn-1FiBKqqrfH51NwypyJ9EgG9XRdQ6aFez5bAVCcGrkXM5KU9BKP8Qs99wfxglAvV8pY3mcdPQogzCh78XgYtH_ZEZxMdBOfHpaFoxbVdV3ruzO",
+        "name": "projects/12660900467156300151/files/bd03d8a09f9d4e82bb0d69e7061ef173"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzhjNzJiZDg4ODJkYjRkNDQ5OWVhZGJkYmYyNmUzZTM0EgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/04c86a70c9b643af8b16da496b6b5277"
+      }
+    },
+    {
+      "code": "S18",
+      "id": "f932ead7aa234648a436416e2d3e2e0c",
+      "name": "projects/12660900467156300151/screens/f932ead7aa234648a436416e2d3e2e0c",
+      "title": "S18 - الإعدادات وتأكيد بدء جديد",
+      "width": "780",
+      "height": "1768",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1Upa6iogrXkRqLRh33t-H2szuYY3xOx5vVTZUNeVR2GQ1ivgpLtyXPWVe4KdwbEzUB1ZsOEiwcsMNYXPUDYNnnyqjeiTy_VF4Zg6CLmAsjFRGU_mggLhLaPtfsJNMqvd24UkWYg9Vs60Tb9zOx5r05Zpucuunl0OEGJo1JIJKv2oCdvN8wcs_1-6mv4rmknDFn2g8qr4eQB_sbE3DUkA8GRgL3ENsSBphTjmR3yU9wBrv5qaN55mkk5qfS0",
+        "name": "projects/12660900467156300151/files/fa627d3742844e7f94152a4637155fac"
+      },
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzEzYjM0Y2EwNGY1MzQyMDg4MTQ3NDE3OTY5MDRlNTQxEgsSBxDS_KXfgA8YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjY2MDkwMDQ2NzE1NjMwMDE1MQ&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12660900467156300151/files/d382209a994b4068a4da909f077bd05a"
+      }
+    }
+  ],
+  "generatedNotes": [
+    "تم تصميم وتوليد الشاشات الثلاث المستقلة والمتكاملة لتطبيق **«الحياة الطيبة»** المخصص للفئة العمرية (10–14 سنة)، مع الالتزام الصارم بجميع موجهات وثيقة التصميم ونظام التصميم المرفق:\n\n### 1. شاشة إعداد الشخصية (S02 - إعداد الشخصية) — `S02 - إعداد الشخصية`\n- **الهوية البصرية:** إطار معماري مقوّس دافئ مع شخصية مستكشف إنسانية واضحة الملامح (بعيدة تماماً عن الطابع الكرتوني الطفولي/chibi).\n- **الخيارات الخمسة التفاعلية:** \n  1. حقل الاسم المستعار «سليم» (اسم في الرحلة دون إنشاء حساب).\n  2. أسلوب الشخصية («المستكشف الهادئ»، «المتأمل الصبور»، «المبادر النشيط»).\n  3. الشكل والمظهر («وشاح الحديقة»، «قبعة المسافر»، «سترة الدرب»).\n  4. درجات الألوان الطبيعية الهادئة مع حلقة تحديد نشطة بلون الصنوبر الداكن.\n  5. شارة الاستكشاف («غصن الزيتون»، «مفتاح الباب»، «شراع النور»).\n- **العمل دون اتصال:** تأكيد مرئي بأن الملف الشخصي محفوظ محلياً على الجهاز دون الحاجة لبريد أو كلمة مرور. زر أساسي واضح: «يلا نبدأ».\n\n---\n\n### 2. شاشة الخريطة الرئيسية (S03 - خريطة الحياة الطيبة) — `S03 - خريطة الحياة الطيبة`\n- **التكوين والرسوم:** خريطة مسار لطيفة مستوحاة من دفاتر الاستكشاف، بمسارات حجرية وأقواس معمارية واضحة، مع بطاقات نصوص بيضاء مثبتة بشكل مستقل فوق الخلفية لضمان القراءة السهلة.\n- **أبواب الرحلة:**\n  - **باب الذكر (المتاح):** محطة حالية واضحة المعالم، مع زر العمل المباشر «كمّل رحلتك» وتوضيح المهمة الحالية («داخل الباب: اكتشف المعنى واستمع لصوت الأثر»).\n  - **باب معية الله (المستقبلي):** يظهر بقفل وتسمية صريحة «يُضاف لاحقًا (غير متاح في هذه النسخة)»، دون إيهام الطفل بوجود نقاط خبرة (XP) أو متطلبات لفتحه.\n- **شريط التنقل السفلي:** 3 وجهات صريحة بأيقونات وعناوين («الخريطة»، «لحظاتي»، «دفتر الرحلة») مع إبراز الخريطة كخيار نشط.\n\n---\n\n### 3. شاشة دفتر التأمل والكتابة (S15 - دفتر التأمل والكتابة) — `S15 - دفتر التأمل والكتابة`\n- **الترويسة والاتجاه:** عنوان «دفتر الرحلة» وسهم رجوع يتجه يميناً متوافق مع الاتجاه العربي RTL مع زر «إغلاق» هادئ.\n- **مساحة التدوين:** سؤال تأملي واضح («متى كان الذكر أسهل بالنسبة لك؟»)، مع بطاقة كتابة بيضاء واسعة بنص نموذجي واقعي لطفل («قبل النوم، لما سبت الموبايل شوية وحسيت بهدوء في الأوضة.»).\n- **الخصوصية والتخزين المحلي:** شارة واضحة «تم الحفظ على الجهاز · ملف شخصي غير متصل» (دون أي إشارة للتخزين السحابي أو تقييم الإيمان أو نقاط المنافسة).\n- **أزرار التحكم:** زر أساسي «حفظ كتابتي»، وزر تخطي هادئ «مش حابب أكتب دلوقتي»، مع خيار «حذف هذه الكتابة» باللون الترابي الهادئ.\n\nجميع الشاشات تدعم مقاس الهواتف (390px)، وبأحجام نقر لا تقل عن 48 بكسل، وخطوط عربية واضحة ومقروءة تماماً.",
+    "تم تصميم الشاشات الخمس المطلوبة لتطبيق **«الحياة الطيبة»** كمساحات عمل مستقلة (Mobile Artboards بمقاس 390×844) وفق الهوية البصرية ونظام التصميم المعتمد (`#F7F8F5` للورق الدافئ، `#246B60` للون الصنوبري، و`#243B36` لحبر النصوص):\n\n---\n\n### الشاشات المصممة:\n\n1. **S01 - مرحباً بك في الحياة الطيبة (S01 - مرحباً بك في الحياة الطيبة)**:\n   - واجهة الترحيب الهادئة بقوس الحديقة التوضيحي الناضج والمسار الحجري المتناغم مع الفئة العمرية (10–14 سنة).\n   - النصوص الأساسية: «رحلتك تبدأ بخطوة صغيرة» و«اكتشف باب الذكر، وجرّب معناه في يومك» مع زر الإجراء الرئيسي «ابدأ رحلتي».\n   - خالية تماماً من متطلبات الحساب، البريد، أدوار الوالدين، أو الشروح التقنية حول الاتصال.\n\n2. **S04 - استكشاف باب الذكر (S04 - استكشاف باب الذكر)**:\n   - مدخل باب الذكر بقوس حديقة منقوش ومضيء بنعومة بدون ألوان نيون صاخبة.\n   - سؤال استكشافي تشاركي: «إيه معنى الذكر؟» مع تأكيد واضح بأنها وقفة تأمل واستكشاف وليست امتحاناً أو تقييماً.\n   - 3 خيارات واضحة مع إبراز الخيار المحدد دون درجات أو أحكام، وزر «اكتشف معايا».\n\n3. **S05 - خطوات داخل باب الذكر (S05 - خطوات داخل باب الذكر)**:\n   - مسار حديقة عمودي بخمس محطات متدرجة وواضحة: *(اكتشف المعنى، جرّب خطوة، اختار لحظة، استمر بطريقتك، وقفة وتأمل)*.\n   - الخطوة الأولى متاحة بزر «افتح القصة»، والمرحلة الثانية مقفلة تعليمياً بشرط واضح «افتحها بعد القصة» لتمييزها عن الأبواب المستقبلية غير المتاحة، مع شريط التصفح السفلي المتناسق.\n\n4. **S06 - مشهد القصة: رسالة ورا رسالة (S06 - مشهد القصة: رسالة ورا رسالة)**:\n   - مشهد واقعي لطالب جالس إلى مكتبه في المساء مع كتب ومصباح وهاتف بإشعار رسالة، دون نصوص مرسومة بداخل الصورة.\n   - نص الحوار الصادق الخالي من اللوم أو الأحكام الأخلاقية، ومؤشر سردي «الخطوة الأولى · موقف من يومك»، مع زر «تفتكر أعمل إيه؟».\n\n5. **S07 - اختيار الخطوة والملاحظة (S07 - اختيار الخطوة والملاحظة)**:\n   - بطاقة الشخصية المصغرة مع السؤال التوجيهي: «إيه خطوة ممكن تساعده يرجع للحظة؟».\n   - الخيارات الثلاثة مع تفعيل الخيار الأوسط («آخد لحظة وأذكر الله») وإظهار بطاقة الملاحظة الهادئة المشجعة: «ممكن تجرّب الخطوة وتشوف اللي تلاحظه. مش لازم إحساسك يتغير فورًا».\n   - أزرار «جرّب الخطوة» وإمكانية إعادة التجربة («نجرب اختيار تاني») بكل احترام للمشاعر دون درجات أو تأنيب.",
+    "تم بحمد الله تصميم الشاشات الخمس المنفصلة **S08 إلى S12** لتطبيق **«الحياة الطيبة»** بتوافق كامل مع دليل التصميم، ونظام الألوان الهادئ (ورق دافئ `#F7F8F5`، صنوبري داكن `#246B60`، حبر غابي `#243B36`، وحبر المريمية `#566961`) ومراعاة تامة للفئة العمرية (10–14 سنة) مع الحفاظ على روح دفتر الميدان الاستكشافي والتجربة غير المتصلة:\n\n1. **S08 - حديقة المعنى (`S08 - حديقة المعنى: الذكر في يومك`)**:\n   - بانوراما علوية مرسومة لبوابة الروضة الهادئة مع فصل تام بين النص والرسم.\n   - العنوان: «الذكر: معنى تصحبه في يومك» مع نص استهلالي واضح ومباشر.\n   - أربعة صفوف هادئة متوازنة لأذكار (سبحان الله، الحمد لله، الله أكبر، لا إله إلا الله) مع إيضاح المعنى القلبي لكل منها.\n   - بطاقة تأملية بارزة: «ماذا يتغير عندما تنتبه للمعنى؟» وزر تفاعلي أساسي بارتفاع 52px: «جرّب لحظة بنفسك».\n\n2. **S09 - المكان الهادئ: وقفة سبحان الله (`S09 - المكان الهادئ: وقفة سبحان الله`)**:\n   - إطار دائري هادئ لورقة نباتية ثابتة تحث على التروي والسكينة بدون حركات دائرية مشتتة أو ضغط عدّ تنازلي.\n   - بطاقة التركيز على ذكر «سُبْحَانَ الله» مع توجيه قلبي لطيف وتحكم لإعادة الوقفة بدون محاكاة لبث صوتي زائف.\n   - الزر الرئيسي «جرّب الوقفة» وخيار تخطي مريح «أتجاوز الآن» وتأكيد ختامي: «التجربة على راحتك. مش لازم تحس بتغيير معين».\n\n3. **S10 - لاحظ تجربتك (`S10 - لاحظ تجربتك: بعد الوقفة`)**:\n   - شريط علوي يضم صورة الشخصية (سالم) وتأكيد دافئ على أن «كل تجربة مختلفة، ومفيش إجابة صح وغلط».\n   - أربعة خيارات متكاملة بأبعاد لمس مريحة (≥56px) مع تحديد خيار «ما حسّيتش بفرق» كحالة نموذجية محايدة مدعومة بإفادة طمأنة: «ملاحظتك مهمة، وطبيعي جداً. تقدر تكمل بطريقتك وبدون أي ضغط».\n   - خلو تام من أي درجات، نقاط XP، أو تقييمات إيمانية.\n\n4. **S11 - اختار لحظة من يومك (`S11 - اختار لحظة: طريق اللحظات`)**:\n   - شبكة وظيفية متناسقة من عمودين لست لحظات يومية بأيقونات خطية أنيقة ونصوص واضحة تتجاوز 16px.\n   - إبراز حالة التحديد لخيار «قبل النوم» بإطار صنوبري بارز وخلفية هادئة وعلامة اختيار واضحة.\n   - الزر الأساسي «دي لحظتي»، مع تأكيد محلي تام على حفظ البيانات على الجهاز دون طلب صلاحيات أو إشعارات مزعجة.\n\n5. **S12 - خطة بسيطة: خطوة تخصك (`S12 - خطة بسيطة: خطوة تخصك`)**:\n   - رسم فني هادئ لنافذة ليلية دافئة.\n   - بطاقة الجملة المنظمة ذات الوسمين التوجيهيين: «لما يحصل... لما أستعد للنوم» ⟵ «سأجرّب... هاخد لحظة وأذكر الله» مع خيار تعديل اللحظة.\n   - رسالة مريحة للتخفف من الشعور بالذنب: «لو نسيت أو أخذت وقفة، تقدر ترجع وتجرب بكل هدوء».\n   - شارة الحفظ المحلي على الجهاز وإتاحة الانتقال إلى «دفتر الرحلة».",
+    "تم بحمد الله توليد الشاشات الخمس المنفصلة (S13، S14، S16، S17، S18) لتطبيق **الحياة الطيبة** بدقة وتطابق كامل مع نظام التصميم المعتمد، والأبعاد القياسية للهاتف (390×844)، والاتجاه العربي الصريح (RTL):\n\n1. **S13 - تسجيل الممارسة (خطوة في يومك):**\n   - تعرض خطة اللحظة الحالية («قبل النوم») مع خيار التعديل الهادئ.\n   - خيارات تسجيل اليوم الثلاثة الواضحة مع تمييز حالة الاختيار («جرّبت لحظتي») بلون الصنوبر Pine وأيقونة التحقق.\n   - سجل هادئ لآخر يومين بحد أقصى، مع توضيح أن «الوقفات جزء من الرحلة» وخلو الشاشة تماماً من عدادات الأيام المتتالية، أو قياس العبادات أو نقاط الـ XP.\n\n2. **S14 - دفتر الرحلة (حالة البداية / فارغ):**\n   - رسم دفتري هادئ ومحفور بالورق والأوراق النباتية دون رموز تعبيرية (emojis) رخيصة أو لوحات مشابك تقليدية.\n   - نص واضح ومطمئن: «لسه ما كتبتش تأملات. اكتب لما تحب، وممكن ترجع وتكمل بعدين.» مع زر الدعوة الأساسي «اكتب أول تأمل» وعزل تام عن أي عناصر تسجيل صوتي.\n\n3. **S16 - ختام الجلسة (خطوة جديدة تصاحب يومك):**\n   - رسم تذكاري نباتي وادع لقوس الحديقة وشجرة الزيتون بعيداً عن مفرقعات الألعاب والاحتفالات الطفولية.\n   - وسم إنجاز الرحلة: «اكتشاف باب الذكر»، وتأكيد أن الممارسة تستمر بالسكينة والحضور دون إطلاق أحكام إيمانية («أصبحت أفضل»).\n   - الأزرار الأساسية للعودة للخريطة أو تفقد اللحظات اليومية.\n\n4. **S17 - شخصيتي (ما اكتشفته):**\n   - مظهر المستكشف المتسق مع شاشة الإعداد S02 للشخصية («سليم» - المستكشف الهادئ).\n   - زر تعديل الشخصية المباشر، وتوثيق «ما اكتشفته» في مسار رحلة مفتوح (المعنى، الموقف، اللحظة اليومية) وشارة باب الذكر التذكارية، مع حفظ البيانات محلياً وبدون لوحات شرف أو مقارنات تنافسية.\n\n5. **S18 - الإعدادات وتأكيد البدء الجديد (Bottom Sheet):**\n   - قائمة الإعدادات المحلية (اللغة العربية، تقليل الحركة، كتاباتي المحفوظة، حذف بيانات الرحلة).\n   - نافذة منبثقة سفلية (Modal Bottom Sheet) لتأكيد تصفير البيانات: «تبدأ من جديد؟»، مع تركيز أولي آمن على زر «إلغاء»، وزر مسح البيانات بلون الطين Semantic Clay (#8B4B3F) لضمان عدم الحذف العرضي وتأكيد حفظ البيانات على الجهاز محلياً.",
+    "تم تحسين وتعديل الشاشات الأربع بنجاح وفق متطلبات التصميم والضوابط التوجيهية:\n\n1. **S03 - خريطة الحياة الطيبة (معدلة)**:\n   - تقديم **باب الذكر** النشط ليحتل بؤرة الشاشة الأولى مع إظهار القوس التوضيحي وزر **«كمّل رحلتك»** معاً في المساحة المرئية.\n   - تصحيح العبارة إلى **«داخل الباب: اكتشف المعنى»** وإزالة أي مهام مضافة.\n   - تحويل **«باب معية الله»** إلى بطاقة هادئة ومدمجة بالأسفل مع عبارة «يُضاف لاحقًا (غير متاح في هذه النسخة)» مع إزالة القوس المغلق الضخم الذي كان يعيق الرؤية.\n   - ضبط شريط التنقل السفلي المعتمد (الخريطة، لحظاتي، دفتر الرحلة) بدون حركات نبضية مزعجة.\n\n2. **S02 - إعداد الشخصية (معدلة)**:\n   - إزالة التصنيفات النفسية والتقييمية للشخصية، والتركيز على التخصيص الشكلي للأطفال (معاينة المستكشف، حقل الاسم «سليم»، ملامح المظهر، الستايل، الألوان، وشارة الاستكشاف).\n   - إزالة العبارات التقنية والمصطلحات البرمجية لجعل الواجهة مخصصة تماماً للطفل.\n   - اعتماد زر البدء الأساسي **«يلا نبدأ»** مع الالتزام بأبعاد اللمس 48px فما فوق.\n\n3. **S15 - دفتر التأمل والكتابة (معدلة)**:\n   - إزالة ادعاء «غير مقيد بطول»، وإضافة عداد الكلمات بالأرقام العربية السليمة **«٢٨ من ٢٠٠٠»**.\n   - حالة حفظ محلية واضحة وموثوقة **«تم الحفظ على الجهاز»**.\n   - إظهار سطر المعالجة الهادئ لحالة الفشل المؤقت **«ما قدرناش نحفظ التغيير، كلامك لسه هنا [إعادة المحاولة]»**.\n   - أزرار واضحة: حفظ كتابتي، مش حابب أكتب دلوقتي، وحذف التدوين.\n\n4. **S17 - شخصيتي: ما اكتشفته (معدلة)**:\n   - مطابقة الصورة والاسم «سليم» مع شاشة الإعداد، والتخلص من أي تقييمات تصنيفية أو أرقام XP ومستويات.\n   - عرض ما تم اكتشافه خلال الرحلة (المعنى، الموقف، اللحظة اليومية، وشعار المسار) في إطار مدمج ومتناسق ومريح للعين."
+  ]
+}

@@ -1,0 +1,62 @@
+@startuml
+!pragma layout smetana
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
+title Child learner domain | identity mechanism remains open
+class ChildProfile {
+ learnerId
+ nickname
+ ageBand: 10-14
+ avatarId
+ appearanceId
+ colorId
+ badgeId
+}
+class AccessIdentity {
+ identityId
+ accessMethod: TBD
+ recoveryPolicy: TBD
+}
+class DeviceSession {
+ sessionId
+ expiresAt
+ revokedAt: optional
+}
+class LearningAttempt {
+ attemptId
+ revisionId
+ currentStepId
+ latestSequence
+ status
+}
+class StepCompletion {
+ stepId
+ completedAt
+}
+class ProgressReceipt {
+ eventId
+ payloadDigest
+ committedAt
+}
+class CompletionRecord {
+ revisionId
+ completedAt
+}
+ChildProfile "1" -- "1" AccessIdentity : scoped access
+AccessIdentity "1" -- "0..*" DeviceSession
+ChildProfile "1" -- "0..*" LearningAttempt
+LearningAttempt "1" *-- "0..*" StepCompletion
+LearningAttempt "1" *-- "0..*" ProgressReceipt
+LearningAttempt "1" *-- "0..1" CompletionRecord
+note bottom of AccessIdentity
+Guest/device versus account is undecided.
+No companion account or family owner.
+Recovery mechanism requires a decision.
+end note
+note bottom of LearningAttempt
+Bound to one content revision.
+Completed steps persist; resume cursor may move.
+No raw reflection payload in progress.
+end note
+@enduml

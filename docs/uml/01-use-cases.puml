@@ -1,0 +1,36 @@
+@startuml
+!pragma layout smetana
+left to right direction
+skinparam shadowing false
+skinparam defaultFontName Arial
+title Hayah Tayeba | child-only MVP use cases
+actor Child
+actor "Content admin" as Admin
+rectangle "Hayah Tayeba" {
+ usecase "UC-01\nStart / resume own profile" as Access
+ usecase "UC-02\nExplore Dhikr journey" as Learn
+ usecase "UC-03\nSave, resume and complete" as Progress
+ usecase "UC-06\nAuthor, review and publish" as Publish
+ usecase "UC-07\nRevise / withdraw content" as Revise
+ usecase "UC-08\nManage own access and data" as Manage
+ usecase "UC-09\nPlan / continue practice" as Practice
+ usecase "UC-10\nCreate character / explore map" as Character
+ usecase "UC-11\nPublish language edition" as Locale
+ usecase "UC-12\nOptional reflection" as Reflect
+}
+Child --> Access
+Child --> Learn
+Child --> Progress
+Child --> Manage
+Child --> Practice
+Child --> Character
+Child --> Reflect
+Admin --> Publish
+Admin --> Revise
+Admin --> Locale
+legend bottom
+The child is the only learner-facing role.
+Content admins cannot access learner records.
+UC-04 and UC-05 are retired, not active use cases.
+endlegend
+@enduml

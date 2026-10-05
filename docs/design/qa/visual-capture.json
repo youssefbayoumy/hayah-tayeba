@@ -1,0 +1,197 @@
+{
+  "date": "2026-10-05",
+  "screens": [
+    {
+      "code": "S01",
+      "route": "welcome",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "code": "S02",
+      "route": "character",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 1034.140625
+      }
+    },
+    {
+      "code": "S03",
+      "route": "map",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "code": "S04",
+      "route": "door",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "code": "S05",
+      "route": "regions",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "code": "S06",
+      "route": "story",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "code": "S07",
+      "route": "choice",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "code": "S08",
+      "route": "meaning",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "code": "S09",
+      "route": "pause",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "code": "S10",
+      "route": "observation",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "code": "S11",
+      "route": "moment",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "code": "S12",
+      "route": "plan",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "code": "S13",
+      "route": "journal",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 1050.109375
+      }
+    },
+    {
+      "code": "S14",
+      "route": "notebook",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "code": "S15",
+      "route": "reflection",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 906.90625
+      }
+    },
+    {
+      "code": "S16",
+      "route": "complete",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "code": "S17",
+      "route": "profile",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "code": "S18",
+      "route": "settings",
+      "size": {
+        "x": 0,
+        "y": 0.25,
+        "width": 390,
+        "height": 844
+      }
+    }
+  ],
+  "variants": 7,
+  "checks": [
+    "All18corephonecaptures",
+    "Cosmeticappearancepresent",
+    "Arabiccounteruseslocalizeddigits",
+    "Reducedmotionswitchmapslabeltobehavior",
+    "Resetinitialfocussafe",
+    "Faileddeletepreservestext",
+    "Failedresetpreservesprofile",
+    "Faileddeparturepreservestext"
+  ],
+  "scope": "Browser design prototype; no native or child-user testing"
+}

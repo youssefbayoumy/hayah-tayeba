@@ -1,0 +1,46 @@
+@startuml
+skinparam shadowing false
+skinparam defaultFontName Arial
+autonumber
+title UC-03 | child checkpoint and duplicate-safe synchronization
+participant "Child app" as C
+database "Local store / outbox" as L
+participant "Progress module" as P
+database "Transactional store" as DB
+C -> L : Save checkpoint + unique event (revision R1)
+L --> C : Durable local save
+C -> P : Submit scoped event
+P -> DB : Validate learner session, revision and availability
+alt Unauthorized or withdrawn
+ P --> C : Access/unavailable result; no new delivery
+else Existing event ID, same payload
+ DB --> P : Prior committed result
+ P --> C : Same result; no duplicate completion
+else Existing ID, different payload
+ P --> C : Reject identifier conflict
+else New valid event
+ P -> DB : Atomically merge completed steps
+ note right of DB
+ Update cursor only with valid newer sequence.
+ Record receipt and optional completion.
+ No raw choices or reflections stored.
+ end note
+ DB --> P : Durable commit
+ P --> C : Confirmed progress / completion
+end
+opt Success acknowledgment received
+ C -> L : Mark event acknowledged
+end
+note over C, L
+Transport failure retains event for retry with the same ID.
+No server-sync claim before acknowledgment.
+end note
+C -> P : Resume own attempt after valid access
+P -> DB : Read only authenticated learner's attempt
+DB --> P : Confirmed state
+P --> C : Resume checkpoint and completed steps
+note over P, DB
+Routine R2 publication preserves the bound R1 attempt.
+R1 withdrawal takes precedence over continued access.
+end note
+@enduml

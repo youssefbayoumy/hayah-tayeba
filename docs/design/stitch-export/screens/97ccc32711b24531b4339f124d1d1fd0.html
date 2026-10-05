@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-canvas text-ink antialiased" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>خريطة الحياة الطيبة</title>
+<!-- Google Fonts: Noto Sans Arabic -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary-fixed-dim": "#b7cbc1",
+            "canvas": "#F7F8F5",
+            "primary-fixed": "#abf0e2",
+            "accentPressed": "#1D574E",
+            "stone": "#C5CECA",
+            "on-secondary-container": "#556860",
+            "surface-container-high": "#e6e9e7",
+            "sand": "#D9C9AC",
+            "inverse-surface": "#2e3130",
+            "surface": "#FFFFFF",
+            "tertiary": "#71392a",
+            "on-secondary-fixed": "#0d1f19",
+            "inverse-primary": "#8fd3c6",
+            "on-tertiary": "#ffffff",
+            "surface-variant": "#e1e3e1",
+            "ink": "#243B36",
+            "secondary-container": "#d2e7dd",
+            "tertiary-container": "#8d503f",
+            "on-error": "#ffffff",
+            "outline": "#6f7976",
+            "on-tertiary-container": "#ffd2c6",
+            "on-primary": "#ffffff",
+            "surface-container-low": "#f2f4f2",
+            "error-container": "#ffdad6",
+            "error": "#8B4B3F",
+            "on-primary-fixed": "#00201b",
+            "background": "#f8faf8",
+            "on-tertiary-fixed": "#370d03",
+            "on-error-container": "#93000a",
+            "paleLeaf": "#BFCFBF",
+            "surface-bright": "#f8faf8",
+            "inverse-on-surface": "#eff1ef",
+            "primary-fixed-dim": "#8fd3c6",
+            "on-tertiary-fixed-variant": "#6e3728",
+            "tertiary-fixed-dim": "#ffb5a0",
+            "textSecondary": "#566961",
+            "border": "#C9D3CC",
+            "controlBorder": "#6F8279",
+            "accent": "#246B60",
+            "surface-dim": "#d8dbd8",
+            "tertiary-fixed": "#ffdbd1",
+            "on-surface-variant": "#3f4946",
+            "primary-container": "#246b60",
+            "primary": "#005248",
+            "on-surface": "#191c1b",
+            "outline-variant": "#bec9c5",
+            "accentSoft": "#E8F0EB",
+            "surface-container-lowest": "#ffffff",
+            "surface-container": "#eceeec",
+            "errorSoft": "#F3E9E5",
+            "surface-tint": "#22695e",
+            "on-secondary": "#ffffff",
+            "on-background": "#191c1b",
+            "on-primary-fixed-variant": "#005047",
+            "surface-container-highest": "#e1e3e1",
+            "secondary-fixed": "#d2e7dd",
+            "clay": "#CBAF9C",
+            "on-primary-container": "#a4e9db",
+            "secondary": "#50625b",
+            "on-secondary-fixed-variant": "#384b43"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1rem",
+            "space-md": "0.75rem",
+            "space-3xl": "3rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem",
+            "margin": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-2xl": "2.5rem",
+            "space-xl": "2rem"
+          },
+          "fontFamily": {
+            "button": ["Noto Sans Arabic"],
+            "headline-md": ["Noto Sans Arabic"],
+            "display": ["Noto Sans Arabic"],
+            "supporting": ["Noto Sans Arabic"],
+            "caption": ["Noto Sans Arabic"],
+            "headline-lg": ["Noto Sans Arabic"],
+            "body": ["Noto Sans Arabic"]
+          },
+          "fontSize": {
+            "button": ["17px", {"lineHeight": "28px", "fontWeight": "600"}],
+            "headline-md": ["20px", {"lineHeight": "32px", "fontWeight": "600"}],
+            "display": ["28px", {"lineHeight": "42px", "fontWeight": "700"}],
+            "supporting": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+            "caption": ["14px", {"lineHeight": "24px", "fontWeight": "500"}],
+            "headline-lg": ["24px", {"lineHeight": "36px", "fontWeight": "700"}],
+            "body": ["18px", {"lineHeight": "30px", "fontWeight": "400"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Noto Sans Arabic', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+    }
+    /* Subtle paper texture overlay */
+    .paper-texture {
+      background-image: radial-gradient(#243B36 0.5px, transparent 0.5px);
+      background-size: 24px 24px;
+      opacity: 0.035;
+    }
+    /* Architectural Arch shape */
+    .arch-frame {
+      border-radius: 90px 90px 16px 16px;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-canvas text-ink min-h-screen flex flex-col justify-between selection:bg-accentSoft selection:text-accent">
+<!-- Mobile Viewport Constraint Box (390px base reference centered on larger screens) -->
+<div class="w-full max-w-[390px] mx-auto min-h-screen bg-canvas flex flex-col relative pb-28 shadow-sm">
+<!-- Background paper noise subtle atmosphere -->
+<div class="paper-texture absolute inset-0 pointer-events-none z-0"></div>
+<!-- Top Safe Area & Screen Header -->
+<header class="relative z-10 pt-6 px-margin pb-3 bg-canvas">
+<div class="flex items-center justify-between">
+<!-- Right side: Warm Greeting & App Identity -->
+<div>
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="w-2 h-2 rounded-full bg-accent"></span>
+<span class="text-caption font-caption text-textSecondary tracking-wide">الحياة الطيبة · رحلتك اليوم</span>
+</div>
+<h1 class="text-headline-lg font-headline-lg text-ink font-bold">أهلاً يا سليم</h1>
+</div>
+<!-- Left side: 48px Profile / Field Bag Button -->
+<button aria-label="الملف الشخصي والإعدادات" class="w-12 h-12 rounded-xl bg-surface border border-border shadow-[0px_2px_6px_rgba(36,59,54,0.04)] flex items-center justify-center text-ink hover:bg-accentSoft active:scale-[0.98] transition-transform duration-150" type="button">
+<span class="material-symbols-outlined text-textSecondary text-[24px]">person</span>
+</button>
+</div>
+<!-- Main Title Plaque: Solid paper aesthetic -->
+<div class="mt-4 p-4 rounded-xl bg-surface border border-border shadow-[0px_4px_12px_rgba(36,59,54,0.04)] relative overflow-hidden">
+<div class="absolute -left-6 -bottom-6 w-20 h-20 rounded-full bg-accentSoft/60 pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-accent text-[22px]">explore</span>
+<h2 class="text-headline-md font-headline-md text-ink font-semibold">خريطة الحياة الطيبة</h2>
+</div>
+<p class="text-caption font-caption text-textSecondary mt-1">استكشف أبواب الخير والسكينة بتأمّل وهدوء</p>
+</div>
+<span class="inline-flex items-center justify-center px-2 py-1 rounded-lg bg-surface-container-low text-textSecondary text-[12px] font-caption border border-border/80">
+            نسخة الميدان
+          </span>
+</div>
+</div>
+</header>
+<!-- Map & Landscape Scrollable Region (Hero Area) -->
+<main class="relative z-10 flex-1 px-margin pt-2 flex flex-col gap-6">
+<!-- Map Garden Canvas -->
+<div class="relative w-full rounded-2xl bg-surface-container-low border border-border p-4 overflow-hidden shadow-[0px_4px_12px_rgba(36,59,54,0.05)]"><!-- Architectural Map Decorative Backdrop -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" fill="none" viewbox="0 0 342 560" xmlns="http://www.w3.org/2000/svg">
+<path d="M-20 60C60 40 140 90 220 65C280 45 330 70 380 55" stroke="#C5CECA" stroke-dasharray="4 4" stroke-width="1.2"></path>
+<path d="M-30 200C50 180 130 230 240 195C310 170 360 205 390 180" stroke="#C5CECA" stroke-dasharray="4 4" stroke-width="1.2"></path>
+<path d="M-10 360C70 340 160 390 260 350C310 330 360 365 400 350" stroke="#C5CECA" stroke-dasharray="4 4" stroke-width="1.2"></path>
+<path d="M171 270 C 171 310, 171 340, 171 380" stroke="#6F8279" stroke-dasharray="4 4" stroke-width="1.5"></path>
+</svg>
+<!-- Garden Flora Accents -->
+<div class="absolute top-4 left-4 opacity-30 flex gap-1 pointer-events-none">
+<span class="material-symbols-outlined text-paleLeaf text-[24px]">park</span>
+<span class="material-symbols-outlined text-paleLeaf text-[18px] -mt-1">forest</span>
+</div>
+<div class="absolute top-48 right-3 opacity-25 flex gap-1 pointer-events-none">
+<span class="material-symbols-outlined text-paleLeaf text-[22px]">yard</span>
+</div>
+<!-- DOOR 1: ACTIVE / PROMINENT HERO (باب الذكر) -->
+<div class="relative z-10 w-full flex flex-col items-center">
+<!-- Active Indicator (No pulse animation) -->
+<div class="mb-2.5 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accentSoft text-accent border border-accent/20 text-[12px] font-caption font-semibold">
+<span class="w-2 h-2 rounded-full bg-accent"></span>
+<span>محطتك الحالية</span>
+</div>
+<!-- Grand Arched Gate Illustration -->
+<div class="w-44 h-48 arch-frame bg-surface border-2 border-accent shadow-[0px_6px_16px_rgba(36,107,96,0.12)] flex flex-col items-center justify-end p-3 relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-b from-accentSoft/70 via-surface to-surface pointer-events-none"></div>
+<!-- Archway Keystone -->
+<div class="absolute top-2 w-6 h-5 bg-accent text-on-primary rounded-t-sm flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[14px]">local_florist</span>
+</div>
+<!-- Open Portal Visualization -->
+<div class="w-28 h-32 arch-frame bg-canvas border border-accent/30 flex flex-col items-center justify-center p-2 relative shadow-inner">
+<span class="material-symbols-outlined text-accent text-[36px] mb-1">menu_book</span>
+<span class="text-caption font-caption text-accent font-semibold">باب الذكر</span>
+</div>
+<!-- Pedestal steps -->
+<div class="w-32 h-1.5 bg-stone rounded-t-md mt-1.5"></div>
+<div class="w-40 h-1.5 bg-stone/70 rounded-t-sm"></div>
+</div>
+<!-- Door 1 Information Plaque (Solid paper outside textured art) -->
+<div class="w-full mt-3 bg-surface rounded-xl p-4 border border-border shadow-[0px_4px_12px_rgba(36,59,54,0.06)] flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-accent text-[22px]">auto_stories</span>
+<h3 class="text-headline-md font-headline-md text-ink font-bold">باب الذكر</h3>
+</div>
+<p class="text-caption font-caption text-textSecondary mt-0.5">
+علاقة القلب بالألفاظ الكريمة وسكينة النفس
+</p>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-accentSoft text-accent font-semibold text-caption border border-accent/20 shrink-0">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>متاح للتعلم</span>
+</span>
+</div>
+<!-- Inner status tag updated to remove 'استمع لصوت الأثر' -->
+<div class="p-2.5 rounded-lg bg-surface-container-low border border-border/80 flex items-center gap-2">
+<span class="material-symbols-outlined text-accent text-[20px]">explore</span>
+<span class="text-caption font-caption text-ink font-medium">داخل الباب: اكتشف المعنى</span>
+</div>
+<!-- Primary CTA Action (min 48px height touch target) -->
+<button class="w-full h-[52px] px-5 rounded-2xl bg-accent text-on-primary text-button font-button flex items-center justify-center gap-2 shadow-sm hover:bg-accentPressed active:scale-[0.98] transition-all duration-150" type="button">
+<span>كمّل رحلتك</span>
+<span class="material-symbols-outlined text-[20px] -scale-x-100">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Stepping Path Connector -->
+<div class="flex flex-col items-center gap-1.5 my-3 relative z-10">
+<span class="w-2.5 h-1 rounded-full bg-stone"></span>
+<span class="w-2.5 h-1 rounded-full bg-stone"></span>
+<span class="w-2.5 h-1 rounded-full bg-stone"></span>
+</div>
+<!-- DOOR 2: FUTURE PREVIEW (Compact muted card below active door) -->
+<div class="relative z-10 w-full bg-surface/90 rounded-xl p-3 border border-border/80 flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-outline shrink-0 border border-stone">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h4 class="text-caption font-caption font-semibold text-ink truncate">باب معية الله</h4>
+</div>
+<p class="text-[11px] font-caption text-textSecondary truncate">مساحة هادئة تكتمل في التحديث القادم</p>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant text-[11px] font-caption border border-border shrink-0">
+يُضاف لاحقًا (غير متاح في هذه النسخة)
+</span>
+</div></div>
+<!-- Recent Activity Plaque (Tactile journal note) -->
+<section aria-label="آخر نشاط" class="bg-surface rounded-xl p-4 border border-border shadow-[0px_2px_8px_rgba(36,59,54,0.04)] relative">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-accentSoft text-accent flex items-center justify-center shrink-0 border border-border">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="text-[12px] font-caption text-textSecondary">خطوة مسجلة في الدفتر</span>
+<span class="text-[12px] font-caption text-textSecondary">أمس</span>
+</div>
+<p class="text-body font-body text-ink font-semibold truncate mt-0.5">
+              آخر خطوة مكتملة: اخترت لحظة قبل النوم
+            </p>
+</div>
+</div>
+</section>
+<!-- Offline Quiet Exploration Notice -->
+<div class="flex items-center justify-center gap-2 py-2 text-textSecondary opacity-80">
+<span class="material-symbols-outlined text-[18px]">cloud_off</span>
+<span class="text-caption font-caption">تطبيقك يعمل بالكامل دون الحاجة للإنترنت</span>
+</div>
+</main>
+<!-- Bottom Navigation Bar (Fixed 3 destinations as specified in Shared Components JSON) -->
+<!-- Matches BottomNavBar JSON definition & rules: No top border line, subtle elevation & background tonal separation -->
+<nav aria-label="شريط التنقل الرئيسي" class="fixed bottom-0 inset-x-0 w-full z-50 bg-surface shadow-[0px_-2px_12px_rgba(36,59,54,0.06)]">
+<div class="max-w-[390px] mx-auto flex justify-around items-center px-gutter py-space-xs min-h-[64px]">
+<!-- Tab 1: الخريطة (Active: Pine pill highlight with accentSoft background) -->
+<a aria-current="page" class="flex flex-col items-center justify-center bg-accentSoft text-accent rounded-xl px-4 py-1.5 font-semibold active:scale-[0.98] transition-transform duration-150" href="#map">
+<span class="material-symbols-outlined text-[24px]">explore</span>
+<span class="text-caption font-caption mt-0.5">الخريطة</span>
+</a>
+<!-- Tab 2: لحظاتي (Inactive) -->
+<a class="flex flex-col items-center justify-center text-textSecondary hover:bg-accentSoft transition-colors rounded-xl px-3 py-1.5 active:scale-[0.98]" href="#moments">
+<span class="material-symbols-outlined text-[24px]">auto_stories</span>
+<span class="text-caption font-caption mt-0.5">لحظاتي</span>
+</a>
+<!-- Tab 3: دفتر الرحلة (Inactive) -->
+<a class="flex flex-col items-center justify-center text-textSecondary hover:bg-accentSoft transition-colors rounded-xl px-3 py-1.5 active:scale-[0.98]" href="#journal">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+<span class="text-caption font-caption mt-0.5">دفتر الرحلة</span>
+</a>
+</div>
+</nav>
+</div>
+</body></html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-canvas text-ink antialiased" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>لاحظ تجربتك - الحياة الطيبة</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Noto Sans Arabic Google Font -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-container": "#556860",
+            "accentSoft": "#E8F0EB",
+            "tertiary-fixed-dim": "#ffb5a0",
+            "surface-container": "#eceeec",
+            "on-primary-fixed-variant": "#005047",
+            "secondary-fixed": "#d2e7dd",
+            "primary-fixed-dim": "#8fd3c6",
+            "on-error-container": "#93000a",
+            "stone": "#C5CECA",
+            "on-primary-container": "#a4e9db",
+            "canvas": "#F7F8F5",
+            "accent": "#246B60",
+            "secondary": "#50625b",
+            "surface-bright": "#f8faf8",
+            "outline": "#6f7976",
+            "primary-container": "#246b60",
+            "surface-tint": "#22695e",
+            "surface-container-lowest": "#ffffff",
+            "secondary-fixed-dim": "#b7cbc1",
+            "on-secondary-fixed-variant": "#384b43",
+            "tertiary-container": "#8d503f",
+            "tertiary": "#71392a",
+            "secondary-container": "#d2e7dd",
+            "on-secondary": "#ffffff",
+            "surface-variant": "#e1e3e1",
+            "on-primary": "#ffffff",
+            "surface-container-high": "#e6e9e7",
+            "inverse-on-surface": "#eff1ef",
+            "textSecondary": "#566961",
+            "surface-container-highest": "#e1e3e1",
+            "on-tertiary": "#ffffff",
+            "inverse-surface": "#2e3130",
+            "border": "#C9D3CC",
+            "on-tertiary-fixed-variant": "#6e3728",
+            "inverse-primary": "#8fd3c6",
+            "clay": "#CBAF9C",
+            "on-surface": "#191c1b",
+            "sand": "#D9C9AC",
+            "on-secondary-fixed": "#0d1f19",
+            "on-primary-fixed": "#00201b",
+            "error-container": "#ffdad6",
+            "controlBorder": "#6F8279",
+            "surface-container-low": "#f2f4f2",
+            "surface-dim": "#d8dbd8",
+            "primary": "#005248",
+            "tertiary-fixed": "#ffdbd1",
+            "outline-variant": "#bec9c5",
+            "on-error": "#ffffff",
+            "on-tertiary-container": "#ffd2c6",
+            "errorSoft": "#F3E9E5",
+            "background": "#f8faf8",
+            "paleLeaf": "#BFCFBF",
+            "error": "#8B4B3F",
+            "on-background": "#191c1b",
+            "ink": "#243B36",
+            "primary-fixed": "#abf0e2",
+            "on-surface-variant": "#3f4946",
+            "accentPressed": "#1D574E",
+            "on-tertiary-fixed": "#370d03",
+            "surface": "#FFFFFF"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "3xl": "1.5rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "1.5rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-3xl": "3rem",
+            "space-md": "0.75rem",
+            "gutter": "1rem",
+            "space-2xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2rem"
+          },
+          "fontFamily": {
+            "caption": ["Noto Sans Arabic"],
+            "supporting": ["Noto Sans Arabic"],
+            "headline-md": ["Noto Sans Arabic"],
+            "body": ["Noto Sans Arabic"],
+            "headline-lg": ["Noto Sans Arabic"],
+            "button": ["Noto Sans Arabic"],
+            "display": ["Noto Sans Arabic"]
+          },
+          "fontSize": {
+            "caption": ["14px", { "lineHeight": "24px", "fontWeight": "500" }],
+            "supporting": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "headline-md": ["20px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "body": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+            "headline-lg": ["24px", { "lineHeight": "36px", "fontWeight": "700" }],
+            "button": ["17px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "display": ["28px", { "lineHeight": "42px", "fontWeight": "700" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Noto Sans Arabic', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      line-height: 1;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-canvas min-h-screen flex flex-col justify-between items-center text-ink selection:bg-accentSoft selection:text-accent">
+<!-- Mobile Screen Container (390px base reference) -->
+<main class="w-full max-w-[420px] min-h-screen flex flex-col justify-between px-margin py-6 mx-auto bg-canvas relative pb-8">
+<!-- Top Bar / Header Component (Docked full-width top feel, task focused sub-journey) -->
+<header class="w-full flex items-center justify-between h-14 mb-4">
+<button aria-label="الرجوع" class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-accentSoft active:scale-[0.98] transition-transform duration-150 text-ink" type="button">
+<span class="material-symbols-outlined text-2xl" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<div class="inline-flex items-center px-4 py-1.5 rounded-full bg-surface-container-low border border-border shadow-sm">
+<span class="font-caption text-caption text-textSecondary font-semibold">لاحظ تجربتك</span>
+</div>
+<div class="w-12 h-12 flex items-center justify-center text-accentSoft opacity-40">
+<span class="material-symbols-outlined text-xl" data-icon="eco">eco</span>
+</div>
+</header>
+<!-- Main Content Flow Area -->
+<div class="flex-1 flex flex-col">
+<!-- Character Reflection Header Strip (Salim Explorer Avatar + Reassuring Speech Bubble) -->
+<section class="flex items-center gap-3.5 mb-6 p-3 bg-surface rounded-2xl border border-border shadow-[0px_4px_12px_rgba(36,59,54,0.04)]">
+<!-- Explorer Character Miniature -->
+<div class="relative w-12 h-12 rounded-full overflow-hidden shrink-0 border-2 border-paleLeaf bg-accentSoft">
+<img class="w-full h-full object-cover" data-alt="A gentle storybook illustration of Salim, a 12-year-old curious young explorer with warm features wearing a soft sage-green field vest and cloth scarf. Rendered in a tactile, calm watercolor style with delicate linework, warm natural lighting, and paper textures. The expression is peaceful, supportive, and smiling warmly against a creamy off-white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl-r9XRbd3RuYxejfXNRgSGYGmDkdhcx7SfzpCoIKaanOkvNa52utpnBD6IK8ZbfJD7DD7KNUmgYP-8ZiX59TJ-axoq7_iVHd_FVZPiMX9DPrQ2XYyzSRKq0NRK3n3j4LBtPxQxOZavWHXqmTCjmR9zxjfLw4WQ3sZN9LWy4FJsHPPaeoGnFBDQlh5IUpMS0QvTug6gi1yQsUYJIZuuy57_oo8h-jNOxKPCJIHGPYAe62lOqCxB0lxAW_weaTRSdHgNAK8AGPDeOIs"/>
+</div>
+<!-- Speech / Guidance Bubble -->
+<div class="flex-1 bg-surface-container-low px-3.5 py-2.5 rounded-xl border border-border/70 relative">
+<p class="font-caption text-caption text-ink font-medium leading-relaxed">
+            "كل تجربة مختلفة، ومفيش إجابة صح وغلط."
+          </p>
+</div>
+</section>
+<!-- Section Title & Subheading -->
+<div class="mb-6 space-y-1.5">
+<h1 class="font-headline-lg text-headline-lg font-bold text-ink tracking-tight">
+          لاحظت إيه بعد الوقفة؟
+        </h1>
+<p class="font-supporting text-supporting text-textSecondary leading-relaxed">
+          ملاحظتك بتساعدك تفهم نفسك أكتر، وما فيش تقييم أو درجات.
+        </p>
+</div>
+<!-- Interactive Choice Options -->
+<form class="space-y-3 flex-1 flex flex-col" onsubmit="event.preventDefault();">
+<!-- Choice 1: Unselected -->
+<label class="group relative flex items-center justify-between min-h-[60px] p-4 rounded-2xl bg-surface border border-controlBorder/40 hover:border-accent/50 cursor-pointer active:scale-[0.99] transition-all">
+<span class="font-body text-body text-ink font-medium select-none">
+            حاسس بهدوء أكتر
+          </span>
+<span class="w-6 h-6 rounded-full border-2 border-stone group-hover:border-accent/60 flex items-center justify-center shrink-0 transition-colors">
+<span class="w-2.5 h-2.5 rounded-full bg-transparent"></span>
+</span>
+<input class="sr-only" name="reflection_choice" type="radio" value="calm"/>
+</label>
+<!-- Choice 2: SELECTED STYLE -->
+<div class="space-y-2.5">
+<label class="group relative flex items-center justify-between min-h-[60px] p-4 rounded-2xl bg-accentSoft border-2 border-accent cursor-pointer active:scale-[0.99] shadow-sm transition-all">
+<span class="font-body text-body text-ink font-semibold select-none">
+              ما حسّيتش بفرق
+            </span>
+<!-- Checked Circle Icon in Pine -->
+<span class="w-6 h-6 rounded-full bg-accent text-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-base" data-icon="check" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+<input checked="" class="sr-only" name="reflection_choice" type="radio" value="no_difference"/>
+</label>
+<!-- Selected Feedback Note (Reassurance Box immediately underneath selected option) -->
+<div class="rounded-xl bg-surface-container-low p-3.5 flex items-start gap-2.5 border border-border/80">
+<span class="material-symbols-outlined text-accent text-lg mt-0.5 shrink-0" data-icon="spa" data-weight="fill" style="font-variation-settings: 'FILL' 1;">spa</span>
+<p class="font-caption text-caption text-ink font-normal leading-relaxed">
+              ملاحظتك مهمة، وطبيعي جداً. تقدر تكمل بطريقتك وبدون أي ضغط.
+            </p>
+</div>
+</div>
+<!-- Choice 3: Unselected -->
+<label class="group relative flex items-center justify-between min-h-[60px] p-4 rounded-2xl bg-surface border border-controlBorder/40 hover:border-accent/50 cursor-pointer active:scale-[0.99] transition-all">
+<span class="font-body text-body text-ink font-medium select-none">
+            لسه مشتت
+          </span>
+<span class="w-6 h-6 rounded-full border-2 border-stone group-hover:border-accent/60 flex items-center justify-center shrink-0 transition-colors">
+<span class="w-2.5 h-2.5 rounded-full bg-transparent"></span>
+</span>
+<input class="sr-only" name="reflection_choice" type="radio" value="distracted"/>
+</label>
+<!-- Choice 4: Unselected -->
+<label class="group relative flex items-center justify-between min-h-[60px] p-4 rounded-2xl bg-surface border border-controlBorder/40 hover:border-accent/50 cursor-pointer active:scale-[0.99] transition-all">
+<span class="font-body text-body text-ink font-medium select-none">
+            لاحظت حاجة جديدة
+          </span>
+<span class="w-6 h-6 rounded-full border-2 border-stone group-hover:border-accent/60 flex items-center justify-center shrink-0 transition-colors">
+<span class="w-2.5 h-2.5 rounded-full bg-transparent"></span>
+</span>
+<input class="sr-only" name="reflection_choice" type="radio" value="something_new"/>
+</label>
+</form>
+</div>
+<!-- Bottom Actions Section (Safe-area action row) -->
+<footer class="pt-6 mt-6 flex flex-col items-center gap-3">
+<!-- Primary Action CTA (>=52px, pine fill #246B60, white text, 16px radius) -->
+<a class="w-full h-[52px] bg-accent text-surface rounded-2xl flex items-center justify-center gap-2 font-button text-button shadow-sm hover:bg-accentPressed active:scale-[0.98] transition-all duration-150" href="#next-moment">
+<span>إلى لحظتي اليومية</span>
+<span class="material-symbols-outlined text-lg transform rotate-180" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<!-- Secondary Quiet Action (48px target minimum, textSecondary, understated) -->
+<button class="w-full min-h-[48px] py-2 flex items-center justify-center font-supporting text-supporting text-textSecondary hover:text-ink active:scale-[0.98] transition-colors underline underline-offset-4 decoration-border" type="button">
+        مش حابب أجاوب
+      </button>
+</footer>
+</main>
+<!-- Interactive Selection Handler (Micro-interactions) -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.querySelector('form');
+      const radioInputs = document.querySelectorAll('input[name="reflection_choice"]');
+      
+      radioInputs.forEach(input => {
+        input.addEventListener('change', () => {
+          // Re-render styles dynamically when choices are made
+          document.querySelectorAll('label').forEach(lbl => {
+            const radio = lbl.querySelector('input');
+            const circle = lbl.querySelector('span:last-of-type');
+            if (radio && radio.checked) {
+              lbl.classList.remove('bg-surface', 'border-controlBorder/40');
+              lbl.classList.add('bg-accentSoft', 'border-2', 'border-accent');
+              if (circle) {
+                circle.classList.add('bg-accent', 'text-surface', 'border-accent');
+                circle.classList.remove('border-stone');
+                circle.innerHTML = '<span class="material-symbols-outlined text-base" data-icon="check" data-weight="fill" style="font-variation-settings: \'FILL\' 1;">check</span>';
+              }
+            } else if (radio) {
+              lbl.classList.remove('bg-accentSoft', 'border-2', 'border-accent');
+              lbl.classList.add('bg-surface', 'border', 'border-controlBorder/40');
+              if (circle) {
+                circle.classList.remove('bg-accent', 'text-surface', 'border-accent');
+                circle.classList.add('border-stone');
+                circle.innerHTML = '<span class="w-2.5 h-2.5 rounded-full bg-transparent"></span>';
+              }
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body></html>
