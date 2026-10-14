@@ -1,0 +1,32 @@
+@startuml
+title v0.5 - Tazkiya learning progression
+start
+:Choose shared character;
+:Choose Dhikr or Tazkiya;
+:Open a stage;
+if (Prerequisite stage completed?) then (yes)
+  if (Required video not completed?) then (yes)
+    :Play only configured segment;
+    :Pause / resume / replay;
+    if (Playback and completion save succeed?) then (yes)
+      :Enter stage;
+    else (no)
+      :Retain old progress; show retry;
+      stop
+    endif
+  endif
+  :Explore authored digital interaction;
+  :Optional private writing or skip;
+  :Deliberately complete stage;
+  if (Atomic local save succeeds?) then (yes)
+    :Add stage and badge once;
+    :Open next stage in same journey;
+    :Optional daily practice / seven-day plan;
+  else (no)
+    :Keep current screen and prior progress;
+  endif
+else (no)
+  :Explain actual prerequisite;
+endif
+stop
+@enduml

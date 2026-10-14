@@ -91,3 +91,6 @@ Use individual sessions with children near both ends of the 10–14 range, subje
 5. **Understand deletion and change their mind:** «افتح اختيار مسح البيانات، واقرأ هيحصل إيه، وبعدين ارجع من غير ما تمسح». Ask what would disappear and what would remain. Observe whether cancellation is clear and accidental confirmation is avoided. Perform any actual destructive test only on a disposable test profile.
 
 For each task, record completion without help, requested help, child explanation, and concrete interface issues. No numerical success threshold or preference result is assumed before research.
+# Current revision notice
+
+The review above is historical v0.4 evidence. Current v0.5 implementation and acceptance results are in [qa/browser-report-v05.json](qa/browser-report-v05.json), [v0.5 requirements](../revisions/v0.5/SRS.md) and [the current board](index.html). No native-device or child-usability approval is inferred from browser tests.

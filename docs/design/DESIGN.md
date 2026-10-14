@@ -1,119 +1,65 @@
-# Design System: الحياة الطيبة — Offline MVP
+# Design System: الحياة الطيبة — v0.5
 
-Working design proposal · 2026-10-05 · aligned to v0.4 DEC-02/03/04. The locked v0.3 baseline is preserved. `TOKENS.json` is the matching machine-readable token reference. Educational wording, XP amounts, and seven-day completion gates are not finalized by this design.
+14 October 2026 · Client-reference revision · Child-only ages 10–14 · Arabic RTL.
 
 ## 1. Visual Theme & Atmosphere
 
-An illustrated field journal for exploring a gentle fantasy world: warm paper, deep pine, garden paths, architectural arches, and lightly drawn contour lines. The world has visual wonder; instructions and everyday situations remain direct and familiar. Children aged 10–14 should feel they are exploring something meaningful rather than using a preschool reward game.
+A warm garden of discovery inspired by the supplied posters: cream paper, pale wood plaques, soft sky and leaf panels, white flowers, arched doors, and the two specific yarn doll characters. The child is the explorer. Familiar everyday situations and plain language carry the learning; the garden supplies light fantasy.
 
-- Density: 4/10, balanced; short copy, one prominent decision per screen.
-- Variance: 3–4/10; confident artwork and a slightly offset composition, stable controls and predictable reading order.
-- Motion: 2–3/10; restrained feedback, no continuously moving controls or attention-seeking loops.
-- One complete Dhikr door. Future doors may be visible only as clearly unavailable previews; a lock must not imply that completing Dhikr unlocks unpublished content.
-- Child-only local experience. No login, parent lane, pairing, cloud status, online invitation, microphone, or voice recording.
-- Offline is ordinary operation. A device without internet uses exactly the same learning flow.
+The client's character direction supersedes the earlier original-avatar style. Preserve their facial identity, golden-brown yarn hair, soft embroidered texture, boy's pale blue-trim outfit and girl's pink flower/dress. Use one selected character in both journeys. Do not mirror it or change the supplied film. Character visuals are reference-derived generated assets, not pixel-exact manual extraction; client likeness review remains appropriate.
 
-Adaptation of the Stitch taste workflow: its web hero layouts, Latin-font preferences, CSS-grid prescriptions, inline headline imagery, and perpetual animation are not requirements for this Arabic native learning app. Clear Arabic shaping, stable navigation, and child comprehension take precedence. A symmetric story frame is appropriate when it improves focus.
+Density 4/10, variance 3/10, motion 2/10. The Stitch taste workflow is adapted for Arabic reading and children: no Latin editorial fonts, perpetual movement, oversized web-hero conventions or asymmetric controls that harm predictable navigation. Art remains separated from text, with one main decision per screen.
 
 ## 2. Color Palette & Roles
 
-| Token | Name / Hex | Use |
+| Token | Hex | Role |
 |---|---|---|
-| `canvas` | Paper / `#F7F8F5` | Entire application background; warm neutral with very slight green undertone |
-| `surface` | Clear sheet / `#FFFFFF` | Writing areas and occasional separated controls |
-| `ink` | Forest ink / `#243B36` | Titles, body text, navigation icons |
-| `textSecondary` | Sage ink / `#566961` | Supporting text, captions, metadata; never lower-opacity body text |
-| `accent` | Deep pine / `#246B60` | Sole interactive accent: primary actions, selection, focus, progress |
-| `accentPressed` | Pressed pine / `#1D574E` | Pressed primary action |
-| `accentSoft` | Pine wash / `#E8F0EB` | Selected-row fill, low-intensity learning feedback |
-| `border` | Paper seam / `#C9D3CC` | Decorative separators and nonessential container boundaries |
-| `controlBorder` | Clear edge / `#6F8279` | Essential input/choice boundary when needed for recognition |
-| `error` | Clay ink / `#8B4B3F` | Destructive/error text and icon; semantic exception, not a second decorative accent |
-| `errorSoft` | Clay wash / `#F3E9E5` | Error surface paired with clay ink and an explanatory icon |
+| paper | `#FFFCF7` | Warm reading canvas |
+| wood | `#FBDDBC` | Plaques, stage symbols and keepsake artwork |
+| pink | `#FCEDF0` | Gentle story/rewrite panels and girl selection surface |
+| sky | `#E9F3FB` | Dhikr/media panels and boy selection surface |
+| leaf | `#EDF5DE` | Tazkiya, helpful feedback and selected navigation |
+| navy | `#193D59` | Titles, primary actions, focus, selected outlines |
+| ink | `#253E4B` | Body copy |
+| muted | `#50616B` | Readable secondary text |
+| edge | `#75858A` | Essential input/choice boundaries |
+| green | `#35644A` | Completed steps and plant icons |
+| error | `#8B3145` | Failed saves and deliberate destructive actions |
 
-Illustration-only colors: sand `#D9C9AC`, pale leaf `#BFCFBF`, stone `#C5CECA`, clay `#CBAF9C`. They are not interactive accents and cannot carry text, selection, or status meaning on their own.
-
-Contrast measured with WCAG sRGB luminance calculations:
-
-| Pair | Ratio |
-|---|---:|
-| Forest ink on paper | 11.23:1 |
-| Pine on paper | 5.89:1 |
-| White on pine | 6.27:1 |
-| Sage ink on paper | 5.49:1 |
-| Sage ink on white | 5.85:1 |
-| Clay ink on paper | 6.20:1 |
-| Pine on pine wash | 5.41:1 |
-| Clear edge on paper | 3.83:1 |
-
-The decorative seam is only 1.44:1 against paper: never use it as the sole boundary of an input or as the sole indicator of a selected/focused state. These values describe tokens, not a certification of every finished screen; inspect overlays, pressed/disabled states, and actual exported artwork separately.
+Pastels are surfaces, not text colors. Selection combines an outline, marker and semantic state. Stages use text and a check/lock symbol as well as color. No opacity-reduced body copy. Token contrast is verified in the revision QA; it is not whole-product accessibility certification.
 
 ## 3. Typography Rules
 
-- Primary family: **Noto Sans Arabic**, bundled at regular 400, medium 500, semibold 600, and bold 700 weights. A browser prototype may fall back to `Tahoma, Arial, sans-serif` without an external font request. Native font registration is explicit; do not assume a CSS font stack works in React Native.
-- Display: 28 px / 42 px line height / 700. Page heading: 24 / 36 / 700. Section heading: 20 / 32 / 600. Body: 18 / 30 / 400. Supporting text: 16 / 26 / 400. Caption: 14 / 24 / 500, only for secondary metadata. Button label: 17 / 28 / 600.
-- Written answers: minimum 18 / 30, aligned to the right. Instruction text never falls below 16 px.
-- Arabic letter spacing is 0; do not squeeze tracking or uppercase Arabic. Verify shaping, diacritics, line breaks, and glyph clipping on Android and iOS.
-- Use hierarchy through weight, space, and contrast. Keep one short page title rather than stacked oversized headings.
-- Allow system text scaling and multi-line labels. Prefer 45–60 Arabic characters per body line where width permits; phone screens naturally wrap earlier. Never truncate story dialogue or instructions.
-- Arabic interface numeral formatting is consistent; stable canonical IDs and any developer diagnostics stay out of the product surface.
+Browser stack: `Tahoma, Arial, sans-serif`, with no font fetch. Native target: bundle and verify Noto Sans Arabic before release. Display 29px/1.65 bold; page 24px/1.65 bold; section 19px/1.8 bold; body 17px/1.95; controls 16px/1.65; captions 14px/1.85. Instruction/choice text stays at least 16px. Arabic tracking is zero and text remains live and selectable. No forced uppercasing, truncated instructions or fixed-height prose. Numerals are Arabic except conventional playback time.
 
 ## 4. Component Stylings
 
-**Primary action.** Pine fill, white text, 16 px radius, minimum 52 px height, 20 px horizontal padding. One primary action per decision area. On press, use the pressed token and optionally a 0.98 scale for 100 ms. Disabled action has a visible text explanation when the reason is not obvious; retain readable ink instead of relying on low opacity.
-
-**Secondary / quiet actions.** Ink text on paper, minimum 48 px target. Underline text links if not visibly button-shaped. Back, skip, replay, and cancel remain recognizable beside a clear primary action. A bottom action area is a layout row inside safe-area constraints, never an overlay covering story text.
-
-**Answer choices.** Full-width rows, minimum 64 px height with 16 px padding and 12 px gap. Neutral background, visible edge, right-aligned wording. Selected state combines 2 px pine outline, pine-wash fill, a check icon, and an explicit selected semantics value. In form-like selectors, selection waits for a continue action. In a narrative choice, tapping opens the authored consequence and permits retry; learning completion waits for the defined deliberate progression action. Multiple-feeling questions use actual multiple-selection behavior where the curriculum calls for it.
-
-**Cards.** Reserve rounded containers for a writing page, a practice unit, or a meaningful grouped interaction. A main map is a spatial illustration, not a grid of equal cards. Narrative pages use open space with separators and a broad artwork panel. No heavy elevation; a rare `0, 4, 12` shadow at 6% ink opacity is enough. Native shadow/elevation behavior must be mapped explicitly.
-
-**Inputs.** Visible label above; no placeholder-only label. Minimum 56 px field with clear edge and 2 px focus outline. Reflection editor has minimum 180 px height, right-aligned writing, generous inset, and space for keyboard-safe actions. Placeholder is a sample response starter, never an instruction the child must copy. Empty reflection may be skipped.
-
-**Reflection save.** States distinguish `draft`, `saving`, `saved`, and `save failed`. Use truthful wording: “تم الحفظ على الجهاز” only after a successful local commit. Failure wording: “لم نقدر نحفظ كتابتك. النص ما زال هنا، جرّب مرة ثانية.” Keep the typed value present, offer “إعادة المحاولة”, and allow continued editing. Navigation after failure must explain that leaving can lose unsaved changes. No reassurance of durable draft recovery if a storage error prevented that persistence.
-
-**Story / local media.** Art and text have separate zones. Short dialogue, optional bundled narration controls, captions, replay, and a clear next action. Native playback symbols remain conventional. A missing local file explains that the content cannot open and offers return/retry; it never asks the child to connect. A network skeleton is unnecessary; only show a stable placeholder when local loading is perceptible.
-
-**Practice check-in.** Date/history affordances remain simple, with “جربت اليوم” and descriptive confirmation. Avoid repeated rewards for duplicate taps. A practice unit is replayable and completion language does not claim to measure sincerity, spirituality, or emotional improvement. Do not design a mandatory seven-day lock as an approved rule.
-
-**Progress / keepsakes.** Use milestone marks, collected objects, and a restrained path segment. Name the concrete learning achievement. No leaderboard, morality meter, fabricated points, guilt about missed days, or competitive faith ranking.
-
-**Settings / reset.** Separate progress management from individual reflection deletion. Whole-profile reset uses a clear confirmation sheet: “هتتمسح الشخصية والتقدم والكتابات المحفوظة من الجهاز.” Buttons: “إلغاء” and “مسح البيانات”. Cancel is the safe initial focus. A destructive action executes only after explicit confirmation, waits for storage completion, and returns to setup only on success. On failure show “ما قدرناش نمسح البيانات. جرّب تاني.” Retain the current profile view and never claim successful erasure.
-
-**Empty journal.** A small neutral illustration, “لسه ما كتبتش تأملات”, and a link to the current prompt. No generated child answers or fabricated practice history.
+- Primary: navy/white, 52px minimum height, 16px radius. Secondary: visible edge and warm canvas. Focus: 3px navy, 3px offset. Icon targets minimum 48px.
+- Character selection: exactly two side-by-side reference-derived dolls. Sky and pink backgrounds do not restrict who may choose either one. Selected outline and check; optional 24-character nickname.
+- Map: two spatially offset arched-door buttons on one garden field; labels sit on clear panels. Both doors available. No false locked preview for either MVP journey.
+- Stage path: continuous vertical trail with stage number/check/lock and explanatory text. Locks reference the previous actual stage in that journey.
+- Learning panel: short story above choice/task. Consequences support retry without moral scoring. Matching uses tap/select controls, not mandatory drag gestures.
+- Rephrasing: optional typed exercise or authored example for each phrase. No AI grading or claims about a child's intentions. Written values persist locally.
+- Media: custom play/pause, replay, mute and bounded scrubber. No autoplay. One original film, three configured ranges. On error, show retry and retain the gate. Full verbatim captions are pending; the current text alternative is explicitly a concept summary.
+- Reflection: optional textarea, max 2000 characters, distinct draft/saved/failure status. Save success is shown only after commit. Failed text remains in memory with retry/continue writing/deliberate discard before navigation.
+- Reward: named learning keepsake, awarded once per stage. No points, leaderboards, emotional score or claim of spiritual superiority.
+- Practice: editable same-day self-report. Seven-day plan is an invitation; digital completion and prior history never reset after absence.
+- Deletion/reset: native dialog, safe cancel focus, clear affected data, rollback on failed write. Individual writing deletion does not erase progress. Migration backups are cleared when writings are deleted or the learner is reset.
 
 ## 5. Layout & Arabic RTL
 
-- Base phone reference: 390 × 844 logical px; margins 24, content width 342. Check 360 px narrow screens and 430 px wider screens. On tablets cap text/interaction column around 560 px while giving art a separate generous region.
-- Spacing scale: 4, 8, 12, 16, 24, 32, 40, 48. Major region gaps 24–32 px; compact control gaps 12–16 px.
-- Screen shell: safe-area header → scrollable content → safe-area action row where needed. Keyboard appearance must not hide save controls, the active writing caret, or validation errors.
-- Reading and interaction order begins at the right. Use semantic start/end in native layout, with explicit RTL testing for icons, focus, and screen-reader order. Back points right in RTL; forward progression points left. Do not mirror play, pause, a photograph, or established check symbols blindly.
-- Character setup presents a large character preview followed by choices, nickname, and a clear continue action. All choices fit predictable groups rather than long horizontal carousel strips. Nickname is not an account or legal-name request.
-- Map labels occupy their own paper plaques or layout text regions, visually separated from art. They never sit directly on textured illustration. Door nodes have stable bounded targets with nearby textual state explanations; decorative path geometry may be positioned inside the art layer.
-- Dhikr is the only currently available content door. A future “معية الله” preview states “غير متاح في هذه النسخة” rather than offering a nonfunctional unlock action.
-- Journey overview uses one continuous vertical path/outline, with completed/current/upcoming stage text. Learning prerequisite locks describe the next action; future-content locks describe availability. Those are different states.
-- Global bottom navigation has exactly three labelled destinations: “الخريطة”، “لحظاتي”، “دفتر الرحلة”. The first item begins at the right in the RTL layout. Profile and settings are reached through the header, not an additional bottom tab. Story/practice screens focus on the task and expose a clearly labelled return action; navigation must not discard unsaved answers silently.
-- No horizontal overflow; avoid text on art, overlapping footer controls, absolute text stacking, or viewport-fixed heights that break with large fonts.
+Phone reference 390×844; check 360/390/430. Content margins 24px (18px on narrow phones), single reading column; maximum app width 480px. Spacing 4/8/12/16/20/24/32/40. The header and bottom navigation are in document flow, never cover writing or long stories. Phone safe-area padding at the bottom. The header provides profile and settings; main tabs are الخريطة / لحظاتي / دفتر الرحلة starting at the right. Stage screens have contextual return to the journey map. Play symbols and characters are not mirrored. Dialog and keyboard order follow semantic DOM order.
 
 ## 6. Motion & Interaction
 
-- Press feedback: 100 ms; selection: 140 ms; screen transitions: 180–220 ms; milestone reveal: at most 350 ms and dismissible.
-- Motion uses opacity and transforms only. An optional native spring uses stiffness 100 / damping 20. No perpetual floating, shimmer, bouncing controls, typewriter story text, or confetti lasting across navigation.
-- Respect reduced motion: replace positional movement with a brief opacity change or immediate state update. No core information is revealed solely by an animation.
-- Target size minimum 48 × 48 px; icon glyph 20–24 px within it. Adjacent actions need at least 8 px separation. Meaning comes from text/icons as well as color.
-- Haptics are optional device feedback and never necessary to understand an outcome.
+Only a 180ms opacity/4px entry transition. No continuous loops, bouncing targets, flashing rewards or time-pressure decisions. Respect system reduced motion and the saved in-app switch. Content stays available with motion disabled. Video pauses on page backgrounding; reopening does not start it unexpectedly.
 
-## 7. Native & Offline Asset Requirements
+## 7. Local Assets & Product Boundary
 
-- For the installed Expo React Native MVP, bundle each font weight, map/door/character art, narration file, video, subtitle/caption, and step image locally. No remote image URL, runtime font fetch, API, streaming dependency, or first-use download is allowed on the learning path.
-- Keep content IDs stable across Arabic and eventual English. The visual system accommodates alternate text lengths; English is not shown as available in the Arabic-only MVP.
-- Art exports: vector or local raster at appropriate display resolution; assets include transparent variants where composition requires them. Avoid oversized videos and unnecessary raster text. Arabic copy remains live UI text.
-- Content package version and learner schema version are distinct. A bundled-content update must preserve character, progress, and written reflections.
-- The browser prototype may use local/system fonts and locally authored SVG so it remains self-contained. Label it as a UI prototype; browser storage is not evidence that the native offline acceptance tests passed.
-- Written reflections remain private local data. No automatic future upload promise is made by these designs.
+`assets/boy.png`, `assets/girl.png` are generated with the client's second poster as identity reference and genuine alpha. `assets/tazkiya-overview.mp4` is an exact copy of the supplied original. Source posters are preserved separately; do not use dense poster text as UI.
+
+The web preview uses relative assets and browser storage, but is not promised to work offline on a first public-page visit. Expo must bundle all files/fonts and use a native local repository, then pass installed-device airplane-mode tests. Remote admin publishing and English are future product work. Stable content IDs allow those additions without altering learner identities or silently uploading private writings.
 
 ## 8. Anti-Patterns & Review Gates
 
-Never use preschool chibi styling as the default, emoji-based navigation, neon gradients, glowing purple, pure-black UI surfaces, generic equal card dashboards, tiny grey text, fake learner analytics, endless feeds, streak guilt, nonfunctional locked-door CTAs, text baked into artwork, or copy that declares the child more faithful because a task was completed.
-
-Before implementation handoff, inspect: Arabic shaping and large text; art/text separation; selected plus disabled states; 48 px targets; local media controls; local-save failures; unsaved reflection navigation; delete/reset cancellation and failure; unavailable future-door explanation; first launch without connectivity; and reduced-motion behavior. Test the visual tone with both a 10-year-old and a 14-year-old rather than assuming one style fits the whole range.
+Avoid dense poster layouts, pasted image text, extra invented character choices, automatic speech recording, moral meters, streak guilt, rewards for private disclosure, leaderboard comparisons and false completion on failed media/save. All twelve Tazkiya stages are implemented as reviewable interactions; editorial approval is separate. Dhikr remains an explicitly labelled introductory sample until the full curriculum is supplied. Before release, review likeness, religious wording, all video captions, usability with 10–14 year olds, system text scaling and native device behavior.

@@ -1,0 +1,18 @@
+{
+  "version": "0.5.0",
+  "timestamp": "2026-10-14T04:19:09.145Z",
+  "passed": 11,
+  "checks": [
+    "migration preserves original and unset character",
+    "legacy writing deletion purges all copies and backup",
+    "failed writing deletion retains prior data",
+    "failed progress commit does not mutate state",
+    "invalid and duplicate stages cannot be committed",
+    "malformed completed video cannot unlock gate",
+    "out of range video record rejected",
+    "future schema is preserved untouched",
+    "corrupt JSON is preserved untouched",
+    "failed migration keeps original legacy payload",
+    "reset removes both persisted copies"
+  ]
+}

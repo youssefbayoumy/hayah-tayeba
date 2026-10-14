@@ -1,39 +1,19 @@
-# Local interactive design prototype
+# Interactive browser preview — v0.5
 
-Open [index.html](index.html) in a modern browser. No installation, server, network, external images, fonts, libraries, analytics, or accounts are needed. This is a reviewable HTML design artifact, not the Expo implementation.
+Open `index.html?demo=1`, or serve `/docs` with `python scripts/serve-preview.py`. Use `http://127.0.0.1:8761/`; the server supports video byte ranges. GitHub Pages publishes the same relative files.
 
-## What is demonstrated
+`content.js` defines reviewed-by-client-pending curriculum/configuration. `store.js` implements browser-local transactions and legacy migration. `app.js` renders shared templates. `styles.css` implements the reference palette. `assets/` contains two transparent generated character variants and one exact original MP4; see asset provenance.
 
-- Original SVG door, map, character, notification-story, and keepsake artwork.
-- Arabic RTL, children aged 10–14, a single local character with nickname, avatar shape, clothing appearance (jacket/hoodie/cap), color, and badge.
-- Introductory Dhikr session: baseline idea, notification story, choice/consequence/retry, meaning, optional pause and observation, everyday intention, written reflection, and session ending.
-- Three primary destinations: الخريطة / لحظاتي / دفتر الرحلة. Character/settings sit in the header; learning progress is reachable from the Dhikr region screen.
-- Future معية الله preview explicitly unavailable in this version; a separate reachable learning prerequisite opens the meaning region after the story.
-- Written draft autosave on input, explicit save, reopen, edit, delete confirmation, optional skip, and full data reset confirmation.
-- Local practice history with one editable record per calendar date, without streak loss, XP values, faith scoring, or required seven-day waiting.
+Both journeys open from the map. Tazkiya includes all 12 supplied stages and video ranges 0–55, 55–115, 115–end before stages 1, 4, 12. Dhikr retains its opening sample session and is labelled accordingly. Reflection is optional and written. Daily practice cannot gate completion or reset progress.
 
-## Content and scope limits
+Storage uses `hayah-tayeba-design-preview-v1` with schemaVersion 2. Existing state migrates without losing nickname, progress, practice or writings. A raw migration backup is retained until writing deletion or full reset; duplicate legacy note content is removed on individual deletion. Corrupt data is preserved behind a recoverable load-error screen. No network submission or cloud backup exists.
 
-The sample session demonstrates reusable screen types, not a complete approved curriculum. Completion means the **opening sample session** ends. The full Dhikr curriculum and religious wording need editorial review and binding to approved content. The prototype does not include genuine audio/video playback; it uses illustrated scenes with written text. The production offline app must bundle any media it needs before installation.
+`legacy-v04.html` is an archival reference, not the current preview; it uses the old schema and should be opened in a separate browser origin/profile for historical inspection.
 
-The desktop sidebar is outside the simulated app and exposes review shortcuts. Those shortcuts can bypass normal flow for visual inspection. The app’s finish action still checks that its sample story, meaning, and everyday plan were explored. Preview data is stored separately from future Expo data under browser-local key `hayah-tayeba-design-preview-v1`.
+The public preview needs internet for initial files/media; it does not promise first-launch offline web operation. The intended Expo build must bundle assets and fonts and pass standalone airplane-mode device QA. No installed native build is delivered by this design update.
 
-## Review routes
+## Verification
 
-`welcome`, `character`, `map`, `door`, `baseline`, `regions`, `story`, `choice`, `outcome`, `meaning`, `pause`, `observation`, `moment`, `plan`, `journal`, `notebook`, `reflection`, `complete`, `progress`, `profile`, `settings`.
+Install Playwright in a tooling environment, start the server, then run `node tests/preview-qa.cjs` from the repo root. Set `NODE_PATH` to that tooling module path if needed. `CHROME_PATH` can override the installed browser executable; `PREVIEW_URL` can target a deployment. The script checks real media boundaries after near-end seeks, migration, full route, errors and persistence, and exports actual screens. It never inserts completed-video flags to pass media tests.
 
-These 21 review routes include variants of the 18 core templates in [SCREEN_INVENTORY.md](../SCREEN_INVENTORY.md): baseline/story choices use one choice template, choice/outcome are two states, moment/plan use intention templates, and progress is a learning overview variant.
-
-## Useful checks
-
-1. Fresh start → blank nickname validation → customize → map → Dhikr → baseline → regions.
-2. Try the learning lock before the story; compare it with the future-door sheet.
-3. Follow story → every choice outcome → retry → meaning → pause or skip → observation → moment → plan → reflection or skip → session ending.
-4. Type a draft without pressing save, navigate away, reopen, and reload. Then explicitly save, edit, and delete it. Confirm other prompts and progress remain.
-5. Record a practice twice on the same day: the second action edits today’s record after confirmation instead of duplicating it.
-6. Reload and use “كمّل رحلتك” to resume the last learning checkpoint; verify character and written text remain.
-7. Cancel full reset, then confirm it and verify a fresh welcome screen.
-8. Test 390px and 320px viewports, keyboard focus, reduced motion, and long Arabic input.
-9. Simulate browser storage write failure: save actions must avoid a false success or destructive navigation; the written draft stays available in memory. This web artifact’s behavior is not proof of Android storage behavior.
-
-Private browser data survives ordinary reloads but not storage clearing. No cross-device recovery or cloud backup is promised.
+`node tests/store-qa.cjs` checks migration, writing-copy deletion, malformed data and atomic commits without a browser. `python scripts/package-preview.py` requires Pillow and creates the handoff ZIP after verifying original-media/baseline hashes, asset alpha and text-color contrast.

@@ -1,6 +1,8 @@
 # Offline MVP implementation plan
 
-Updated: 2026-10-05 (Africa/Cairo)
+Updated: 2026-10-14 (Africa/Cairo)
+
+**Current revision:** [v0.5](../revisions/v0.5/README.md) adds the second Tazkiya journey, the two client-reference characters, the shared poster palette and three video segments. The browser design implementation is delivered; installed Expo/offline acceptance remains pending. The single-door/custom-avatar assumptions below are the historical v0.4 delivery sequence and are superseded where the v0.5 addendum changes them.
 
 This working plan follows DEC-02/DEC-03/DEC-04 in the [v0.4 addendum](../revisions/v0.4/DECISIONS.md). It replaces the account-first/backend-first sequence. The locked v0.3 snapshot and PDF remain unchanged.
 

@@ -1,0 +1,57 @@
+@startuml
+!pragma layout smetana
+title v0.5 - Shared character, independent learning journeys
+class LocalLearner {
+  schemaVersion: 2
+  characterId: boy | girl
+  nickname: optional
+  activeJourneyId
+}
+class JourneyProgress {
+  journeyId
+  completedStageIds: unique
+  badgeIds: unique
+  checkpoint
+}
+class StageActivity {
+  stageId
+  templateResponse
+  completed
+}
+class VideoProgress {
+  videoSegmentId
+  positionSeconds
+  completed
+}
+class WrittenReflection {
+  journeyId
+  stageId
+  promptId
+  text
+  updatedAt
+}
+class PracticeRecord {
+  localDate: unique per journey
+  selfReport
+}
+class PracticePlan {
+  virtue
+  behaviorToImprove
+  dailyGoodAct
+  briefReview
+}
+LocalLearner "1" *-- "2" JourneyProgress
+JourneyProgress *-- "*" StageActivity
+JourneyProgress *-- "*" VideoProgress
+JourneyProgress *-- "*" PracticeRecord
+JourneyProgress *-- "0..1" PracticePlan
+LocalLearner *-- "*" WrittenReflection
+note bottom of LocalLearner
+No account in MVP. Local data only.
+Character changes do not reset progress.
+end note
+note bottom of WrittenReflection
+Optional, private writing.
+Not part of moral scoring or completion gates.
+end note
+@enduml

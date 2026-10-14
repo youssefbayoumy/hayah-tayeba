@@ -70,3 +70,6 @@ All three exports load remote Tailwind, Google Fonts, and Material Symbols; the 
 2. Rework S02: real avatar thumbnails and larger preview; compact selection groups; remove personality mechanics; 48 px targets.
 3. Retain S15 composition while correcting save states, removing technical/limit claims, improving text contrast, and enlarging close/delete targets.
 4. Render revised screens at full phone width before signoff. Check 360/390/430 px, Arabic font rendering, text scaling, and real content states. Then continue generation using the refined patterns.
+# Current revision notice
+
+The review above is historical v0.4 evidence. Current v0.5 captures in `screens/v0.5/` were visually reviewed for the two reference-derived characters, shared pastel/wood palette, live readable Arabic, clear selected states and 360/390/430 layouts. The palette supersedes the old pine/field-journal design. [Asset/contrast integrity](qa/asset-integrity-v05.json) records token checks; likeness, full captions and native accessibility remain release review work.

@@ -1,0 +1,63 @@
+{
+  "version": "0.5.0",
+  "filmBytes": 30273895,
+  "filmSHA256": "9ccbef62779164614055f0307ee91b7fc5b7589e4d179c3af568a7896552ff00",
+  "originalFilmUnchanged": true,
+  "frozenBaselineUnchanged": true,
+  "contrastRatios": {
+    "navy/paper": 11.07,
+    "navy/wood": 8.73,
+    "navy/pink": 9.99,
+    "navy/sky": 10.08,
+    "navy/leaf": 10.1,
+    "ink/paper": 10.98,
+    "ink/wood": 8.65,
+    "ink/pink": 9.9,
+    "ink/sky": 9.99,
+    "ink/leaf": 10.01,
+    "muted/paper": 6.29,
+    "muted/wood": 4.96,
+    "muted/pink": 5.67,
+    "muted/sky": 5.72,
+    "muted/leaf": 5.74,
+    "green/paper": 6.68,
+    "green/wood": 5.26,
+    "green/pink": 6.02,
+    "green/sky": 6.08,
+    "green/leaf": 6.09,
+    "error/paper": 7.82,
+    "error/wood": 6.16,
+    "error/pink": 7.06,
+    "error/sky": 7.12,
+    "error/leaf": 7.14,
+    "white/navy": 11.33
+  },
+  "characterAssets": {
+    "boy.png": {
+      "size": [
+        1295,
+        1215
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    "girl.png": {
+      "size": [
+        1208,
+        1302
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ]
+    }
+  },
+  "limitations": [
+    "Token pairs, not whole-product accessibility certification",
+    "Reference-derived generated assets require client likeness review"
+  ]
+}
