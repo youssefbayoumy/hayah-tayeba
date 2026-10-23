@@ -1,25 +1,25 @@
-# UX flows — working v0.5
+# UX flows — v0.6
 
-## Start and return
+## Start and home
 
-Fresh start → welcome → select one of two dolls → optional nickname → save locally → map. Returning learner → map → active journey checkpoint. Migrated learner → new character selection with retained nickname/progress/writings → map. Failed load preserves the raw data and offers retry, never silently resets it.
+Welcome → choose original boy/girl portrait → optional nickname → save locally → two-journey home map. Returning users can resume the active saved challenge. Migrated users retain their character and nickname; old flat profiles with no stable character still select one. Corrupt/unknown-version data remains protected behind retry/settings.
 
-Both map doors are available immediately. Journey progress and plans are independent; profile and private diary are shared.
+Home → Dhikr keeps its original four-stage introductory flow, with the new global theme. Home → journey of the good heart → three ordered garden doors. Each shows five exploration markers and its associated key state.
 
-## Tazkiya journey
+## Gardens
 
-Journey map → required intro film 0–55 → stage 1 activity → optional writing / think without writing → complete stage → named keepsake → stage 2. Stages 1–3 form التخلية. Before stage 4, film 55–115 introduces التحلية. Stages 4–10 cover practice of good character. Stage 11 reviews three optional questions. Before stage 12, film 115–end introduces the final application. Stage 12 saves the seven-day plan, offers optional reflection and completes the digital journey immediately. Daily self-reports are later optional invitations.
+التخلية entry → film 0–55 (unless previously completed) → garden map → five scenarios: السخرية، الغيبة، الحسد، الكذب، الغضب. Each response reveals supportive feedback; any response enables deliberate Next. Five explored challenges earn the first key once.
 
-Every stage opens after its preceding stage. Revisit completed stages freely without duplicate badges or resets. Selecting an unexpected scenario answer shows its authored consequence and allows retry; it does not label the child wrong or make feelings a score. Stage 7 explicitly allows trusted help if harm continues.
+التحلية then introduces film 55–115 → الصدق، الرحمة، الصبر، الأمانة، الإحسان → second key. التزكية introduces film 115–end → الصلاة، القرآن، الذكر، مساعدة الآخرين، مراقبة النفس → third key. Three keys open كنز القلب الطيب. Replays preserve progress and never duplicate rewards.
 
-## Writing
+No correct-answer gate, lost hearts, emotional penalties or seven-day wait. Feedback does not classify feelings, trusted help or ordinary recreation as moral failure. Misnumbered maps and erroneous next-door text in the references are rebuilt using live labels and real destinations.
 
-Stage prompt → editor → autosaved draft → save a reflection → return to originating stage/review. Journal → same editor → save → journal. Empty writing can be skipped. Individual delete asks confirmation and removes only that entry/draft/legacy copies. On failed save, keep typed text and show retry; leaving offers retry, continued writing or deliberate discard of unsaved changes. Do not show durable-save success on failure.
+## Writing and practice
 
-## Film
+Garden-key screen → optional reflection editor → explicit save → originating key screen. Diary → current or archived note/draft → edit/save → diary. Every note retains source metadata independent of its current/retired stage. Failed text is retained; leaving offers retry, continue writing or deliberate discard. Individual deletion removes the entry, draft, origin and migration-backup copies, without deleting learning progress.
 
-No autoplay. Play/pause/replay/mute/seek within the current segment; position saved periodically and when paused/leaving. Backgrounding pauses playback. Successful segment completion enables stage entry. Failed loading or completion save does not unlock it. Stage 3 may replay the existing first segment and return to its activity, not jump to stage 1.
+Treasure or لحظاتي → optional three-field daily plan → local save → daily self-report. The editor is independent of the removed stage 12. Duplicate local-date records ask to edit. Missed days preserve history and keys.
 
-## Daily practice and profile
+## Profile and data
 
-Saved intention/plan → لحظاتي → one self-report per local calendar date. Duplicate day offers edit confirmation. Missing days never remove history. Profile → change doll/name → save → existing progress retained. Settings → reduce motion, local-data explanation, deliberate full reset. Reset failure keeps existing learner data; cancel changes nothing.
+Profile → edit character/name → saved progress unchanged. Current keys/Dhikr keepsakes and previous twelve-stage achievements are clearly separated. Reset asks confirmation, clears learner/archive/notes and both backup versions only on success, and retains the current experience on failure.

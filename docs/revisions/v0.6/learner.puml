@@ -1,0 +1,57 @@
+@startuml
+!pragma layout smetana
+title v0.6 - Three gardens, archived learning and independent writing
+class Learner {
+  schemaVersion = 3
+  characterId
+  nickname
+  activeJourneyId
+}
+class JourneyProgress {
+  journeyId
+  completedChallengeIds: unique
+  keyOrKeepsakeIds: unique
+  checkpoint
+  optionalPracticePlan
+}
+class Garden {
+  gardenId
+  fiveOrderedChallengeIds
+  videoSegmentId
+  keyId
+}
+class Exploration {
+  challengeId
+  selectedChoice
+  completed
+}
+class Writing {
+  canonicalPromptId
+  draftOrSavedText
+  independentSourceMetadata
+}
+class PreviousTazkiya {
+  version = 0.5
+  oldStageCatalog
+  preservedProgress
+}
+class VideoProgress {
+  stableSegmentId
+  positionSeconds
+  completed
+}
+Learner *-- "2" JourneyProgress
+Learner *-- "*" Writing
+Learner *-- "0..1" PreviousTazkiya
+JourneyProgress *-- "*" Exploration
+JourneyProgress *-- "*" VideoProgress
+Garden "3" --> "15 total" Exploration
+note bottom of Writing
+May outlive its source stage.
+Optional, device-local, editable and deletable.
+end note
+note bottom of Exploration
+Any explored response permits continuation.
+Correctness does not measure the child.
+end note
+@enduml

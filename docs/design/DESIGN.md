@@ -1,65 +1,67 @@
-# Design System: الحياة الطيبة — v0.5
+# Design System: الحياة الطيبة — v0.6
 
-14 October 2026 · Client-reference revision · Child-only ages 10–14 · Arabic RTL.
+23 October 2026 · Original client artwork · Arabic RTL · Child-only ages 10–14.
 
 ## 1. Visual Theme & Atmosphere
 
-A warm garden of discovery inspired by the supplied posters: cream paper, pale wood plaques, soft sky and leaf panels, white flowers, arched doors, and the two specific yarn doll characters. The child is the explorer. Familiar everyday situations and plain language carry the learning; the garden supplies light fantasy.
+A richly illustrated garden adventure: original yarn characters, flowers, lanterns, arched doors, parchment plaques and a treasure chest. Use the supplied collage pixels, not generated approximations. The theme applies to the entire demo, including Dhikr and shared screens. Dhikr's learning content remains its existing opening sample.
 
-The client's character direction supersedes the earlier original-avatar style. Preserve their facial identity, golden-brown yarn hair, soft embroidered texture, boy's pale blue-trim outfit and girl's pink flower/dress. Use one selected character in both journeys. Do not mirror it or change the supplied film. Character visuals are reference-derived generated assets, not pixel-exact manual extraction; client likeness review remains appropriate.
+The second journey has three gardens inside one main journey: التخلية، التحلية، التزكية. Exploration earns three learning keys; it does not rate a child's inner state. Density 4/10, variance 3/10, motion 2/10. Art is visually rich while controls remain stable and readable.
 
-Density 4/10, variance 3/10, motion 2/10. The Stitch taste workflow is adapted for Arabic reading and children: no Latin editorial fonts, perpetual movement, oversized web-hero conventions or asymmetric controls that harm predictable navigation. Art remains separated from text, with one main decision per screen.
+Adaptation of the Stitch design workflow: the client's pink/green/purple identities and original luminous key artwork override its one-accent/no-purple style defaults. Arabic shaping, predictable interaction and reduced motion override Latin headline, asymmetric web-hero and perpetual-animation prescriptions. No extra animation glow is added to the supplied art.
 
 ## 2. Color Palette & Roles
 
-| Token | Hex | Role |
+| Token | Hex | Functional role |
 |---|---|---|
-| paper | `#FFFCF7` | Warm reading canvas |
-| wood | `#FBDDBC` | Plaques, stage symbols and keepsake artwork |
-| pink | `#FCEDF0` | Gentle story/rewrite panels and girl selection surface |
-| sky | `#E9F3FB` | Dhikr/media panels and boy selection surface |
-| leaf | `#EDF5DE` | Tazkiya, helpful feedback and selected navigation |
-| navy | `#193D59` | Titles, primary actions, focus, selected outlines |
-| ink | `#253E4B` | Body copy |
-| muted | `#50616B` | Readable secondary text |
-| edge | `#75858A` | Essential input/choice boundaries |
-| green | `#35644A` | Completed steps and plant icons |
-| error | `#8B3145` | Failed saves and deliberate destructive actions |
+| paper | `#FFF5DA` | Warm parchment canvas |
+| wood | `#F6D39B` | Wooden plaque/panel surface |
+| pink | `#F9D6DC` | Neutral answer surfaces, before feedback |
+| sky | `#DDF0E4` | Soft garden supporting surface |
+| leaf | `#E5EDC7` | Gentle green surfaces |
+| navy (legacy name) | `#5B2D1C` | Deep wood-brown titles and icons |
+| ink | `#38281E` | Body copy |
+| muted | `#685243` | Supporting text |
+| edge | `#937951` | Essential input/choice borders |
+| green | `#325F31` | Suggested-action feedback and completed markers |
+| error | `#8B173D` | Save failures and deliberate deletion |
+| accent | `#B91451` | Vivid deep-pink primary actions, readable with white text |
+| purple | `#703392` | Third-garden identity and keyboard focus |
 
-Pastels are surfaces, not text colors. Selection combines an outline, marker and semantic state. Stages use text and a check/lock symbol as well as color. No opacity-reduced body copy. Token contrast is verified in the revision QA; it is not whole-product accessibility certification.
+Artwork keeps its exact source colors. UI colors follow those families, calibrated for legibility rather than using arbitrary photograph averages. Never reveal the lesson's suggested answer through green coloring before selection. Pink is not a failure signal. A suggested response receives a green explanation panel; other responses receive supportive parchment feedback without red-cross judgment of feelings.
 
 ## 3. Typography Rules
 
-Browser stack: `Tahoma, Arial, sans-serif`, with no font fetch. Native target: bundle and verify Noto Sans Arabic before release. Display 29px/1.65 bold; page 24px/1.65 bold; section 19px/1.8 bold; body 17px/1.95; controls 16px/1.65; captions 14px/1.85. Instruction/choice text stays at least 16px. Arabic tracking is zero and text remains live and selectable. No forced uppercasing, truncated instructions or fixed-height prose. Numerals are Arabic except conventional playback time.
+Browser stack `Tahoma, Arial, sans-serif`; no external font request. Native target remains bundled Noto Sans Arabic after device verification. Main plaque headings 25px/1.65 bold, section/question headings 20px/1.9, body 17px/1.95, choices/buttons 16px/1.8, captions generally 14px. Arabic tracking is zero. All questions, explanations, numbers and controls are live HTML, independently readable from artwork. Avoid image-based answer text, fixed-height prose or truncated instructions.
 
 ## 4. Component Stylings
 
-- Primary: navy/white, 52px minimum height, 16px radius. Secondary: visible edge and warm canvas. Focus: 3px navy, 3px offset. Icon targets minimum 48px.
-- Character selection: exactly two side-by-side reference-derived dolls. Sky and pink backgrounds do not restrict who may choose either one. Selected outline and check; optional 24-character nickname.
-- Map: two spatially offset arched-door buttons on one garden field; labels sit on clear panels. Both doors available. No false locked preview for either MVP journey.
-- Stage path: continuous vertical trail with stage number/check/lock and explanatory text. Locks reference the previous actual stage in that journey.
-- Learning panel: short story above choice/task. Consequences support retry without moral scoring. Matching uses tap/select controls, not mandatory drag gestures.
-- Rephrasing: optional typed exercise or authored example for each phrase. No AI grading or claims about a child's intentions. Written values persist locally.
-- Media: custom play/pause, replay, mute and bounded scrubber. No autoplay. One original film, three configured ranges. On error, show retry and retain the gate. Full verbatim captions are pending; the current text alternative is explicitly a concept summary.
-- Reflection: optional textarea, max 2000 characters, distinct draft/saved/failure status. Save success is shown only after commit. Failed text remains in memory with retry/continue writing/deliberate discard before navigation.
-- Reward: named learning keepsake, awarded once per stage. No points, leaderboards, emotional score or claim of spiritual superiority.
-- Practice: editable same-day self-report. Seven-day plan is an invitation; digital completion and prior history never reset after absence.
-- Deletion/reset: native dialog, safe cancel focus, clear affected data, rollback on failed write. Individual writing deletion does not erase progress. Migration backups are cleared when writings are deleted or the learner is reset.
+- **Plaques:** parchment/wood gradient, restrained inset edge, brown live title, 22px radius. Shallow depth follows the source plaques; controls never rely on image text.
+- **Primary actions:** deep pink with white text, minimum 52px height, 16px radius, visible pressed/disabled states. Secondary actions use parchment and a visible brown border. Keyboard outline 3px purple.
+- **Original scenes:** lossless PNG crops above questions. They omit source question/answer panels and misleading numbering. No AI repainting, upscaling or invented detail. Crop resolution is the original collage resolution. Maps use separate live labels instead of screenshot hotspots.
+- **Character setup:** exactly two source-image portraits, same stable boy/girl IDs and optional nickname. Fixed original scenes may contain both characters regardless of the selected profile.
+- **Garden overview:** three illustrated door panels and a three-key collection. Home still has two main journeys. Garden cards state their real prerequisite rather than implying unpublished content.
+- **Challenge:** live topic/number, original scene, one scenario and three neutral pink choices. Selecting any response shows its explanation and enables Next. Retrying is optional. No lives, score deductions or completion gate tied to the suggested response.
+- **Progress:** five labelled exploration markers; a key is awarded once after five challenges. A repeated visit cannot farm progress. Three keys open the treasure ending.
+- **Media:** custom play/pause, replay, mute and bounded scrubber. No autoplay. Existing one-film ranges introduce the three gardens. Missing media and failed completion writes retain the gate. Concept summaries are explicitly not verbatim captions; full captions remain pending.
+- **Diary:** optional private writing, 2000-character limit, truthful draft/save/failure states. Old source titles remain independent of retired stage screens. Failed text stays available with retry, continued writing or deliberate discard.
+- **Practice:** optional plan editor independent of the old stage 12. Daily self-report edits the same date after confirmation; missed days do not erase learning.
+- **Profile/reset:** current keys and Dhikr keepsakes are separate from a collapsible previous-journey archive. Note deletion and whole-learner reset have distinct confirmations and preserve data on failure.
 
 ## 5. Layout & Arabic RTL
 
-Phone reference 390×844; check 360/390/430. Content margins 24px (18px on narrow phones), single reading column; maximum app width 480px. Spacing 4/8/12/16/20/24/32/40. The header and bottom navigation are in document flow, never cover writing or long stories. Phone safe-area padding at the bottom. The header provides profile and settings; main tabs are الخريطة / لحظاتي / دفتر الرحلة starting at the right. Stage screens have contextual return to the journey map. Play symbols and characters are not mirrored. Dialog and keyboard order follow semantic DOM order.
+Phone reference 390×844; verify 360/390/430. Content margins 24px, 18px on narrow phones; maximum app width 480px. Rich art occupies its own zone; live text sits on clear parchment panels. Natural document scrolling keeps long questions, explanations and editors usable. Header/profile/settings and bottom navigation remain in flow. Main destinations are الخريطة / لحظاتي / دفتر الرحلة, starting at the right. Contextual back navigation returns to garden, journey or originating diary screen. Play, photographs and character artwork are not mirrored.
 
 ## 6. Motion & Interaction
 
-Only a 180ms opacity/4px entry transition. No continuous loops, bouncing targets, flashing rewards or time-pressure decisions. Respect system reduced motion and the saved in-app switch. Content stays available with motion disabled. Video pauses on page backgrounding; reopening does not start it unexpectedly.
+Only the existing brief entry transition, using opacity/transform. Honor system and in-app reduced motion. No perpetual loops, flashing answer marks, timed decisions or guilt effects. Touch targets at least 48px; choices at least 59px. Backgrounding pauses video; returning does not autoplay.
 
-## 7. Local Assets & Product Boundary
+## 7. Assets & Delivery
 
-`assets/boy.png`, `assets/girl.png` are generated with the client's second poster as identity reference and genuine alpha. `assets/tazkiya-overview.mp4` is an exact copy of the supplied original. Source posters are preserved separately; do not use dense poster text as UI.
+`assets/gardens/manifest.json` records original file, crop rectangle and output dimensions for all 26 assets. The four source boards are preserved under its `references/`. Images 1–3 define the questions; image 4 provides welcome/overall visual material only. The unchanged original MP4 is reused, with cuts at 55 and 115 seconds.
 
-The web preview uses relative assets and browser storage, but is not promised to work offline on a first public-page visit. Expo must bundle all files/fonts and use a native local repository, then pass installed-device airplane-mode tests. Remote admin publishing and English are future product work. Stable content IDs allow those additions without altering learner identities or silently uploading private writings.
+The static browser demo needs initial network access and uses local browser storage. Expo still needs bundled files/fonts and standalone airplane-mode device acceptance. No backend, account, analytics, live admin publishing or reflection upload is introduced.
 
 ## 8. Anti-Patterns & Review Gates
 
-Avoid dense poster layouts, pasted image text, extra invented character choices, automatic speech recording, moral meters, streak guilt, rewards for private disclosure, leaderboard comparisons and false completion on failed media/save. All twelve Tazkiya stages are implemented as reviewable interactions; editorial approval is separate. Dhikr remains an explicitly labelled introductory sample until the full curriculum is supplied. Before release, review likeness, religious wording, all video captions, usability with 10–14 year olds, system text scaling and native device behavior.
+Never copy full answer-key screenshots into an interactive question, reveal correct choices before interaction, assign moral scores, penalize emotions, discourage trusted help, condemn ordinary recreation, equate a treasure with measured spiritual worth, reset old data silently or mislabel old progress as new completion. Do not mix the twelve alternative questions from image 4 into the approved fifteen. Review original-art crops, Arabic copy, saved/failed states, archive editing, video ranges, keyboard focus and narrow screens before publishing.

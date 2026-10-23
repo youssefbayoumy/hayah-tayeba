@@ -1,0 +1,37 @@
+@startuml
+title v0.6 - Explore three gardens and collect three keys
+start
+:Choose one shared character;
+:Home map - Dhikr or journey of the good heart;
+:Open journey of the good heart;
+repeat
+  :Open next available garden;
+  if (Intro segment already completed?) then (yes)
+  else (no)
+    :Play only configured range;
+    if (Playback and completion save succeed?) then (yes)
+    else (no)
+      :Keep progress; offer retry;
+      stop
+    endif
+  endif
+  repeat
+    :Show original scene and three live choices;
+    :Choose any response;
+    :Read supportive explanation;
+    :Optional exploration of other responses;
+    :Deliberately continue;
+    if (Local commit succeeds?) then (yes)
+      :Record challenge once;
+    else (no)
+      :Keep screen and prior progress;
+      stop
+    endif
+  repeat while (Fewer than five explored?) is (yes)
+  :Award garden key once;
+  :Optional private writing;
+repeat while (Fewer than three keys?) is (yes)
+:Open treasure ending;
+:Optional daily plan and practice;
+stop
+@enduml

@@ -1,0 +1,396 @@
+{
+  "version": "0.6.0",
+  "sources": "Client supplied 23 October 2026",
+  "crops": [
+    {
+      "asset": "welcome.png",
+      "source": "4-1000185163.jpg",
+      "bounds": [
+        25,
+        88,
+        355,
+        190
+      ],
+      "size": [
+        330,
+        102
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "scenery.png",
+      "source": "1-1000185161.jpg",
+      "bounds": [
+        435,
+        108,
+        740,
+        194
+      ],
+      "size": [
+        305,
+        86
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "boy-portrait.png",
+      "source": "2-1000185162.jpg",
+      "bounds": [
+        206,
+        85,
+        312,
+        243
+      ],
+      "size": [
+        106,
+        158
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "girl-portrait.png",
+      "source": "2-1000185162.jpg",
+      "bounds": [
+        31,
+        93,
+        157,
+        252
+      ],
+      "size": [
+        126,
+        159
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "takhliya-intro.png",
+      "source": "1-1000185161.jpg",
+      "bounds": [
+        4,
+        87,
+        421,
+        250
+      ],
+      "size": [
+        417,
+        163
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "tahliya-intro.png",
+      "source": "2-1000185162.jpg",
+      "bounds": [
+        4,
+        83,
+        421,
+        220
+      ],
+      "size": [
+        417,
+        137
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "tazkiya-intro.png",
+      "source": "3-1000185164.jpg",
+      "bounds": [
+        4,
+        86,
+        421,
+        215
+      ],
+      "size": [
+        417,
+        129
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "takhliya-1.png",
+      "source": "1-1000185161.jpg",
+      "bounds": [
+        909,
+        42,
+        1278,
+        184
+      ],
+      "size": [
+        369,
+        142
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "takhliya-2.png",
+      "source": "1-1000185161.jpg",
+      "bounds": [
+        435,
+        379,
+        899,
+        456
+      ],
+      "size": [
+        464,
+        77
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "takhliya-3.png",
+      "source": "1-1000185161.jpg",
+      "bounds": [
+        908,
+        382,
+        1277,
+        456
+      ],
+      "size": [
+        369,
+        74
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "takhliya-4.png",
+      "source": "1-1000185161.jpg",
+      "bounds": [
+        4,
+        637,
+        421,
+        718
+      ],
+      "size": [
+        417,
+        81
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "takhliya-5.png",
+      "source": "1-1000185161.jpg",
+      "bounds": [
+        434,
+        638,
+        899,
+        716
+      ],
+      "size": [
+        465,
+        78
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "tahliya-1.png",
+      "source": "2-1000185162.jpg",
+      "bounds": [
+        860,
+        43,
+        1276,
+        178
+      ],
+      "size": [
+        416,
+        135
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "tahliya-2.png",
+      "source": "2-1000185162.jpg",
+      "bounds": [
+        4,
+        354,
+        423,
+        456
+      ],
+      "size": [
+        419,
+        102
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "tahliya-3.png",
+      "source": "2-1000185162.jpg",
+      "bounds": [
+        432,
+        354,
+        851,
+        456
+      ],
+      "size": [
+        419,
+        102
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "tahliya-4.png",
+      "source": "2-1000185162.jpg",
+      "bounds": [
+        859,
+        354,
+        1276,
+        456
+      ],
+      "size": [
+        417,
+        102
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "tahliya-5.png",
+      "source": "2-1000185162.jpg",
+      "bounds": [
+        4,
+        614,
+        423,
+        710
+      ],
+      "size": [
+        419,
+        96
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "tazkiya-1.png",
+      "source": "3-1000185164.jpg",
+      "bounds": [
+        859,
+        42,
+        1277,
+        176
+      ],
+      "size": [
+        418,
+        134
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "tazkiya-2.png",
+      "source": "3-1000185164.jpg",
+      "bounds": [
+        4,
+        355,
+        424,
+        472
+      ],
+      "size": [
+        420,
+        117
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "tazkiya-3.png",
+      "source": "3-1000185164.jpg",
+      "bounds": [
+        431,
+        355,
+        852,
+        471
+      ],
+      "size": [
+        421,
+        116
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "tazkiya-4.png",
+      "source": "3-1000185164.jpg",
+      "bounds": [
+        859,
+        355,
+        1277,
+        472
+      ],
+      "size": [
+        418,
+        117
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "tazkiya-5.png",
+      "source": "3-1000185164.jpg",
+      "bounds": [
+        4,
+        616,
+        424,
+        731
+      ],
+      "size": [
+        420,
+        115
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "takhliya-key.png",
+      "source": "1-1000185161.jpg",
+      "bounds": [
+        913,
+        641,
+        1275,
+        730
+      ],
+      "size": [
+        362,
+        89
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "tahliya-key.png",
+      "source": "2-1000185162.jpg",
+      "bounds": [
+        441,
+        617,
+        845,
+        729
+      ],
+      "size": [
+        404,
+        112
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "tazkiya-key.png",
+      "source": "3-1000185164.jpg",
+      "bounds": [
+        438,
+        614,
+        848,
+        738
+      ],
+      "size": [
+        410,
+        124
+      ],
+      "operation": "lossless original-pixel crop only"
+    },
+    {
+      "asset": "treasure.png",
+      "source": "3-1000185164.jpg",
+      "bounds": [
+        861,
+        617,
+        1276,
+        744
+      ],
+      "size": [
+        415,
+        127
+      ],
+      "operation": "lossless original-pixel crop only"
+    }
+  ]
+}

@@ -1,18 +1,2 @@
-const vm=require('vm'),fs=require('fs'),assert=require('assert/strict');
-const KEY='hayah-tayeba-design-preview-v1',content=fs.readFileSync('docs/design/prototype/content.js','utf8'),source=fs.readFileSync('docs/design/prototype/store.js','utf8');
-const checks=[];
-function load(raw){const values=new Map(raw===undefined?[]:[[KEY,raw]]);let fail=false;const context=vm.createContext({window:{},localStorage:{getItem:k=>values.get(k)??null,setItem:(k,v)=>{if(fail)throw Error('quota');values.set(k,v);},removeItem:k=>{if(fail)throw Error('removal');values.delete(k);}}});vm.runInContext(content,context);vm.runInContext(source,context);return {store:context.window.HayahStore,values,setFail:x=>fail=x};}
-function test(name,fn){fn();checks.push(name);}
-const old={profile:{name:'نور',avatar:2},done:['story','meaning'],practice:[{day:'2026-10-01',text:'جربت'}],drafts:{'dhikr-reflection-0':'خاص'},reflections:{'dhikr-reflection-0':'خاص'},settings:{motion:true},moment:'sleep',last:'meaning'};
-test('migration preserves original and unset character',()=>{const x=load(JSON.stringify(old));assert.equal(x.store.data.characterId,null);assert.equal(x.store.data.legacy.reflections['dhikr-reflection-0'],'خاص');assert.equal(x.store.data.journeys.dhikr.completed.length,2);assert.equal(x.values.get(KEY+'.backup-v1'),JSON.stringify(old));});
-test('legacy writing deletion purges all copies and backup',()=>{const x=load(JSON.stringify(old));assert.equal(x.store.deleteWriting('dhikr-reflection-0'),true);const raw=x.values.get(KEY);assert.equal(raw.includes('خاص'),false);assert.equal(x.values.has(KEY+'.backup-v1'),false);assert.equal(x.store.data.journeys.dhikr.completed.length,2);});
-test('failed writing deletion retains prior data',()=>{const x=load(JSON.stringify(old));x.setFail(true);assert.equal(x.store.deleteWriting('dhikr-reflection-0'),false);assert.equal(x.store.data.reflections['dhikr-reflection-0'].text,'خاص');});
-test('failed progress commit does not mutate state',()=>{const x=load();x.setFail(true);assert.equal(x.store.commit(d=>d.journeys.dhikr.completed.push('d1')),false);assert.equal(x.store.data.journeys.dhikr.completed.length,0);});
-test('invalid and duplicate stages cannot be committed',()=>{const x=load();assert.equal(x.store.commit(d=>d.journeys.dhikr.completed.push('t1')),false);assert.equal(x.store.commit(d=>d.journeys.dhikr.completed.push('d1','d1')),false);});
-test('malformed completed video cannot unlock gate',()=>{const x=load();assert.equal(x.store.commit(d=>d.journeys.tazkiya.videos['tazkiya-intro']={videoSegmentId:'tazkiya-intro',position:40,completed:'false'}),false);});
-test('out of range video record rejected',()=>{const x=load();assert.equal(x.store.commit(d=>d.journeys.tazkiya.videos['tazkiya-tahliya']={videoSegmentId:'tazkiya-tahliya',position:0,completed:true}),false);});
-test('future schema is preserved untouched',()=>{const raw=JSON.stringify({...old,schemaVersion:99}),x=load(raw);assert.equal(x.store.loadError,true);assert.equal(x.values.get(KEY),raw);assert.equal(x.store.commit(d=>d.profile={name:'x'}),false);});
-test('corrupt JSON is preserved untouched',()=>{const x=load('{broken');assert.equal(x.store.loadError,true);assert.equal(x.values.get(KEY),'{broken');});
-test('failed migration keeps original legacy payload',()=>{const values=new Map([[KEY,JSON.stringify(old)]]);const context=vm.createContext({window:{},localStorage:{getItem:k=>values.get(k)??null,setItem:()=>{throw Error('quota');}}});vm.runInContext(content,context);vm.runInContext(source,context);assert.equal(values.get(KEY),JSON.stringify(old));assert.equal(context.window.HayahStore.data.profile.name,'نور');});
-test('reset removes both persisted copies',()=>{const x=load(JSON.stringify(old));assert.equal(x.store.reset(),true);assert.equal(x.values.size,0);assert.equal(x.store.data.profile,null);});
-fs.writeFileSync('docs/design/qa/store-report-v05.json',JSON.stringify({version:'0.5.0',timestamp:new Date().toISOString(),passed:checks.length,checks},null,2));console.log(JSON.stringify({passed:checks.length}));
+// Stable entry point for the current learner schema.
+require('./garden-store-qa.cjs');

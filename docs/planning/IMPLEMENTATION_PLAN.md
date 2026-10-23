@@ -1,8 +1,8 @@
 # Offline MVP implementation plan
 
-Updated: 2026-10-14 (Africa/Cairo)
+Updated: 2026-10-23 (Africa/Cairo)
 
-**Current revision:** [v0.5](../revisions/v0.5/README.md) adds the second Tazkiya journey, the two client-reference characters, the shared poster palette and three video segments. The browser design implementation is delivered; installed Expo/offline acceptance remains pending. The single-door/custom-avatar assumptions below are the historical v0.4 delivery sequence and are superseded where the v0.5 addendum changes them.
+**Current revision:** [v0.6](../revisions/v0.6/README.md) replaces the twelve-stage second journey with three gardens, fifteen explore-any-answer challenges and three keys, and applies original client artwork across the demo. Schema 3 preserves previous learning/writing data. The browser implementation is delivered; installed Expo/offline acceptance remains pending. The sequence below is historical v0.4 planning and is superseded wherever newer addenda change it.
 
 This working plan follows DEC-02/DEC-03/DEC-04 in the [v0.4 addendum](../revisions/v0.4/DECISIONS.md). It replaces the account-first/backend-first sequence. The locked v0.3 snapshot and PDF remain unchanged.
 

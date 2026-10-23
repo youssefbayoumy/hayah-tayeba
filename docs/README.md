@@ -2,7 +2,7 @@
 
 Version: 0.3 · Authored: 2026-09-29 · Baselined: 2026-10-03 · Status: **locked planning baseline; explicit open decisions retained**
 
-This pack records the historical baseline requirements and software models. The current [v0.5 addendum](revisions/v0.5/README.md) supersedes changed scope assumptions and links the implemented [browser design preview](design/prototype/index.html?demo=1). An installed Expo application has not yet been delivered. English is the working documentation language; Arabic product names and example copy are retained.
+This pack records the historical baseline requirements and software models. The current [v0.6 addendum](revisions/v0.6/README.md) specifies the three-garden replacement, explore-any-answer behavior, original-art theme and migration, and links the implemented [browser design preview](design/prototype/index.html?demo=1). An installed Expo application has not yet been delivered. English is the working documentation language; Arabic product names and example copy are retained.
 
 The approved v0.3 snapshot and change-control policy are recorded in [BASELINE.md](BASELINE.md). Original draft labels in the archived documents describe their preparation status; the baseline record captures the subsequent approval.
 

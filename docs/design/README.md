@@ -1,14 +1,14 @@
-# Hayah Tayeba UI/UX handoff — v0.5
+# Hayah Tayeba UI/UX handoff — v0.6
 
-- [Interactive preview](prototype/index.html?demo=1) and [current review board](index.html).
-- [Design system](DESIGN.md), [tokens](TOKENS.json), [flows](UX_FLOW.md), [screen inventory](SCREEN_INVENTORY.md).
-- [Client requirements and models](../revisions/v0.5/README.md).
-- [Browser test report](qa/browser-report-v05.json) and current captures in `screens/v0.5/`.
-- [Asset provenance](prototype/assets/README.md).
-- [Packaged handoff](../../output/design/Hayah_Tayeba_UI_UX_Design_Pack_v0.5.zip).
+- [Current interactive preview](prototype/index.html?demo=1) · [review board](index.html).
+- [Requirements and models](../revisions/v0.6/README.md).
+- [Design system](DESIGN.md) · [tokens](TOKENS.json) · [flows](UX_FLOW.md) · [screen inventory](SCREEN_INVENTORY.md).
+- [Browser checks](qa/browser-report-v06.json) · [migration/store checks](qa/store-report-v06.json) · [integrity/contrast](qa/asset-integrity-v06.json).
+- [Original-art crop manifest](prototype/assets/gardens/manifest.json).
+- [Handoff ZIP](../../output/design/Hayah_Tayeba_UI_UX_Design_Pack_v0.6.zip).
 
-Current preview: two reference-derived characters, unified poster palette, independent Dhikr opening session and twelve-stage Tazkiya journey, three real film segments, shared private written diary, daily practice, migration and error states. No account or mother role.
+The whole demo uses the new original garden-art theme. The second journey replaces its old twelve stages with three gardens, fifteen explore-any-answer challenges, three keys and a treasure ending. Dhikr keeps its opening curriculum. Learner schema 3 preserves old progress in an archive, retains old writings as editable entries and keeps existing video/practice data.
 
-The old [v0.4 board](index-v04.html), old screenshots and [Stitch project](https://stitch.withgoogle.com/projects/12660900467156300151) remain historical visual studies; they have not been regenerated in Stitch to the new two-character palette. `DESIGN.md` and the implemented browser preview are the current design source. The frozen v0.3 package and previously delivered PDFs are unchanged.
+The [v0.5 board](index-v05.html), [v0.4 board](index-v04.html), prior screenshots, handoff ZIPs and frozen v0.3 package remain historical references. The [Stitch project](https://stitch.withgoogle.com/projects/12660900467156300151) still contains earlier visual studies; no claim is made that those screens were regenerated. The local guide and implemented preview are current.
 
-This is a browser design implementation, not the Expo mobile build. Final curriculum/source review, full captions, installed offline packaging, device tests and testing with children remain future acceptance work.
+This is a web prototype, not an installed Expo build. Full captions, final curriculum approval, testing with children and standalone offline/device QA remain pending.

@@ -1,0 +1,172 @@
+{
+  "version": "0.6.0",
+  "originalFilmUnchanged": true,
+  "filmSHA256": "9ccbef62779164614055f0307ee91b7fc5b7589e4d179c3af568a7896552ff00",
+  "frozenBaselineUnchanged": true,
+  "v05HandoffUnchanged": true,
+  "cropChecks": [
+    {
+      "asset": "welcome.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "800504c5b11d9efb11a8fc9d448702e430d204c397df1da78e254310d1363b9d"
+    },
+    {
+      "asset": "scenery.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "8cc9d6103c45c72696c91400244e10b6d3e6d4eb4a8d29e6468eec97c2c717a9"
+    },
+    {
+      "asset": "boy-portrait.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "336b30aa1a9629f7d663b414e7673eee5403e5eb85b64c09f40277b52ddd40d6"
+    },
+    {
+      "asset": "girl-portrait.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "3f85fe65419be7036d52af3de0593685eb70f5495bf42177e8f47f5b641256a9"
+    },
+    {
+      "asset": "takhliya-intro.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "1a696fbd06519111923f133c3be50e77f67fd8628bceb184640e685556a39911"
+    },
+    {
+      "asset": "tahliya-intro.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "ab3ecf0907a00b6dd895932cf668d06c48f7aabc315efa208ada91ec3ac4e1ea"
+    },
+    {
+      "asset": "tazkiya-intro.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "a2638d061f08d044d8fc8c64851ae4db92e53b62cd08e46e951b87ec9213ee85"
+    },
+    {
+      "asset": "takhliya-1.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "eda692b86e7fc61e05c85869e540a5b395c6199429ce047ecc054ce25a4d664a"
+    },
+    {
+      "asset": "takhliya-2.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "0221e7b1c290e0780e5e8fad8bb3c86098f4707510cfe96d7de8cc51921dbafd"
+    },
+    {
+      "asset": "takhliya-3.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "5f2ec69d23ec2d36131554723d04782e531489ec0d6b975583b3966423c65617"
+    },
+    {
+      "asset": "takhliya-4.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "e3cb2925a0aae85ed0418b5b2716b75ad9362b52662c1e945c33945c640a29b9"
+    },
+    {
+      "asset": "takhliya-5.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "a6d751be7d22c320abf6b3290fc556114ff9f91136cafb22c682647b7fd588dc"
+    },
+    {
+      "asset": "tahliya-1.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "4227dd1da511daff9058a36d66db2bb8e0d8412919f76ee84b6492676f516099"
+    },
+    {
+      "asset": "tahliya-2.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "2585a1a421c077ce8d6e1d0ef42253cd071c5407cfdba84de683abcf8ce6362e"
+    },
+    {
+      "asset": "tahliya-3.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "676cdd9a5da4a1ac392b6def19fc4b9689c37bc38425edafece25ec6ce81608f"
+    },
+    {
+      "asset": "tahliya-4.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "f157df8353f6219a1dbad255716377b4f85eed0b3fe335aa79143c52f5fe1414"
+    },
+    {
+      "asset": "tahliya-5.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "e6905d39d98f3ee2b07354769960efb91d66bf8b3fcef53ef9f8bbc6e9f07cb5"
+    },
+    {
+      "asset": "tazkiya-1.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "b2f0f3f56a23efb23b8f428d4d5927a79f4ca5fd2673768288552071bd47054a"
+    },
+    {
+      "asset": "tazkiya-2.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "1a575bf2ea20be09e0b6684481c19bfa4f0a0d105ea25fd4ac7b20e470f15621"
+    },
+    {
+      "asset": "tazkiya-3.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "9d1be0c807a744fa6b38c885ba185177b71bea0b1123f9d5fd4eed4b8203221c"
+    },
+    {
+      "asset": "tazkiya-4.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "76e3119cecbbe73e5ce23080d03f42542c1443e43cd7f8e621b79c88ee67a218"
+    },
+    {
+      "asset": "tazkiya-5.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "c6580c2e5fc5ce208d5a5ac70e2c0db8492bf2dc5558b8a6d5bcd300fd50e69a"
+    },
+    {
+      "asset": "takhliya-key.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "b247d579b9b9ecd7373b362d387de1f80451a81d94131ece8e8819028bdd3244"
+    },
+    {
+      "asset": "tahliya-key.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "55f4b87147f5c3d285e189d3f5d23935a5a8c325240ddf38d1f79f2410d18be6"
+    },
+    {
+      "asset": "tazkiya-key.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "8fed6d77a5f39cdec1d26694f8dfa2f389ff561eaf9b8158faaa1362557eb7dc"
+    },
+    {
+      "asset": "treasure.png",
+      "pixelExactOriginalCrop": true,
+      "sha256": "ccfbdf5dc16d237fa7424097ec9041a9c8c65f01b967973dcdbdb5208159e3f4"
+    }
+  ],
+  "contrastRatios": {
+    "navy/paper": 10.52,
+    "navy/wood": 8.01,
+    "navy/pink": 8.54,
+    "navy/sky": 9.61,
+    "navy/leaf": 9.4,
+    "ink/paper": 12.97,
+    "ink/wood": 9.87,
+    "ink/pink": 10.52,
+    "ink/sky": 11.85,
+    "ink/leaf": 11.59,
+    "muted/paper": 6.72,
+    "muted/wood": 5.11,
+    "muted/pink": 5.45,
+    "muted/sky": 6.14,
+    "muted/leaf": 6.0,
+    "green/paper": 6.86,
+    "green/wood": 5.22,
+    "green/pink": 5.57,
+    "green/sky": 6.27,
+    "green/leaf": 6.13,
+    "error/paper": 8.45,
+    "error/wood": 6.43,
+    "error/pink": 6.85,
+    "error/sky": 7.72,
+    "error/leaf": 7.55,
+    "white/accent": 6.4
+  },
+  "limitations": [
+    "Token contrast, not whole-product certification",
+    "Original collage resolution retained",
+    "No synthetic image detail added"
+  ]
+}
