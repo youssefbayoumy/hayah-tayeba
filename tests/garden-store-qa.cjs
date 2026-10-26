@@ -1,12 +1,12 @@
 const vm=require('vm'),fs=require('fs'),assert=require('assert/strict'),{v2,v1}=require('./garden-fixtures.cjs');
-const KEY='hayah-tayeba-design-preview-v1',scripts=['content.js','gardens.js','store.js'].map(f=>fs.readFileSync('docs/design/prototype/'+f,'utf8')),checks=[];
+const KEY='hayah-tayeba-design-preview-v1',scripts=['content.js','gardens.js','maiyya-content.js','store.js'].map(f=>fs.readFileSync('docs/design/prototype/'+f,'utf8')),checks=[];
 function load(raw,{failWrite=false,failRemove=null}={}){
  const values=new Map(raw===undefined?[]:[[KEY,raw]]);let fail=failWrite;
  const context=vm.createContext({window:{},localStorage:{getItem:k=>values.get(k)??null,setItem:(k,v)=>{if(fail)throw Error('quota');values.set(k,v);},removeItem:k=>{if(fail||k===failRemove)throw Error('removal');values.delete(k);}}});scripts.forEach(s=>vm.runInContext(s,context));
  return {store:context.window.HayahStore,content:context.window.HAYAH_CONTENT,values,setFail:v=>fail=v};
 }
 const test=(name,fn)=>{fn();checks.push(name);};
-test('fresh schema has 15 challenges and three gardens',()=>{const x=load();assert.equal(x.store.data.schemaVersion,3);assert.equal(x.content.journeys[1].stages.length,15);assert.equal(x.content.journeys[1].gardens.length,3);});
+test('fresh schema has 15 garden challenges and three journeys',()=>{const x=load();assert.equal(x.store.data.schemaVersion,4);assert.equal(x.content.journeys[1].stages.length,15);assert.equal(x.content.journeys[1].gardens.length,3);assert.equal(x.content.journeys.length,3);});
 test('v2 old completion is archived, never transferred to new questions',()=>{const x=load(JSON.stringify(v2()));assert.equal(x.store.data.archives.tazkiyaV05.progress.completed.length,12);assert.equal(x.store.data.journeys.tazkiya.completed.length,0);assert.equal(x.store.data.journeys.tazkiya.badges.length,0);assert.equal(x.store.data.journeys.tazkiya.checkpoint,null);});
 test('v2 profile, Dhikr, practice and plan retained',()=>{const x=load(JSON.stringify(v2())),d=x.store.data;assert.equal(d.profile.name,'نور');assert.equal(d.characterId,'girl');assert.equal(d.journeys.dhikr.completed.length,2);assert.equal(d.journeys.tazkiya.plan.virtue,'الصدق');assert.equal(d.journeys.tazkiya.practice.length,1);});
 test('same original film retains all completed segment records',()=>{const d=load(JSON.stringify(v2())).store.data;assert.equal(Object.values(d.journeys.tazkiya.videos).filter(v=>v.completed).length,3);});
@@ -26,4 +26,4 @@ test('failed note deletion keeps text and archive',()=>{const x=load(JSON.string
 test('partial backup removal failure restores copies',()=>{const x=load(JSON.stringify(v2()),{failRemove:KEY+'.backup-v2'});x.values.set(KEY+'.backup-v1','older-copy');assert.equal(x.store.reset(),false);assert.equal(x.values.get(KEY+'.backup-v1'),'older-copy');assert.equal(x.store.data.profile.name,'نور');});
 test('reset removes learner, both backups and archive',()=>{const x=load(JSON.stringify(v2()));x.values.set(KEY+'.backup-v1','older-copy');assert.equal(x.store.reset(),true);assert.equal(x.values.size,0);assert.equal(x.store.data.archives.tazkiyaV05,null);});
 for(const raw of ['{broken',JSON.stringify({...v2(),schemaVersion:99}),JSON.stringify({...v2(),journeys:{}})])test('invalid load is preserved: '+raw.slice(0,20),()=>{const x=load(raw);assert.equal(x.store.loadError,true);assert.equal(x.values.get(KEY),raw);assert.equal(x.store.commit(d=>d.profile={name:'x'}),false);});
-fs.writeFileSync('docs/design/qa/store-report-v06.json',JSON.stringify({version:'0.6.0',timestamp:new Date().toISOString(),passed:checks.length,checks},null,2));console.log(JSON.stringify({passed:checks.length}));
+fs.writeFileSync('docs/design/qa/store-regression-v07.json',JSON.stringify({version:'0.7.0',timestamp:new Date().toISOString(),passed:checks.length,checks},null,2));console.log(JSON.stringify({passed:checks.length}));

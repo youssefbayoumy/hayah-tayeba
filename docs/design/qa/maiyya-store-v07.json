@@ -1,0 +1,24 @@
+{
+  "version": "0.7.0",
+  "timestamp": "2026-10-26T08:38:39.177Z",
+  "passed": 17,
+  "checks": [
+    "new journey has fifteen ordered stations and three chapters",
+    "six source-bound matching exercises and six distinct daily items",
+    "schema 3 upgrade adds empty maiyya without changing existing journeys",
+    "schema 3 archive, notes and raw backup preserved",
+    "schema 4 reload is idempotent",
+    "failed migration retains original schema 3 payload",
+    "daily reports do not complete stations or award religious badges",
+    "missed days preserve prior records and learning",
+    "invalid daily data rejected {\"items\":{\"unknown\":true}}",
+    "invalid daily data rejected {\"items\":{\"prayer\":\"yes\"}}",
+    "invalid daily data rejected {\"items\":{},\"dice\":{\"number\":7}}",
+    "invalid daily data rejected {\"items\":{},\"triangle\":{\"index\":4,\"message\":0}}",
+    "invalid calendar date rejected",
+    "premature final badge rejected",
+    "failed daily write retains prior committed report",
+    "new written reflection deletion purges schema 3 raw backup too",
+    "reset purges all three backup versions"
+  ]
+}

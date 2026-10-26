@@ -126,4 +126,24 @@ dialog::backdrop {background:#2B3D286A;}
 .switch.on {background:#AC1B50;}
 .editor-status {color:#3D5D2D;}.editor-status.error {color:#8B173D;}
 .progress {background:#DECA9F;}.progress span {background:#487536;}
+.chapter-heading {margin-top:30px;padding:12px 16px;border-radius:18px;background:#E6EBC5;border:1px solid #A0AF73;}
+.daily-checklist {display:grid;gap:12px;margin:24px 0;}
+.daily-item {display:flex;text-align:right;align-items:center;gap:14px;min-height:88px;width:100%;background:#FFF0CB;border:1px solid #B18A54;border-radius:20px;padding:16px;}
+.daily-item[aria-checked=true] {background:#E0EBC2;border-color:#6C8E45;}
+.daily-item>span:last-child {display:grid;gap:5px;}
+.daily-item .small {font-size:14px;}
+.daily-check {display:grid;place-items:center;flex-shrink:0;width:29px;height:29px;border:2px solid #8B754F;border-radius:9px;color:#FFF;background:#FFF8E7;font-size:21px;}
+.daily-item[aria-checked=true] .daily-check {background:#416D30;border-color:#416D30;}
+.triangles {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0;}
+.triangle {display:grid;place-items:center;gap:4px;padding:12px 5px;background:#FADEAC;border:1px solid #A68450;border-radius:18px;min-height:98px;}
+.triangle>span:first-child {font-size:42px;line-height:1.2;color:#9C214B;}
+.triangle .small {font-size:14px;}
+.triangle:disabled {background:#E8DFBD;color:#655A43;}
+.dice-result {text-align:center;padding:12px;}
+.dice-result>strong {display:grid;place-items:center;border:2px solid #B18746;border-radius:20px;width:72px;height:72px;margin:8px auto 18px;background:#FFF2CC;font-size:34px;color:#A1194E;}
+.timer-display {font-size:36px;direction:ltr;text-align:center;margin:18px 0;color:#7D2647;font-variant-numeric:tabular-nums;}
+.verse-match .choice svg {width:26px;height:26px;}
+.verse-match .quote {background:#FFF5D5;border-color:#8A9B57;margin:18px 0;padding-block:12px;}
+.verse-match .quote p.small,.maiyya-stage .quote p.small {font-size:14px;line-height:1.9;}
+.nav button {font-size:12px;}
 @media(max-width:370px){.door-button{grid-template-columns:83px 1fr 16px;padding:11px;gap:10px}.door-button .scene{width:83px;height:112px}.door-button h2{font-size:18px}.door-button .tag{font-size:12px}.plaque{font-size:23px}.question-panel{padding:17px 12px}.key-slot{font-size:14px}.key-slot .small{font-size:14px}}

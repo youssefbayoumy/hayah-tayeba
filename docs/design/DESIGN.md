@@ -1,12 +1,12 @@
-# Design System: الحياة الطيبة — v0.6
+# Design System: الحياة الطيبة — v0.7
 
-23 October 2026 · Original client artwork · Arabic RTL · Child-only ages 10–14.
+26 October 2026 · Existing garden identity retained · Arabic RTL · Child-only ages 10–14.
 
 ## 1. Visual Theme & Atmosphere
 
 A richly illustrated garden adventure: original yarn characters, flowers, lanterns, arched doors, parchment plaques and a treasure chest. Use the supplied collage pixels, not generated approximations. The theme applies to the entire demo, including Dhikr and shared screens. Dhikr's learning content remains its existing opening sample.
 
-The second journey has three gardens inside one main journey: التخلية، التحلية، التزكية. Exploration earns three learning keys; it does not rate a child's inner state. Density 4/10, variance 3/10, motion 2/10. Art is visually rich while controls remain stable and readable.
+The second journey has three gardens: التخلية، التحلية، التزكية. The third is باب معية الله, with fifteen stations, a faith/good-deeds chapter and daily practice. Both keep the existing identity. The newly supplied blue/gold images are content references only. Activities do not rate a child's inner state. Density 4/10, variance 3/10, motion 2/10.
 
 Adaptation of the Stitch design workflow: the client's pink/green/purple identities and original luminous key artwork override its one-accent/no-purple style defaults. Arabic shaping, predictable interaction and reduced motion override Latin headline, asymmetric web-hero and perpetual-animation prescriptions. No extra animation glow is added to the supplied art.
 
@@ -40,17 +40,20 @@ Browser stack `Tahoma, Arial, sans-serif`; no external font request. Native targ
 - **Primary actions:** deep pink with white text, minimum 52px height, 16px radius, visible pressed/disabled states. Secondary actions use parchment and a visible brown border. Keyboard outline 3px purple.
 - **Original scenes:** lossless PNG crops above questions. They omit source question/answer panels and misleading numbering. No AI repainting, upscaling or invented detail. Crop resolution is the original collage resolution. Maps use separate live labels instead of screenshot hotspots.
 - **Character setup:** exactly two source-image portraits, same stable boy/girl IDs and optional nickname. Fixed original scenes may contain both characters regardless of the selected profile.
-- **Garden overview:** three illustrated door panels and a three-key collection. Home still has two main journeys. Garden cards state their real prerequisite rather than implying unpublished content.
+- **Garden overview:** three illustrated garden panels and a three-key collection inside the second journey. Home has three main journeys. Ma'iyya uses three chapter headings and an ordered station path in the same garden theme.
 - **Challenge:** live topic/number, original scene, one scenario and three neutral pink choices. Selecting any response shows its explanation and enables Next. Retrying is optional. No lives, score deductions or completion gate tied to the suggested response.
 - **Progress:** five labelled exploration markers; a key is awarded once after five challenges. A repeated visit cannot farm progress. Three keys open the treasure ending.
 - **Media:** custom play/pause, replay, mute and bounded scrubber. No autoplay. Existing one-film ranges introduce the three gardens. Missing media and failed completion writes retain the gate. Concept summaries are explicitly not verbatim captions; full captions remain pending.
 - **Diary:** optional private writing, 2000-character limit, truthful draft/save/failure states. Old source titles remain independent of retired stage screens. Failed text stays available with retry, continued writing or deliberate discard.
 - **Practice:** optional plan editor independent of the old stage 12. Daily self-report edits the same date after confirmation; missed days do not erase learning.
+- **Ma'iyya matching:** live verse/excerpt, reference and context, then three doors and a practical question. Correct educational associations open the gate, with unlimited retries. Suggested narrative responses remain exploratory; matching never claims to grant divine favor.
+- **Daily screen:** six editable private checkboxes, 0/6 explicitly labelled as self-reported steps. Returning Ma'iyya participants land here with continue/map actions. Optional triangles give ordinary random suggestions; dice reveal one saved virtual participation keepsake per date, independent of prayer reports.
+- **Timer:** optional two-minute practice with a visible countdown, start/pause/reset and persisted remaining time. Background/navigation pauses it. It never gates progress or measures worship/attention.
 - **Profile/reset:** current keys and Dhikr keepsakes are separate from a collapsible previous-journey archive. Note deletion and whole-learner reset have distinct confirmations and preserve data on failure.
 
 ## 5. Layout & Arabic RTL
 
-Phone reference 390×844; verify 360/390/430. Content margins 24px, 18px on narrow phones; maximum app width 480px. Rich art occupies its own zone; live text sits on clear parchment panels. Natural document scrolling keeps long questions, explanations and editors usable. Header/profile/settings and bottom navigation remain in flow. Main destinations are الخريطة / لحظاتي / دفتر الرحلة, starting at the right. Contextual back navigation returns to garden, journey or originating diary screen. Play, photographs and character artwork are not mirrored.
+Phone reference 390×844; verify 360/390/430. Content margins 24px, 18px on narrow phones; maximum app width 480px. Rich art and live parchment text have distinct zones. Natural scrolling keeps explanations/editors usable. Header and navigation remain in flow. Destinations are الخريطة / رحلتي اليوم / لحظاتي / دفتر الرحلة, starting at the right. Contextual back returns to garden, journey or originating diary screen. Play, photos and characters are not mirrored.
 
 ## 6. Motion & Interaction
 

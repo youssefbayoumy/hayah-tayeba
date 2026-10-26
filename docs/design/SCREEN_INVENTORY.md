@@ -1,4 +1,6 @@
-# Screen inventory — v0.6
+# Screen inventory — v0.7
+
+Ma'iyya adds a three-chapter overview, station templates for contextual matching, heart/tongue/body classification, optional dhikr timer and daily-plan closing, plus `ma-reward`, `daily` and `matching` routes. The daily screen has six editable reports, optional triangle/dice states and preserved history. Source/writing metadata remain independent of stage screens. Existing routes below continue to work; current captures are in `screens/v0.7/`.
 
 | Route | Purpose | Important states |
 |---|---|---|

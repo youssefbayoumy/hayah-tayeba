@@ -1,4 +1,10 @@
-# UX flows — v0.6
+# UX flows — v0.7
+
+## Ma'iyya addition
+
+Home has three journeys. Ma'iyya overview → discovery station → seven faith/good-deeds stations → seven practical stations, ending in the optional seven-day plan and learning keepsake. Matching checks a suitable meaning and application response with unlimited retries; narrative choices remain exploratory. No real-world performance, mood change or seven-day wait gates learning.
+
+After starting Ma'iyya, returning learners land on رحلتي اليوم with six editable self-reports, continue-learning and map actions. Optional triangles reveal one stored ordinary suggestion per local date; optional dice reveal one virtual participation keepsake, independent of prayer checks. Date changes begin a fresh checklist while all past records remain. Written review is optional; no microphone or notification feature is added. Existing two-journey flows below remain available.
 
 ## Start and home
 

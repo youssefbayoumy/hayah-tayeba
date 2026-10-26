@@ -1,23 +1,28 @@
-# Interactive browser preview — v0.6
+# Browser preview — v0.7
 
-Run `python scripts/serve-preview.py --port 8762` from the root; open `http://127.0.0.1:8762/`. The static server supports video byte ranges. GitHub Pages publishes the same `/docs` files.
+Run `python scripts/serve-preview.py --port 8763`, then open `http://127.0.0.1:8763/`. Byte ranges support accurate seeking in the existing film. Pages deploys the same `/docs` files.
 
-## Structure
+Three independent journeys: Dhikr's opening sample; the fifteen-challenge three-garden journey; and باب معية الله with fifteen stations in three chapters. Existing garden artwork/characters remain. The five new blue/gold images are retained as content references, not a new visual theme.
 
-`content.js` keeps the earlier Dhikr content and source catalog; `gardens.js` defines the approved three-garden/fifteen-question replacement and original artwork bindings. `store.js` owns schema 3 migration and local transactions. `app.js` implements the shared screens. `video-player.js` handles bounded playback of the unchanged original film. `garden-theme.css` overrides the base styles with the global reference theme.
+## Modules
 
-Original source-pixel crops and their manifest are under `assets/gardens/`. Reproduce them with `python scripts/crop-garden-assets.py`; it uses the original attachments when available and otherwise the retained source references. Crops are lossless PNGs. No image generation or upscaling is used for v0.6.
+- `content.js` / `gardens.js`: existing source catalog and three-garden curriculum.
+- `maiyya-content.js`: faith/good-deeds chapter, contextual Quran sources, six matching exercises, daily-item definitions and virtual suggestions.
+- `store.js`: schema 4, legacy migration and local transactions.
+- `app.js` / `maiyya-ui.js`: shared shell and third-journey screens. The latter receives explicit shell/repository helpers.
+- `video-player.js`: existing bounded film; no new Ma'iyya video was supplied.
+- `garden-theme.css`: unchanged color/art identity with new checklist, matching, timer and surprise components.
 
-## Behavior
+Ma'iyya has no daily waiting. Four matching exercises bind to stations and two are optional in the library; a suitable educational association/application opens the gate with unlimited retries. Narrative answers give supportive feedback and permit continuing. The optional timer and actual worship/feelings never gate learning. Seven-day plan data is separate from digital completion.
 
-Two main journeys remain. Tazkiya has التخلية / التحلية / التزكية, five scenarios each, explored in order. Any answer's explanation permits Next. Five explored challenges earn one key; three keys open treasure. Required video ranges 0–55 / 55–115 / 115–end introduce the gardens. Writing and seven-day practice are optional. Dhikr remains the original opening sample, visually restyled.
+The daily screen stores editable local-date reports. It becomes the returning landing page after Ma'iyya is started. One optional triangle suggestion and virtual dice result are saved per date; dice eligibility depends on participation, not prayer reporting. No real gifts, points, competitive ranking, microphone, notification permission or cloud service exists.
 
-Browser key `hayah-tayeba-design-preview-v1` now contains schemaVersion 3. Original flat data and schema 2 are migrated before validating current content IDs. Old Tazkiya progress/keepsakes are archived, while notes—including draft-only writings—retain independent origin metadata. New challenges do not inherit old completion. The same film's viewing records, plans, practice and Dhikr are preserved. Deleting a note removes its raw backup copies; reset removes both `.backup-v1` and `.backup-v2` along with current data.
+Schema 4 keeps the existing browser key. Version 3 gains an empty Ma'iyya record without changing either existing journey, diary or archive. Earlier migrations remain supported. Note deletion/reset handles `.backup-v1`, `.backup-v2`, `.backup-v3`. Failed writes never report a new completion/reward.
 
-## Verification and handoff
+## Verification
 
-- `node tests/garden-store-qa.cjs`: migration, archive, duplicate/invalid keys, backup deletion, failed writes and protected corrupt loads.
-- `node tests/garden-preview-qa.cjs`: original-art screens, all 45 responses, complete route, real video boundaries after near-end seeks, replay, old-note editing, local failures and 360/390/430 layouts. Requires Playwright and installed Chrome; `NODE_PATH`, `CHROME_PATH`, `PREVIEW_URL` may be set for the tooling environment.
-- `python scripts/package-gardens.py`: Pillow-based contact sheet, original crop/media/baseline checks, contrast evidence and v0.6 ZIP. The stable `preview-qa.cjs`, `store-qa.cjs` and `package-preview.py` entry points now delegate to current tooling; v0.5 tooling remains preserved in Git history and its ZIP.
+`node tests/store-qa.cjs` and `node tests/preview-qa.cjs` run existing-journey regression. `node tests/maiyya-store-qa.cjs` and `node tests/maiyya-preview-qa.cjs` cover new behavior and schema 3 migration. Browser tests require Playwright/installed Chrome; `NODE_PATH`, `CHROME_PATH`, `PREVIEW_URL` may identify the tooling environment. Current reports/captures are under `qa/` and `screens/v0.7/`.
 
-This public web preview needs network access for initial files/video and has no service worker or cloud backup. It is not proof of an installed Expo app working on first launch in airplane mode. Native packaging, full captions and device/child usability acceptance remain future work.
+`python scripts/package-preview.py` creates the current handoff with integrity evidence. Pillow is used for visual QA contact sheets and verifying original crop pixels, not for generating new art. The original sources/crop manifest and previous handoffs remain preserved.
+
+This is a network-loaded web prototype with browser-local storage, not the installed Expo build. Native first-launch offline behavior, full captions, qualified curriculum approval and device/child usability acceptance remain future release work.

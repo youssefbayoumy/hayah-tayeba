@@ -93,4 +93,4 @@ Use individual sessions with children near both ends of the 10–14 range, subje
 For each task, record completion without help, requested help, child explanation, and concrete interface issues. No numerical success threshold or preference result is assumed before research.
 # Current revision notice
 
-The review above is historical v0.4 evidence. Current v0.6 implementation and acceptance results are in [qa/browser-report-v06.json](qa/browser-report-v06.json), [v0.6 requirements](../revisions/v0.6/SRS.md) and [the current board](index.html). No native-device or child-usability approval is inferred from browser tests.
+The review above is historical v0.4 evidence. Current v0.7 results are in [Ma'iyya browser checks](qa/maiyya-browser-v07.json), [existing-journey regression](qa/browser-regression-v07.json), [requirements](../revisions/v0.7/SRS.md) and [the current board](index.html). No native-device or child-usability approval is inferred from browser tests.

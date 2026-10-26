@@ -1,8 +1,8 @@
 # Offline MVP implementation plan
 
-Updated: 2026-10-23 (Africa/Cairo)
+Updated: 2026-10-26 (Africa/Cairo)
 
-**Current revision:** [v0.6](../revisions/v0.6/README.md) replaces the twelve-stage second journey with three gardens, fifteen explore-any-answer challenges and three keys, and applies original client artwork across the demo. Schema 3 preserves previous learning/writing data. The browser implementation is delivered; installed Expo/offline acceptance remains pending. The sequence below is historical v0.4 planning and is superseded wherever newer addenda change it.
+**Current revision:** [v0.7](../revisions/v0.7/README.md) adds Ma'iyya as a third journey, includes the faith/good-deeds chapter, contextual verse matching and optional daily participation activities. Schema 4 preserves both existing journeys and writing/archive data. The garden theme remains. The sequence below is historical v0.4 planning, superseded wherever newer addenda change it; installed Expo/offline acceptance remains pending.
 
 This working plan follows DEC-02/DEC-03/DEC-04 in the [v0.4 addendum](../revisions/v0.4/DECISIONS.md). It replaces the account-first/backend-first sequence. The locked v0.3 snapshot and PDF remain unchanged.
 

@@ -1,0 +1,29 @@
+{
+  "version": "0.7.0",
+  "timestamp": "2026-10-26T08:18:44.390Z",
+  "passed": 22,
+  "checks": [
+    "fresh schema has 15 garden challenges and three journeys",
+    "v2 old completion is archived, never transferred to new questions",
+    "v2 profile, Dhikr, practice and plan retained",
+    "same original film retains all completed segment records",
+    "archived saved writing and draft-only origin retain labels",
+    "v2 raw backup retained until deliberate delete or reset",
+    "migrated schema reload is idempotent",
+    "v1 migration retains notes and asks for new character",
+    "delete archived writing purges draft, entry, origin and raw backups",
+    "delete v1 writing also purges embedded legacy copies",
+    "failed migration keeps original raw payload",
+    "failed commit does not mutate progress or keys",
+    "invalid and duplicate challenge IDs rejected",
+    "key cannot be recorded without all five explored challenges",
+    "key accepts all five explored challenges once",
+    "malformed or out-of-range video records cannot unlock",
+    "failed note deletion keeps text and archive",
+    "partial backup removal failure restores copies",
+    "reset removes learner, both backups and archive",
+    "invalid load is preserved: {broken",
+    "invalid load is preserved: {\"schemaVersion\":99,",
+    "invalid load is preserved: {\"schemaVersion\":2,\""
+  ]
+}

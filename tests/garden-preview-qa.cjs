@@ -1,6 +1,6 @@
 /* Current v0.6 browser acceptance. Start scripts/serve-preview.py --port 8762. */
 const {chromium}=require('playwright'),fs=require('fs'),path=require('path'),assert=require('assert/strict'),{v2}=require('./garden-fixtures.cjs');
-const BASE=process.env.PREVIEW_URL||'http://127.0.0.1:8762/design/prototype/?demo=1',OUT='docs/design/screens/v0.6';
+const BASE=process.env.PREVIEW_URL||'http://127.0.0.1:8763/design/prototype/?demo=1',OUT='docs/design/screens/v0.7/regression';
 fs.mkdirSync(OUT,{recursive:true});const checks=[],errors=[];
 function check(name,value){assert.ok(value,name);checks.push(name);}
 let browser;
@@ -24,7 +24,7 @@ let browser;
  await p.goto(BASE);await shot('01-welcome');await act('go','character');await shot('02-character');
  check('only two original-art character choices',await p.locator('[data-act="character"]').count()===2);
  await act('character','girl');await p.locator('#nickname').fill('نور');await act('save-character');await shot('03-home');
- check('main map still has two journeys',await p.locator('[data-act="journey"]').count()===2);
+ check('main map has three journeys',await p.locator('[data-act="journey"]').count()===3);
  await act('journey','tazkiya');await shot('04-three-gardens');
  check('exactly three nested garden doors',await p.locator('[data-act="garden"]').count()===3);
  await act('garden','tahliya');check('later garden is locked',await p.locator('dialog').isVisible()&&await screen()==='journey');await p.locator('[data-act="close-dialog"]').click();
@@ -80,7 +80,7 @@ let browser;
  }
  // v0.5 upgrade retains all old writings, including draft-only metadata.
  await p.evaluate(old=>localStorage.setItem(HayahStore.KEY,JSON.stringify(old)),v2());await p.reload();
- check('v2 upgrades to schema 3',await p.evaluate(()=>HayahStore.data.schemaVersion===3));check('old completion archived, new challenges fresh',(await state()).archives.tazkiyaV05.progress.completed.length===12&&(await state()).journeys.tazkiya.completed.length===0);
+ check('v2 upgrades to schema 4',await p.evaluate(()=>HayahStore.data.schemaVersion===4));check('old completion archived, new challenges fresh',(await state()).archives.tazkiyaV05.progress.completed.length===12&&(await state()).journeys.tazkiya.completed.length===0);
  await act('go','notebook');await act('entry','tazkiya:t11:p1');check('old draft-only note reopens without missing stage',await p.locator('#reflection').inputValue()==='كتابة لم أحفظها كتأمل');await p.locator('#reflection').fill('تأمل سابق تم تعديله');await act('save-reflection');await act('entry','tazkiya:t11:p1');check('old note edits preserve archived origin',(await state()).reflections['tazkiya:t11:p1'].archived===true);await act('delete-entry','tazkiya:t11:p1');await p.locator('[data-act="confirm"]').click();check('deleting old note also purges raw migration backup',await p.evaluate(()=>!localStorage.getItem(HayahStore.KEY+'.backup-v2')));
  await act('go','profile');await p.locator('summary').click();await shot('14-previous-journey');check('old keepsakes remain visible',await p.locator('details .badge-card').count()===12);
  await act('go','map');await act('journey','tazkiya');await act('garden','takhliya');check('previous video completion remains valid',await screen()==='garden');
@@ -96,6 +96,6 @@ let browser;
  await f.evaluate(()=>localStorage.setItem('hayah-tayeba-design-preview-v1','{corrupt'));await f.reload();check('corrupt data is preserved without overwrite',await f.evaluate(()=>HayahApp.screen==='load-error'&&localStorage.getItem(HayahStore.KEY)==='{corrupt'));
  const mc=await browser.newContext(),m=await mc.newPage();await m.route('**/tazkiya-overview.mp4',r=>r.abort());await m.goto(BASE);await m.locator('[data-value="character"]').click();await m.locator('[data-act="character"][data-value="girl"]').click();await m.locator('[data-act="save-character"]').click();await m.locator('[data-act="journey"][data-value="tazkiya"]').click();await m.locator('[data-act="garden"][data-value="takhliya"]').click();await m.locator('#video-error').waitFor({state:'visible'});check('missing film never opens garden gate',await m.locator('#video-next').isDisabled()&&await m.evaluate(()=>!HayahStore.data.journeys.tazkiya.videos['tazkiya-intro']?.completed));
  check('no uncaught browser errors',errors.length===0);
- fs.writeFileSync('docs/design/qa/browser-report-v06.json',JSON.stringify({version:'0.6.0',timestamp:new Date().toISOString(),passed:checks.length,checks,errors,browser:'Installed Chrome via Playwright',limitations:['Browser prototype, not native Expo/device QA','Original client collage crops retain their source resolution','Video boundary tests use muted playback after near-end seeks; not full audio/caption acceptance']},null,2));
+ fs.writeFileSync('docs/design/qa/browser-regression-v07.json',JSON.stringify({version:'0.7.0',timestamp:new Date().toISOString(),passed:checks.length,checks,errors,browser:'Installed Chrome via Playwright',limitations:['Browser prototype, not native Expo/device QA','Original client collage crops retain their source resolution','Video boundary tests use muted playback after near-end seeks; not full audio/caption acceptance']},null,2));
  console.log(JSON.stringify({passed:checks.length,errors}));
 })().catch(e=>{console.error(e);process.exitCode=1;}).finally(async()=>{if(browser)await browser.close();});

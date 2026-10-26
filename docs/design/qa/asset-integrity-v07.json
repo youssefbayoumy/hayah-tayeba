@@ -1,0 +1,48 @@
+{
+  "version": "0.7.0",
+  "previousHandoffsUnchanged": true,
+  "frozenBaselineUnchanged": true,
+  "originalFilmUnchanged": true,
+  "verifiedOriginalCrops": 26,
+  "paletteUnchangedFromV06": true,
+  "contrastRatios": {
+    "navy/paper": 10.52,
+    "navy/wood": 8.01,
+    "navy/pink": 8.54,
+    "navy/sky": 9.61,
+    "navy/leaf": 9.4,
+    "ink/paper": 12.97,
+    "ink/wood": 9.87,
+    "ink/pink": 10.52,
+    "ink/sky": 11.85,
+    "ink/leaf": 11.59,
+    "muted/paper": 6.72,
+    "muted/wood": 5.11,
+    "muted/pink": 5.45,
+    "muted/sky": 6.14,
+    "muted/leaf": 6.0,
+    "green/paper": 6.86,
+    "green/wood": 5.22,
+    "green/pink": 5.57,
+    "green/sky": 6.27,
+    "green/leaf": 6.13,
+    "error/paper": 8.45,
+    "error/wood": 6.43,
+    "error/pink": 6.85,
+    "error/sky": 7.72,
+    "error/leaf": 7.55,
+    "white/accent": 6.4
+  },
+  "newContentReferences": {
+    "1-1000186450.jpg": "9ee5c076fd610a8e6002561653fcf4dcef74db7e56a83b97fd622183ce991afc",
+    "2-1000186447.jpg": "bfcd3ce55890a4604cc2e45e7b52ab1cf7be211126170fa045fd55230387ab53",
+    "3-1000186444.jpg": "c4194eeee2d6ba60acbd6b337355fce262b2b6a5451313b51775e8821bbf6738",
+    "4-1000186441.jpg": "1bb5165d2b51f7ebb5be44a01ec8d265ea2d096c2c8c7abf9ecec0db21ded57f",
+    "5-1000186438.jpg": "c8bdcce82d6a5db0d2e5380c5e38558bd9898758d51438c80b6c57f794e466fd"
+  },
+  "limitations": [
+    "Browser preview, not native offline/device acceptance",
+    "Religious copy remains for client editorial review",
+    "New reference images are not a theme change"
+  ]
+}
